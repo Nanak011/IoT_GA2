@@ -1,0 +1,473 @@
+{
+  "name": "Post-Flood Water Quality Node",
+  "description": "Virtual ESP32-S3 water-quality node (pH, turbidity, TDS, temperature, flow). Alarm thresholds with hysteresis per ITS67404 Task 3 C.3.",
+  "type": "DEFAULT",
+  "transportType": "DEFAULT",
+  "provisionType": "DISABLED",
+  "profileData": {
+    "configuration": {
+      "type": "DEFAULT"
+    },
+    "transportConfiguration": {
+      "type": "DEFAULT"
+    },
+    "provisionConfiguration": {
+      "type": "DISABLED",
+      "provisionDeviceSecret": null
+    },
+    "alarms": [
+      {
+        "id": "high_turbidity",
+        "alarmType": "High Turbidity",
+        "createRules": {
+          "WARNING": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "TIME_SERIES",
+                    "key": "turbidity_ntu"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "NUMERIC",
+                    "operation": "GREATER",
+                    "value": {
+                      "defaultValue": 50,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "Turbidity ${turbidity_ntu} NTU > 50: silt ingress, chlorination efficiency reduced",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "TIME_SERIES",
+                  "key": "turbidity_ntu"
+                },
+                "valueType": "NUMERIC",
+                "value": null,
+                "predicate": {
+                  "type": "NUMERIC",
+                  "operation": "LESS",
+                  "value": {
+                    "defaultValue": 40,
+                    "userValue": null,
+                    "dynamicValue": null
+                  }
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "gross_contamination",
+        "alarmType": "Gross Contamination",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "TIME_SERIES",
+                    "key": "turbidity_ntu"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "NUMERIC",
+                    "operation": "GREATER",
+                    "value": {
+                      "defaultValue": 200,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "Turbidity ${turbidity_ntu} NTU > 200: isolate source, do not drink",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "TIME_SERIES",
+                  "key": "turbidity_ntu"
+                },
+                "valueType": "NUMERIC",
+                "value": null,
+                "predicate": {
+                  "type": "NUMERIC",
+                  "operation": "LESS",
+                  "value": {
+                    "defaultValue": 150,
+                    "userValue": null,
+                    "dynamicValue": null
+                  }
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "ph_out_of_range",
+        "alarmType": "pH Out of Range",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "TIME_SERIES",
+                    "key": "ph"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "COMPLEX",
+                    "operation": "OR",
+                    "predicates": [
+                      {
+                        "type": "NUMERIC",
+                        "operation": "LESS",
+                        "value": {
+                          "defaultValue": 6.5,
+                          "userValue": null,
+                          "dynamicValue": null
+                        }
+                      },
+                      {
+                        "type": "NUMERIC",
+                        "operation": "GREATER",
+                        "value": {
+                          "defaultValue": 8.5,
+                          "userValue": null,
+                          "dynamicValue": null
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "pH ${ph} outside NDWQS 6.5-8.5",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "TIME_SERIES",
+                  "key": "ph"
+                },
+                "valueType": "NUMERIC",
+                "value": null,
+                "predicate": {
+                  "type": "COMPLEX",
+                  "operation": "AND",
+                  "predicates": [
+                    {
+                      "type": "NUMERIC",
+                      "operation": "GREATER_OR_EQUAL",
+                      "value": {
+                        "defaultValue": 6.7,
+                        "userValue": null,
+                        "dynamicValue": null
+                      }
+                    },
+                    {
+                      "type": "NUMERIC",
+                      "operation": "LESS_OR_EQUAL",
+                      "value": {
+                        "defaultValue": 8.3,
+                        "userValue": null,
+                        "dynamicValue": null
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "high_tds",
+        "alarmType": "High TDS",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "TIME_SERIES",
+                    "key": "tds_ppm"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "NUMERIC",
+                    "operation": "GREATER",
+                    "value": {
+                      "defaultValue": 500,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "TDS ${tds_ppm} ppm > 500: dissolved ingress",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "TIME_SERIES",
+                  "key": "tds_ppm"
+                },
+                "valueType": "NUMERIC",
+                "value": null,
+                "predicate": {
+                  "type": "NUMERIC",
+                  "operation": "LESS",
+                  "value": {
+                    "defaultValue": 450,
+                    "userValue": null,
+                    "dynamicValue": null
+                  }
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "supply_interruption",
+        "alarmType": "Supply Interruption",
+        "createRules": {
+          "MAJOR": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "TIME_SERIES",
+                    "key": "flow_lpm"
+                  },
+                  "valueType": "NUMERIC",
+                  "value": null,
+                  "predicate": {
+                    "type": "NUMERIC",
+                    "operation": "EQUAL",
+                    "value": {
+                      "defaultValue": 0,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "DURATION",
+                "unit": "SECONDS",
+                "predicate": {
+                  "defaultValue": 60,
+                  "userValue": null,
+                  "dynamicValue": null
+                }
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "Zero flow sustained (demo 60 s; production 30 min)",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "TIME_SERIES",
+                  "key": "flow_lpm"
+                },
+                "valueType": "NUMERIC",
+                "value": null,
+                "predicate": {
+                  "type": "NUMERIC",
+                  "operation": "GREATER",
+                  "value": {
+                    "defaultValue": 0,
+                    "userValue": null,
+                    "dynamicValue": null
+                  }
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      },
+      {
+        "id": "node_inactive",
+        "alarmType": "Node Inactive",
+        "createRules": {
+          "CRITICAL": {
+            "condition": {
+              "condition": [
+                {
+                  "key": {
+                    "type": "ATTRIBUTE",
+                    "key": "active"
+                  },
+                  "valueType": "BOOLEAN",
+                  "value": null,
+                  "predicate": {
+                    "type": "BOOLEAN",
+                    "operation": "EQUAL",
+                    "value": {
+                      "defaultValue": false,
+                      "userValue": null,
+                      "dynamicValue": null
+                    }
+                  }
+                }
+              ],
+              "spec": {
+                "type": "SIMPLE"
+              }
+            },
+            "schedule": null,
+            "alarmDetails": "No telemetry for longer than inactivityTimeout",
+            "dashboardId": null
+          }
+        },
+        "clearRule": {
+          "condition": {
+            "condition": [
+              {
+                "key": {
+                  "type": "ATTRIBUTE",
+                  "key": "active"
+                },
+                "valueType": "BOOLEAN",
+                "value": null,
+                "predicate": {
+                  "type": "BOOLEAN",
+                  "operation": "EQUAL",
+                  "value": {
+                    "defaultValue": true,
+                    "userValue": null,
+                    "dynamicValue": null
+                  }
+                }
+              }
+            ],
+            "spec": {
+              "type": "SIMPLE"
+            }
+          },
+          "schedule": null,
+          "alarmDetails": null,
+          "dashboardId": null
+        },
+        "propagate": false,
+        "propagateToOwner": false,
+        "propagateToTenant": false,
+        "propagateRelationTypes": null
+      }
+    ]
+  },
+  "defaultRuleChainId": null,
+  "defaultDashboardId": null,
+  "defaultQueueName": null,
+  "provisionDeviceKey": null,
+  "firmwareId": null,
+  "softwareId": null,
+  "image": null,
+  "default": false
+}

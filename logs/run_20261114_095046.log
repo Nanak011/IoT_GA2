@@ -1,0 +1,1304 @@
+09:50:46.337 | FLEET  | CONFIG    | transport=mqtt host=eu.thingsboard.cloud:8883 tls=True interval=5.0s burst=2.0s time_scale=12.0x buffer_max=20000 batch=50 dp_rate=8/s burst=30 backoff=2.0-20.0s
+09:50:46.657 | BDR-01 | BOOT      | Bidur Reservoir Outlet (27.8993, 85.1608) buffer=BDR-01.db pending=0
+09:50:46.658 | BDR-01 | STATE     | BOOT -> OFFLINE  (not connected yet)
+09:50:46.658 | BDR-02 | BOOT      | Battar Tap Stand (27.8912, 85.1534) buffer=BDR-02.db pending=0
+09:50:46.659 | BDR-02 | STATE     | BOOT -> OFFLINE  (not connected yet)
+09:50:46.659 | BDR-03 | BOOT      | Holding Centre Tubewell (27.8846, 85.1679) buffer=BDR-03.db pending=0
+09:50:46.660 | BDR-03 | STATE     | BOOT -> OFFLINE  (not connected yet)
+09:50:46.670 | FLEET  | SCENARIO  | scenario 'demo-15min' loaded (13 events)
+09:50:46.700 | BDR-01 | READ      | seq=1 ph=7.35 turb=3.4NTU tds=173ppm T=19.6C flow=13.5L/min led=GREEN | SQLite pending=1  [BUFFERING - offline]
+09:50:46.706 | BDR-02 | READ      | seq=1 ph=7.25 turb=4.3NTU tds=191ppm T=20.6C flow=10.7L/min led=GREEN | SQLite pending=1  [BUFFERING - offline]
+09:50:46.708 | BDR-03 | READ      | seq=1 ph=7.10 turb=2.4NTU tds=231ppm T=18.3C flow=9.0L/min led=GREEN | SQLite pending=1  [BUFFERING - offline]
+09:50:47.909 | BDR-01 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:50:47.909 | BDR-03 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:50:47.909 | BDR-02 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:50:48.544 | BDR-03 | PUB       | seq=1 ts=1794629146707 QoS1 PUBACK in 171 ms
+09:50:48.554 | BDR-01 | PUB       | seq=1 ts=1794629146696 QoS1 PUBACK in 169 ms
+09:50:48.560 | BDR-02 | PUB       | seq=1 ts=1794629146704 QoS1 PUBACK in 174 ms
+09:50:51.674 | BDR-03 | READ      | seq=2 ph=7.10 turb=2.6NTU tds=231ppm T=18.4C flow=8.9L/min led=GREEN | SQLite pending=1
+09:50:51.674 | BDR-02 | READ      | seq=2 ph=7.25 turb=4.3NTU tds=190ppm T=20.6C flow=10.6L/min led=GREEN | SQLite pending=1
+09:50:51.674 | BDR-01 | READ      | seq=2 ph=7.34 turb=3.2NTU tds=173ppm T=19.6C flow=13.1L/min led=GREEN | SQLite pending=1
+09:50:51.683 | FLEET  | SCENARIO  | STEP 1-2: baseline telemetry - all three sources normal (green)
+09:50:51.877 | BDR-03 | PUB       | seq=2 ts=1794629151668 QoS1 PUBACK in 176 ms
+09:50:51.885 | BDR-01 | PUB       | seq=2 ts=1794629151667 QoS1 PUBACK in 168 ms
+09:50:51.888 | BDR-02 | PUB       | seq=2 ts=1794629151666 QoS1 PUBACK in 172 ms
+09:50:56.674 | BDR-01 | READ      | seq=3 ph=7.35 turb=3.0NTU tds=175ppm T=19.6C flow=12.8L/min led=GREEN | SQLite pending=1
+09:50:56.675 | BDR-03 | READ      | seq=3 ph=7.10 turb=2.4NTU tds=231ppm T=18.4C flow=8.8L/min led=GREEN | SQLite pending=1
+09:50:56.675 | BDR-02 | READ      | seq=3 ph=7.26 turb=4.1NTU tds=192ppm T=20.6C flow=10.5L/min led=GREEN | SQLite pending=1
+09:50:57.023 | BDR-03 | PUB       | seq=3 ts=1794629156668 QoS1 PUBACK in 284 ms
+09:50:57.023 | BDR-01 | PUB       | seq=3 ts=1794629156668 QoS1 PUBACK in 284 ms
+09:50:57.023 | BDR-02 | PUB       | seq=3 ts=1794629156667 QoS1 PUBACK in 284 ms
+09:51:01.678 | BDR-02 | READ      | seq=4 ph=7.27 turb=4.2NTU tds=191ppm T=20.6C flow=10.5L/min led=GREEN | SQLite pending=1
+09:51:01.678 | BDR-01 | READ      | seq=4 ph=7.36 turb=3.1NTU tds=176ppm T=19.7C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:01.678 | BDR-03 | READ      | seq=4 ph=7.10 turb=2.5NTU tds=228ppm T=18.4C flow=8.9L/min led=GREEN | SQLite pending=1
+09:51:01.862 | BDR-01 | PUB       | seq=4 ts=1794629161669 QoS1 PUBACK in 172 ms
+09:51:01.862 | BDR-03 | PUB       | seq=4 ts=1794629161669 QoS1 PUBACK in 170 ms
+09:51:01.868 | BDR-02 | PUB       | seq=4 ts=1794629161670 QoS1 PUBACK in 176 ms
+09:51:06.686 | BDR-02 | READ      | seq=5 ph=7.27 turb=3.9NTU tds=190ppm T=20.6C flow=10.8L/min led=GREEN | SQLite pending=1
+09:51:06.687 | BDR-01 | READ      | seq=5 ph=7.35 turb=2.6NTU tds=175ppm T=19.7C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:06.687 | BDR-03 | READ      | seq=5 ph=7.08 turb=2.4NTU tds=230ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=1
+09:51:06.957 | BDR-01 | PUB       | seq=5 ts=1794629166683 QoS1 PUBACK in 205 ms
+09:51:06.957 | BDR-03 | PUB       | seq=5 ts=1794629166683 QoS1 PUBACK in 205 ms
+09:51:06.957 | BDR-02 | PUB       | seq=5 ts=1794629166683 QoS1 PUBACK in 204 ms
+09:51:11.698 | BDR-02 | READ      | seq=6 ph=7.27 turb=4.2NTU tds=189ppm T=20.6C flow=10.7L/min led=GREEN | SQLite pending=1
+09:51:11.698 | BDR-01 | READ      | seq=6 ph=7.35 turb=3.0NTU tds=175ppm T=19.7C flow=12.7L/min led=GREEN | SQLite pending=1
+09:51:11.698 | BDR-03 | READ      | seq=6 ph=7.07 turb=2.3NTU tds=229ppm T=18.4C flow=8.8L/min led=GREEN | SQLite pending=1
+09:51:11.974 | BDR-01 | PUB       | seq=6 ts=1794629171690 QoS1 PUBACK in 215 ms
+09:51:11.974 | BDR-02 | PUB       | seq=6 ts=1794629171690 QoS1 PUBACK in 215 ms
+09:51:11.974 | BDR-03 | PUB       | seq=6 ts=1794629171690 QoS1 PUBACK in 216 ms
+09:51:16.705 | BDR-02 | READ      | seq=7 ph=7.27 turb=4.0NTU tds=190ppm T=20.6C flow=10.7L/min led=GREEN | SQLite pending=1
+09:51:16.705 | BDR-03 | READ      | seq=7 ph=7.06 turb=2.6NTU tds=232ppm T=18.4C flow=8.8L/min led=GREEN | SQLite pending=1
+09:51:16.705 | BDR-01 | READ      | seq=7 ph=7.36 turb=3.1NTU tds=174ppm T=19.8C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:16.992 | BDR-01 | PUB       | seq=7 ts=1794629176697 QoS1 PUBACK in 227 ms
+09:51:16.992 | BDR-03 | PUB       | seq=7 ts=1794629176698 QoS1 PUBACK in 227 ms
+09:51:16.993 | BDR-02 | PUB       | seq=7 ts=1794629176697 QoS1 PUBACK in 227 ms
+09:51:21.715 | BDR-02 | READ      | seq=8 ph=7.27 turb=4.2NTU tds=191ppm T=20.6C flow=10.5L/min led=GREEN | SQLite pending=1
+09:51:21.726 | BDR-03 | READ      | seq=8 ph=7.07 turb=2.6NTU tds=232ppm T=18.4C flow=8.8L/min led=GREEN | SQLite pending=1
+09:51:21.736 | BDR-01 | READ      | seq=8 ph=7.37 turb=2.8NTU tds=174ppm T=19.8C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:22.156 | BDR-01 | PUB       | seq=8 ts=1794629181708 QoS1 PUBACK in 335 ms
+09:51:22.156 | BDR-03 | PUB       | seq=8 ts=1794629181707 QoS1 PUBACK in 335 ms
+09:51:22.157 | BDR-02 | PUB       | seq=8 ts=1794629181710 QoS1 PUBACK in 336 ms
+09:51:26.740 | BDR-01 | READ      | seq=9 ph=7.38 turb=2.9NTU tds=175ppm T=19.8C flow=12.9L/min led=GREEN | SQLite pending=1
+09:51:26.740 | BDR-02 | READ      | seq=9 ph=7.26 turb=4.3NTU tds=189ppm T=20.6C flow=10.7L/min led=GREEN | SQLite pending=1
+09:51:26.740 | BDR-03 | READ      | seq=9 ph=7.08 turb=2.6NTU tds=230ppm T=18.4C flow=8.9L/min led=GREEN | SQLite pending=1
+09:51:27.033 | BDR-01 | PUB       | seq=9 ts=1794629186732 QoS1 PUBACK in 229 ms
+09:51:27.033 | BDR-03 | PUB       | seq=9 ts=1794629186732 QoS1 PUBACK in 229 ms
+09:51:27.034 | BDR-02 | PUB       | seq=9 ts=1794629186733 QoS1 PUBACK in 231 ms
+09:51:31.744 | BDR-02 | READ      | seq=10 ph=7.26 turb=4.1NTU tds=187ppm T=20.6C flow=10.8L/min led=GREEN | SQLite pending=1
+09:51:31.744 | BDR-03 | READ      | seq=10 ph=7.09 turb=2.8NTU tds=232ppm T=18.3C flow=8.8L/min led=GREEN | SQLite pending=1
+09:51:31.744 | BDR-01 | READ      | seq=10 ph=7.37 turb=3.0NTU tds=174ppm T=19.8C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:32.048 | BDR-02 | PUB       | seq=10 ts=1794629191736 QoS1 PUBACK in 244 ms
+09:51:32.049 | BDR-03 | PUB       | seq=10 ts=1794629191737 QoS1 PUBACK in 245 ms
+09:51:32.049 | BDR-01 | PUB       | seq=10 ts=1794629191737 QoS1 PUBACK in 245 ms
+09:51:36.756 | BDR-03 | READ      | seq=11 ph=7.10 turb=2.6NTU tds=231ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=1
+09:51:36.756 | BDR-01 | READ      | seq=11 ph=7.36 turb=3.3NTU tds=173ppm T=19.8C flow=12.8L/min led=GREEN | SQLite pending=1
+09:51:36.756 | BDR-02 | READ      | seq=11 ph=7.27 turb=4.2NTU tds=188ppm T=20.6C flow=10.7L/min led=GREEN | SQLite pending=1
+09:51:37.061 | BDR-02 | PUB       | seq=11 ts=1794629196749 QoS1 PUBACK in 246 ms
+09:51:37.062 | BDR-01 | PUB       | seq=11 ts=1794629196749 QoS1 PUBACK in 246 ms
+09:51:37.062 | BDR-03 | PUB       | seq=11 ts=1794629196749 QoS1 PUBACK in 246 ms
+09:51:41.768 | BDR-01 | READ      | seq=12 ph=7.36 turb=3.2NTU tds=171ppm T=19.8C flow=13.0L/min led=GREEN | SQLite pending=1
+09:51:41.768 | BDR-02 | READ      | seq=12 ph=7.28 turb=4.1NTU tds=187ppm T=20.7C flow=11.0L/min led=GREEN | SQLite pending=1
+09:51:41.768 | BDR-03 | READ      | seq=12 ph=7.10 turb=2.5NTU tds=230ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=1
+09:51:42.082 | BDR-02 | PUB       | seq=12 ts=1794629201761 QoS1 PUBACK in 255 ms
+09:51:42.082 | BDR-01 | PUB       | seq=12 ts=1794629201761 QoS1 PUBACK in 255 ms
+09:51:42.082 | BDR-03 | PUB       | seq=12 ts=1794629201761 QoS1 PUBACK in 254 ms
+09:51:46.774 | BDR-03 | READ      | seq=13 ph=7.11 turb=2.4NTU tds=229ppm T=18.3C flow=9.3L/min led=GREEN | SQLite pending=1
+09:51:46.775 | BDR-02 | READ      | seq=13 ph=7.30 turb=4.3NTU tds=187ppm T=20.7C flow=10.9L/min led=GREEN | SQLite pending=1
+09:51:46.775 | BDR-01 | READ      | seq=13 ph=7.35 turb=3.3NTU tds=170ppm T=19.8C flow=12.5L/min led=GREEN | SQLite pending=1
+09:51:47.096 | BDR-01 | PUB       | seq=13 ts=1794629206766 QoS1 PUBACK in 261 ms
+09:51:47.096 | BDR-02 | PUB       | seq=13 ts=1794629206767 QoS1 PUBACK in 260 ms
+09:51:47.097 | BDR-03 | PUB       | seq=13 ts=1794629206766 QoS1 PUBACK in 260 ms
+09:51:51.789 | BDR-01 | READ      | seq=14 ph=7.35 turb=3.3NTU tds=169ppm T=19.8C flow=12.4L/min led=GREEN | SQLite pending=1
+09:51:51.789 | BDR-02 | READ      | seq=14 ph=7.28 turb=4.3NTU tds=186ppm T=20.7C flow=10.5L/min led=GREEN | SQLite pending=1
+09:51:51.789 | BDR-03 | READ      | seq=14 ph=7.10 turb=2.8NTU tds=232ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=1
+09:51:52.120 | BDR-03 | PUB       | seq=14 ts=1794629211782 QoS1 PUBACK in 270 ms
+09:51:52.120 | BDR-01 | PUB       | seq=14 ts=1794629211781 QoS1 PUBACK in 271 ms
+09:51:52.120 | BDR-02 | PUB       | seq=14 ts=1794629211781 QoS1 PUBACK in 271 ms
+09:51:56.797 | BDR-02 | READ      | seq=15 ph=7.28 turb=4.2NTU tds=185ppm T=20.7C flow=10.4L/min led=GREEN | SQLite pending=1
+09:51:56.798 | BDR-01 | READ      | seq=15 ph=7.36 turb=3.1NTU tds=173ppm T=19.8C flow=12.6L/min led=GREEN | SQLite pending=1
+09:51:56.798 | BDR-03 | READ      | seq=15 ph=7.10 turb=2.4NTU tds=231ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=1
+09:51:57.135 | BDR-03 | PUB       | seq=15 ts=1794629216794 QoS1 PUBACK in 272 ms
+09:51:57.136 | BDR-02 | PUB       | seq=15 ts=1794629216794 QoS1 PUBACK in 272 ms
+09:51:57.136 | BDR-01 | PUB       | seq=15 ts=1794629216794 QoS1 PUBACK in 274 ms
+09:52:01.675 | FLEET  | SCENARIO  | STEP 3: rainfall-triggered silt/sewage intrusion at the reservoir outlet
+09:52:01.676 | FLEET  | SCENARIO  | contamination event at BDR-01: peak 650 NTU (ingress fraction 0.432), rise 10 min, washout tau 25 min [sim time]
+09:52:01.676 | FLEET  | SCENARIO  |   -> will reach BDR-02 after 12.0 sim-min, diluted x0.6
+09:52:01.804 | BDR-01 | READ      | seq=16 ph=7.35 turb=2.9NTU tds=175ppm T=19.8C flow=11.6L/min led=GREEN | SQLite pending=1
+09:52:01.804 | BDR-03 | READ      | seq=16 ph=7.10 turb=2.4NTU tds=233ppm T=18.4C flow=9.0L/min led=GREEN | SQLite pending=1
+09:52:01.805 | BDR-02 | READ      | seq=16 ph=7.27 turb=4.0NTU tds=185ppm T=20.7C flow=10.6L/min led=GREEN | SQLite pending=1
+09:52:02.149 | BDR-02 | PUB       | seq=16 ts=1794629221800 QoS1 PUBACK in 281 ms
+09:52:02.150 | BDR-03 | PUB       | seq=16 ts=1794629221801 QoS1 PUBACK in 281 ms
+09:52:02.150 | BDR-01 | PUB       | seq=16 ts=1794629221800 QoS1 PUBACK in 282 ms
+09:52:06.815 | BDR-03 | READ      | seq=17 ph=7.11 turb=2.4NTU tds=231ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=1
+09:52:06.815 | BDR-02 | READ      | seq=17 ph=7.25 turb=3.9NTU tds=187ppm T=20.7C flow=10.7L/min led=GREEN | SQLite pending=1
+09:52:06.816 | BDR-01 | READ      | seq=17 ph=7.30 turb=21.3NTU tds=186ppm T=19.8C flow=13.5L/min led=GREEN | SQLite pending=1
+09:52:07.168 | BDR-02 | PUB       | seq=17 ts=1794629226808 QoS1 PUBACK in 293 ms
+09:52:07.169 | BDR-03 | PUB       | seq=17 ts=1794629226808 QoS1 PUBACK in 292 ms
+09:52:07.169 | BDR-01 | PUB       | seq=17 ts=1794629226808 QoS1 PUBACK in 294 ms
+09:52:11.817 | BDR-01 | ALARM     | edge rule CREATE: High Turbidity [WARNING] -> LED AMBER
+09:52:11.821 | BDR-02 | READ      | seq=18 ph=7.24 turb=3.9NTU tds=188ppm T=20.8C flow=10.7L/min led=GREEN | SQLite pending=1
+09:52:11.821 | BDR-01 | READ      | seq=18 ph=7.21 turb=64.1NTU tds=214ppm T=19.6C flow=9.2L/min led=AMBER | SQLite pending=1
+09:52:11.821 | BDR-03 | READ      | seq=18 ph=7.10 turb=2.4NTU tds=232ppm T=18.4C flow=9.5L/min led=GREEN | SQLite pending=1
+09:52:12.183 | BDR-02 | PUB       | seq=18 ts=1794629231818 QoS1 PUBACK in 331 ms
+09:52:12.184 | BDR-01 | PUB       | seq=18 ts=1794629231818 QoS1 PUBACK in 330 ms
+09:52:12.184 | BDR-03 | PUB       | seq=18 ts=1794629231818 QoS1 PUBACK in 329 ms
+09:52:13.834 | BDR-01 | READ      | seq=19 ph=7.16 turb=82.0NTU tds=226ppm T=19.5C flow=11.3L/min led=AMBER | SQLite pending=1
+09:52:14.063 | BDR-01 | PUB       | seq=19 ts=1794629233831 QoS1 PUBACK in 173 ms
+09:52:15.840 | BDR-01 | READ      | seq=20 ph=7.09 turb=118.7NTU tds=241ppm T=19.4C flow=13.9L/min led=AMBER | SQLite pending=1
+09:52:16.077 | BDR-01 | PUB       | seq=20 ts=1794629235836 QoS1 PUBACK in 172 ms
+09:52:16.829 | BDR-03 | READ      | seq=19 ph=7.11 turb=2.6NTU tds=231ppm T=18.4C flow=9.5L/min led=GREEN | SQLite pending=1
+09:52:16.829 | BDR-02 | READ      | seq=19 ph=7.24 turb=3.9NTU tds=189ppm T=20.8C flow=10.6L/min led=GREEN | SQLite pending=1
+09:52:17.103 | BDR-03 | PUB       | seq=19 ts=1794629236827 QoS1 PUBACK in 206 ms
+09:52:17.104 | BDR-02 | PUB       | seq=19 ts=1794629236827 QoS1 PUBACK in 206 ms
+09:52:17.845 | BDR-01 | READ      | seq=21 ph=7.03 turb=149.4NTU tds=258ppm T=19.2C flow=14.3L/min led=AMBER | SQLite pending=1
+09:52:18.190 | BDR-01 | PUB       | seq=21 ts=1794629237843 QoS1 PUBACK in 281 ms
+09:52:19.857 | BDR-01 | READ      | seq=22 ph=6.96 turb=183.6NTU tds=277ppm T=19.0C flow=12.9L/min led=AMBER | SQLite pending=1
+09:52:20.271 | BDR-01 | PUB       | seq=22 ts=1794629239855 QoS1 PUBACK in 346 ms
+09:52:21.843 | BDR-03 | READ      | seq=20 ph=7.10 turb=2.5NTU tds=230ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=1
+09:52:21.843 | BDR-02 | READ      | seq=20 ph=7.24 turb=3.9NTU tds=192ppm T=20.8C flow=10.8L/min led=GREEN | SQLite pending=1
+09:52:21.857 | BDR-01 | ALARM     | edge rule CREATE: Gross Contamination [CRITICAL] -> LED RED
+09:52:21.859 | BDR-01 | READ      | seq=23 ph=6.89 turb=235.2NTU tds=296ppm T=18.9C flow=11.4L/min led=RED | SQLite pending=1
+09:52:22.118 | BDR-02 | PUB       | seq=20 ts=1794629241840 QoS1 PUBACK in 210 ms
+09:52:22.119 | BDR-01 | PUB       | seq=23 ts=1794629241857 QoS1 PUBACK in 195 ms
+09:52:22.119 | BDR-03 | PUB       | seq=20 ts=1794629241840 QoS1 PUBACK in 210 ms
+09:52:23.860 | BDR-01 | READ      | seq=24 ph=6.84 turb=268.3NTU tds=315ppm T=18.8C flow=10.9L/min led=RED | SQLite pending=1
+09:52:24.125 | BDR-01 | PUB       | seq=24 ts=1794629243857 QoS1 PUBACK in 201 ms
+09:52:25.878 | BDR-01 | READ      | seq=25 ph=6.79 turb=300.9NTU tds=335ppm T=18.7C flow=11.9L/min led=RED | SQLite pending=1
+09:52:26.110 | BDR-01 | PUB       | seq=25 ts=1794629245875 QoS1 PUBACK in 174 ms
+09:52:26.859 | BDR-02 | READ      | seq=21 ph=7.23 turb=4.0NTU tds=190ppm T=20.8C flow=10.8L/min led=GREEN | SQLite pending=1
+09:52:26.860 | BDR-03 | READ      | seq=21 ph=7.10 turb=2.4NTU tds=229ppm T=18.4C flow=9.0L/min led=GREEN | SQLite pending=1
+09:52:27.646 | BDR-03 | PUB       | seq=21 ts=1794629246856 QoS1 PUBACK in 722 ms
+09:52:27.646 | BDR-02 | PUB       | seq=21 ts=1794629246856 QoS1 PUBACK in 723 ms
+09:52:27.889 | BDR-01 | READ      | seq=26 ph=6.74 turb=334.3NTU tds=355ppm T=18.5C flow=13.1L/min led=RED | SQLite pending=1
+09:52:28.163 | BDR-01 | PUB       | seq=26 ts=1794629247886 QoS1 PUBACK in 207 ms
+09:52:29.892 | BDR-01 | READ      | seq=27 ph=6.69 turb=384.4NTU tds=377ppm T=18.3C flow=13.2L/min led=RED | SQLite pending=1
+09:52:30.207 | BDR-01 | PUB       | seq=27 ts=1794629249889 QoS1 PUBACK in 246 ms
+09:52:31.861 | BDR-02 | READ      | seq=22 ph=7.24 turb=3.7NTU tds=191ppm T=20.9C flow=10.9L/min led=GREEN | SQLite pending=1
+09:52:31.862 | BDR-03 | READ      | seq=22 ph=7.10 turb=2.2NTU tds=231ppm T=18.4C flow=9.2L/min led=GREEN | SQLite pending=1
+09:52:31.895 | BDR-01 | READ      | seq=28 ph=6.66 turb=380.3NTU tds=397ppm T=18.2C flow=12.8L/min led=RED | SQLite pending=1
+09:52:32.136 | BDR-01 | PUB       | seq=28 ts=1794629251891 QoS1 PUBACK in 208 ms
+09:52:32.136 | BDR-02 | PUB       | seq=22 ts=1794629251858 QoS1 PUBACK in 208 ms
+09:52:32.136 | BDR-03 | PUB       | seq=22 ts=1794629251858 QoS1 PUBACK in 208 ms
+09:52:33.906 | BDR-01 | READ      | seq=29 ph=6.62 turb=431.2NTU tds=416ppm T=18.1C flow=11.9L/min led=RED | SQLite pending=1
+09:52:34.199 | BDR-01 | PUB       | seq=29 ts=1794629253903 QoS1 PUBACK in 273 ms
+09:52:35.909 | BDR-01 | READ      | seq=30 ph=6.58 turb=456.1NTU tds=433ppm T=17.9C flow=11.1L/min led=RED | SQLite pending=1
+09:52:36.247 | BDR-01 | PUB       | seq=30 ts=1794629255905 QoS1 PUBACK in 272 ms
+09:52:36.865 | BDR-02 | READ      | seq=23 ph=7.25 turb=3.7NTU tds=191ppm T=20.9C flow=10.8L/min led=GREEN | SQLite pending=1
+09:52:36.865 | BDR-03 | READ      | seq=23 ph=7.12 turb=2.2NTU tds=231ppm T=18.3C flow=9.3L/min led=GREEN | SQLite pending=1
+09:52:37.170 | BDR-03 | PUB       | seq=23 ts=1794629256862 QoS1 PUBACK in 239 ms
+09:52:37.170 | BDR-02 | PUB       | seq=23 ts=1794629256862 QoS1 PUBACK in 238 ms
+09:52:37.919 | BDR-01 | READ      | seq=31 ph=6.56 turb=462.2NTU tds=452ppm T=17.8C flow=11.3L/min led=RED | SQLite pending=1
+09:52:38.192 | BDR-01 | PUB       | seq=31 ts=1794629257915 QoS1 PUBACK in 211 ms
+09:52:39.933 | BDR-01 | READ      | seq=32 ph=6.52 turb=528.0NTU tds=468ppm T=17.7C flow=12.4L/min led=RED | SQLite pending=1
+09:52:40.258 | BDR-01 | PUB       | seq=32 ts=1794629259929 QoS1 PUBACK in 292 ms
+09:52:41.875 | BDR-03 | READ      | seq=24 ph=7.12 turb=2.2NTU tds=228ppm T=18.3C flow=9.2L/min led=GREEN | SQLite pending=1
+09:52:41.875 | BDR-02 | READ      | seq=24 ph=7.26 turb=4.1NTU tds=191ppm T=20.9C flow=10.7L/min led=GREEN | SQLite pending=1
+09:52:41.935 | BDR-01 | ALARM     | edge rule CREATE: pH Out of Range [CRITICAL] -> LED RED
+09:52:41.938 | BDR-01 | READ      | seq=33 ph=6.49 turb=549.5NTU tds=482ppm T=17.6C flow=12.9L/min led=RED | SQLite pending=1
+09:52:42.185 | BDR-03 | PUB       | seq=24 ts=1794629261872 QoS1 PUBACK in 248 ms
+09:52:42.186 | BDR-02 | PUB       | seq=24 ts=1794629261871 QoS1 PUBACK in 248 ms
+09:52:42.202 | BDR-01 | PUB       | seq=33 ts=1794629261936 QoS1 PUBACK in 202 ms
+09:52:43.940 | BDR-01 | READ      | seq=34 ph=6.47 turb=578.0NTU tds=493ppm T=17.5C flow=12.7L/min led=RED | SQLite pending=1
+09:52:44.233 | BDR-01 | PUB       | seq=34 ts=1794629263936 QoS1 PUBACK in 232 ms
+09:52:45.950 | BDR-01 | ALARM     | edge rule CREATE: High TDS [CRITICAL] -> LED RED
+09:52:45.952 | BDR-01 | READ      | seq=35 ph=6.45 turb=565.7NTU tds=501ppm T=17.4C flow=12.1L/min led=RED | SQLite pending=1
+09:52:46.177 | BDR-01 | PUB       | seq=35 ts=1794629265951 QoS1 PUBACK in 209 ms
+09:52:46.877 | BDR-02 | READ      | seq=25 ph=7.28 turb=3.8NTU tds=192ppm T=20.9C flow=10.5L/min led=GREEN | SQLite pending=1
+09:52:46.877 | BDR-03 | READ      | seq=25 ph=7.11 turb=2.2NTU tds=228ppm T=18.3C flow=9.2L/min led=GREEN | SQLite pending=1
+09:52:47.155 | BDR-03 | PUB       | seq=25 ts=1794629266875 QoS1 PUBACK in 212 ms
+09:52:47.155 | BDR-02 | PUB       | seq=25 ts=1794629266875 QoS1 PUBACK in 212 ms
+09:52:47.968 | BDR-01 | READ      | seq=36 ph=6.44 turb=590.1NTU tds=507ppm T=17.3C flow=12.1L/min led=RED | SQLite pending=1
+09:52:48.191 | BDR-01 | PUB       | seq=36 ts=1794629267965 QoS1 PUBACK in 176 ms
+09:52:49.972 | BDR-01 | READ      | seq=37 ph=6.44 turb=586.0NTU tds=511ppm T=17.3C flow=12.2L/min led=RED | SQLite pending=1
+09:52:50.277 | BDR-01 | PUB       | seq=37 ts=1794629269970 QoS1 PUBACK in 269 ms
+09:52:51.889 | BDR-03 | READ      | seq=26 ph=7.10 turb=2.2NTU tds=228ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=1
+09:52:51.889 | BDR-02 | READ      | seq=26 ph=7.26 turb=4.0NTU tds=192ppm T=20.9C flow=10.6L/min led=GREEN | SQLite pending=1
+09:52:51.986 | BDR-01 | READ      | seq=38 ph=6.43 turb=628.5NTU tds=512ppm T=17.2C flow=12.3L/min led=RED | SQLite pending=1
+09:52:52.224 | BDR-02 | PUB       | seq=26 ts=1794629271886 QoS1 PUBACK in 270 ms
+09:52:52.225 | BDR-03 | PUB       | seq=26 ts=1794629271887 QoS1 PUBACK in 270 ms
+09:52:52.243 | BDR-01 | PUB       | seq=38 ts=1794629271984 QoS1 PUBACK in 197 ms
+09:52:53.989 | BDR-01 | READ      | seq=39 ph=6.45 turb=624.2NTU tds=513ppm T=17.2C flow=12.5L/min led=RED | SQLite pending=1
+09:52:54.269 | BDR-01 | PUB       | seq=39 ts=1794629273986 QoS1 PUBACK in 214 ms
+09:52:55.989 | BDR-01 | READ      | seq=40 ph=6.46 turb=606.9NTU tds=510ppm T=17.2C flow=12.8L/min led=RED | SQLite pending=1
+09:52:56.236 | BDR-01 | PUB       | seq=40 ts=1794629275988 QoS1 PUBACK in 180 ms
+09:52:56.896 | BDR-02 | READ      | seq=27 ph=7.25 turb=4.1NTU tds=192ppm T=20.9C flow=10.6L/min led=GREEN | SQLite pending=1
+09:52:56.896 | BDR-03 | READ      | seq=27 ph=7.11 turb=2.2NTU tds=229ppm T=18.4C flow=9.2L/min led=GREEN | SQLite pending=1
+09:52:57.136 | BDR-03 | PUB       | seq=27 ts=1794629276893 QoS1 PUBACK in 178 ms
+09:52:57.144 | BDR-02 | PUB       | seq=27 ts=1794629276892 QoS1 PUBACK in 186 ms
+09:52:58.006 | BDR-01 | READ      | seq=41 ph=6.47 turb=621.6NTU tds=509ppm T=17.2C flow=12.8L/min led=RED | SQLite pending=1
+09:52:58.240 | BDR-01 | PUB       | seq=41 ts=1794629278002 QoS1 PUBACK in 171 ms
+09:53:00.010 | BDR-01 | READ      | seq=42 ph=6.46 turb=606.2NTU tds=508ppm T=17.2C flow=12.5L/min led=RED | SQLite pending=1
+09:53:00.314 | BDR-01 | PUB       | seq=42 ts=1794629280006 QoS1 PUBACK in 241 ms
+09:53:01.907 | BDR-02 | READ      | seq=28 ph=7.27 turb=4.3NTU tds=191ppm T=20.9C flow=10.0L/min led=GREEN | SQLite pending=1
+09:53:01.908 | BDR-03 | READ      | seq=28 ph=7.10 turb=2.2NTU tds=229ppm T=18.4C flow=9.2L/min led=GREEN | SQLite pending=1
+09:53:02.014 | BDR-01 | READ      | seq=43 ph=6.45 turb=643.3NTU tds=509ppm T=17.2C flow=12.5L/min led=RED | SQLite pending=1
+09:53:02.130 | BDR-03 | PUB       | seq=28 ts=1794629281904 QoS1 PUBACK in 175 ms
+09:53:02.181 | BDR-02 | PUB       | seq=28 ts=1794629281904 QoS1 PUBACK in 226 ms
+09:53:02.245 | BDR-01 | PUB       | seq=43 ts=1794629282012 QoS1 PUBACK in 213 ms
+09:53:04.027 | BDR-01 | READ      | seq=44 ph=6.45 turb=622.9NTU tds=508ppm T=17.2C flow=12.8L/min led=RED | SQLite pending=1
+09:53:04.308 | BDR-01 | PUB       | seq=44 ts=1794629284024 QoS1 PUBACK in 213 ms
+09:53:06.029 | BDR-01 | READ      | seq=45 ph=6.44 turb=655.4NTU tds=506ppm T=17.2C flow=12.9L/min led=RED | SQLite pending=1
+09:53:06.351 | BDR-01 | PUB       | seq=45 ts=1794629286027 QoS1 PUBACK in 258 ms
+09:53:06.919 | BDR-02 | READ      | seq=29 ph=7.25 turb=11.0NTU tds=194ppm T=20.9C flow=10.9L/min led=GREEN | SQLite pending=1
+09:53:06.919 | BDR-03 | READ      | seq=29 ph=7.10 turb=2.2NTU tds=228ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=1
+09:53:07.277 | BDR-03 | PUB       | seq=29 ts=1794629286916 QoS1 PUBACK in 295 ms
+09:53:07.277 | BDR-02 | PUB       | seq=29 ts=1794629286916 QoS1 PUBACK in 294 ms
+09:53:08.041 | BDR-01 | READ      | seq=46 ph=6.44 turb=676.4NTU tds=506ppm T=17.2C flow=13.4L/min led=RED | SQLite pending=1
+09:53:08.401 | BDR-01 | PUB       | seq=46 ts=1794629288040 QoS1 PUBACK in 326 ms
+09:53:10.048 | BDR-01 | READ      | seq=47 ph=6.45 turb=638.8NTU tds=506ppm T=17.2C flow=13.2L/min led=RED | SQLite pending=1
+09:53:10.345 | BDR-01 | PUB       | seq=47 ts=1794629290046 QoS1 PUBACK in 230 ms
+09:53:11.928 | BDR-02 | READ      | seq=30 ph=7.21 turb=27.8NTU tds=202ppm T=20.8C flow=7.5L/min led=GREEN | SQLite pending=1
+09:53:11.928 | BDR-03 | READ      | seq=30 ph=7.11 turb=2.2NTU tds=229ppm T=18.5C flow=9.3L/min led=GREEN | SQLite pending=1
+09:53:12.052 | BDR-01 | READ      | seq=48 ph=6.45 turb=642.8NTU tds=507ppm T=17.2C flow=13.0L/min led=RED | SQLite pending=1
+09:53:12.192 | BDR-03 | PUB       | seq=30 ts=1794629291925 QoS1 PUBACK in 248 ms
+09:53:12.192 | BDR-02 | PUB       | seq=30 ts=1794629291925 QoS1 PUBACK in 249 ms
+09:53:12.292 | BDR-01 | PUB       | seq=48 ts=1794629292050 QoS1 PUBACK in 206 ms
+09:53:14.065 | BDR-01 | READ      | seq=49 ph=6.45 turb=637.3NTU tds=505ppm T=17.2C flow=13.5L/min led=RED | SQLite pending=1
+09:53:14.338 | BDR-01 | PUB       | seq=49 ts=1794629294062 QoS1 PUBACK in 256 ms
+09:53:16.072 | BDR-01 | READ      | seq=50 ph=6.46 turb=646.9NTU tds=506ppm T=17.2C flow=13.7L/min led=RED | SQLite pending=1
+09:53:16.300 | BDR-01 | PUB       | seq=50 ts=1794629296070 QoS1 PUBACK in 181 ms
+09:53:16.927 | BDR-02 | ALARM     | edge rule CREATE: High Turbidity [WARNING] -> LED AMBER
+09:53:16.931 | BDR-03 | READ      | seq=31 ph=7.10 turb=2.3NTU tds=228ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=1
+09:53:16.931 | BDR-02 | READ      | seq=31 ph=7.15 turb=55.6NTU tds=218ppm T=20.6C flow=11.4L/min led=AMBER | SQLite pending=1
+09:53:17.169 | BDR-03 | PUB       | seq=31 ts=1794629296928 QoS1 PUBACK in 177 ms
+09:53:17.177 | BDR-02 | PUB       | seq=31 ts=1794629296928 QoS1 PUBACK in 186 ms
+09:53:18.072 | BDR-01 | READ      | seq=51 ph=6.46 turb=631.2NTU tds=503ppm T=17.3C flow=13.9L/min led=RED | SQLite pending=1
+09:53:18.333 | BDR-01 | PUB       | seq=51 ts=1794629298070 QoS1 PUBACK in 245 ms
+09:53:18.933 | BDR-02 | READ      | seq=32 ph=7.13 turb=68.6NTU tds=225ppm T=20.6C flow=10.9L/min led=AMBER | SQLite pending=1
+09:53:19.253 | BDR-02 | PUB       | seq=32 ts=1794629298931 QoS1 PUBACK in 255 ms
+09:53:20.078 | BDR-01 | READ      | seq=52 ph=6.45 turb=673.2NTU tds=501ppm T=17.3C flow=13.5L/min led=RED | SQLite pending=1
+09:53:20.379 | BDR-01 | PUB       | seq=52 ts=1794629300075 QoS1 PUBACK in 239 ms
+09:53:20.943 | BDR-02 | READ      | seq=33 ph=7.09 turb=80.3NTU tds=232ppm T=20.5C flow=9.2L/min led=AMBER | SQLite pending=1
+09:53:21.202 | BDR-02 | PUB       | seq=33 ts=1794629300939 QoS1 PUBACK in 213 ms
+09:53:21.938 | BDR-03 | READ      | seq=32 ph=7.10 turb=2.5NTU tds=228ppm T=18.5C flow=9.2L/min led=GREEN | SQLite pending=1
+09:53:22.081 | BDR-01 | READ      | seq=53 ph=6.45 turb=664.0NTU tds=497ppm T=17.2C flow=13.5L/min led=RED | SQLite pending=1
+09:53:22.222 | BDR-03 | PUB       | seq=32 ts=1794629301936 QoS1 PUBACK in 221 ms
+09:53:22.274 | BDR-01 | PUB       | seq=53 ts=1794629302079 QoS1 PUBACK in 179 ms
+09:53:22.949 | BDR-02 | READ      | seq=34 ph=7.06 turb=93.1NTU tds=240ppm T=20.5C flow=8.3L/min led=AMBER | SQLite pending=1
+09:53:23.247 | BDR-02 | PUB       | seq=34 ts=1794629302946 QoS1 PUBACK in 250 ms
+09:53:24.094 | BDR-01 | READ      | seq=54 ph=6.45 turb=662.5NTU tds=492ppm T=17.2C flow=13.7L/min led=RED | SQLite pending=1
+09:53:24.373 | BDR-01 | PUB       | seq=54 ts=1794629304092 QoS1 PUBACK in 216 ms
+09:53:24.962 | BDR-02 | READ      | seq=35 ph=7.04 turb=113.1NTU tds=250ppm T=20.4C flow=9.0L/min led=AMBER | SQLite pending=1
+09:53:25.299 | BDR-02 | PUB       | seq=35 ts=1794629304959 QoS1 PUBACK in 272 ms
+09:53:26.111 | BDR-01 | READ      | seq=55 ph=6.47 turb=632.8NTU tds=491ppm T=17.3C flow=13.5L/min led=RED | SQLite pending=1
+09:53:26.425 | BDR-01 | PUB       | seq=55 ts=1794629306106 QoS1 PUBACK in 250 ms
+09:53:26.955 | BDR-03 | READ      | seq=33 ph=7.11 turb=2.4NTU tds=229ppm T=18.6C flow=9.2L/min led=GREEN | SQLite pending=1
+09:53:26.968 | BDR-02 | READ      | seq=36 ph=7.00 turb=128.3NTU tds=258ppm T=20.4C flow=9.7L/min led=AMBER | SQLite pending=1
+09:53:27.253 | BDR-02 | PUB       | seq=36 ts=1794629306964 QoS1 PUBACK in 237 ms
+09:53:27.253 | BDR-03 | PUB       | seq=33 ts=1794629306948 QoS1 PUBACK in 221 ms
+09:53:28.121 | BDR-01 | READ      | seq=56 ph=6.47 turb=648.8NTU tds=488ppm T=17.3C flow=13.7L/min led=RED | SQLite pending=1
+09:53:28.369 | BDR-01 | PUB       | seq=56 ts=1794629308118 QoS1 PUBACK in 215 ms
+09:53:28.981 | BDR-02 | READ      | seq=37 ph=6.96 turb=152.7NTU tds=268ppm T=20.3C flow=10.8L/min led=AMBER | SQLite pending=1
+09:53:29.292 | BDR-02 | PUB       | seq=37 ts=1794629308977 QoS1 PUBACK in 264 ms
+09:53:30.136 | BDR-01 | READ      | seq=57 ph=6.49 turb=680.1NTU tds=487ppm T=17.4C flow=13.4L/min led=RED | SQLite pending=1
+09:53:30.417 | BDR-01 | PUB       | seq=57 ts=1794629310132 QoS1 PUBACK in 266 ms
+09:53:30.995 | BDR-02 | READ      | seq=38 ph=6.94 turb=169.7NTU tds=277ppm T=20.3C flow=10.6L/min led=AMBER | SQLite pending=1
+09:53:31.267 | BDR-02 | PUB       | seq=38 ts=1794629310991 QoS1 PUBACK in 210 ms
+09:53:31.951 | BDR-03 | READ      | seq=34 ph=7.11 turb=2.5NTU tds=228ppm T=18.6C flow=9.1L/min led=GREEN | SQLite pending=1
+09:53:32.140 | BDR-01 | READ      | seq=58 ph=6.49 turb=662.5NTU tds=488ppm T=17.4C flow=13.6L/min led=RED | SQLite pending=1
+09:53:32.215 | BDR-03 | PUB       | seq=34 ts=1794629311948 QoS1 PUBACK in 199 ms
+09:53:32.464 | BDR-01 | PUB       | seq=58 ts=1794629312138 QoS1 PUBACK in 257 ms
+09:53:33.004 | BDR-02 | READ      | seq=39 ph=6.91 turb=196.0NTU tds=284ppm T=20.2C flow=9.8L/min led=AMBER | SQLite pending=1
+09:53:33.260 | BDR-02 | PUB       | seq=39 ts=1794629313001 QoS1 PUBACK in 193 ms
+09:53:34.153 | BDR-01 | READ      | seq=59 ph=6.47 turb=655.6NTU tds=486ppm T=17.5C flow=13.5L/min led=RED | SQLite pending=1
+09:53:34.385 | BDR-01 | PUB       | seq=59 ts=1794629314151 QoS1 PUBACK in 168 ms
+09:53:35.013 | BDR-02 | ALARM     | edge rule CREATE: Gross Contamination [CRITICAL] -> LED RED
+09:53:35.017 | BDR-02 | READ      | seq=40 ph=6.89 turb=221.6NTU tds=294ppm T=20.1C flow=9.2L/min led=RED | SQLite pending=1
+09:53:35.250 | BDR-02 | PUB       | seq=40 ts=1794629315014 QoS1 PUBACK in 171 ms
+09:53:36.165 | BDR-01 | READ      | seq=60 ph=6.49 turb=599.6NTU tds=481ppm T=17.5C flow=13.3L/min led=RED | SQLite pending=1
+09:53:36.414 | BDR-01 | PUB       | seq=60 ts=1794629316160 QoS1 PUBACK in 173 ms
+09:53:36.965 | BDR-03 | READ      | seq=35 ph=7.10 turb=2.4NTU tds=227ppm T=18.6C flow=9.2L/min led=GREEN | SQLite pending=1
+09:53:37.026 | BDR-02 | READ      | seq=41 ph=6.86 turb=233.1NTU tds=302ppm T=20.0C flow=8.9L/min led=RED | SQLite pending=1
+09:53:37.196 | BDR-03 | PUB       | seq=35 ts=1794629316961 QoS1 PUBACK in 168 ms
+09:53:37.377 | BDR-02 | PUB       | seq=41 ts=1794629317025 QoS1 PUBACK in 287 ms
+09:53:38.174 | BDR-01 | READ      | seq=61 ph=6.48 turb=574.5NTU tds=476ppm T=17.6C flow=13.1L/min led=RED | SQLite pending=1
+09:53:38.412 | BDR-01 | PUB       | seq=61 ts=1794629318172 QoS1 PUBACK in 175 ms
+09:53:39.037 | BDR-02 | READ      | seq=42 ph=6.83 turb=241.6NTU tds=311ppm T=20.0C flow=9.5L/min led=RED | SQLite pending=1
+09:53:39.322 | BDR-02 | PUB       | seq=42 ts=1794629319034 QoS1 PUBACK in 221 ms
+09:53:40.184 | BDR-01 | READ      | seq=62 ph=6.49 turb=567.6NTU tds=470ppm T=17.6C flow=12.9L/min led=RED | SQLite pending=1
+09:53:40.536 | BDR-01 | PUB       | seq=62 ts=1794629320180 QoS1 PUBACK in 288 ms
+09:53:41.049 | BDR-02 | READ      | seq=43 ph=6.79 turb=253.1NTU tds=320ppm T=19.9C flow=10.5L/min led=RED | SQLite pending=1
+09:53:41.293 | BDR-02 | PUB       | seq=43 ts=1794629321046 QoS1 PUBACK in 178 ms
+09:53:41.978 | BDR-03 | READ      | seq=36 ph=7.10 turb=2.4NTU tds=228ppm T=18.5C flow=9.4L/min led=GREEN | SQLite pending=1
+09:53:42.182 | BDR-01 | READ      | seq=63 ph=6.49 turb=545.1NTU tds=466ppm T=17.6C flow=13.0L/min led=RED | SQLite pending=1
+09:53:42.206 | BDR-03 | PUB       | seq=36 ts=1794629321975 QoS1 PUBACK in 166 ms
+09:53:42.415 | BDR-01 | PUB       | seq=63 ts=1794629322181 QoS1 PUBACK in 168 ms
+09:53:43.055 | BDR-02 | READ      | seq=44 ph=6.76 turb=257.9NTU tds=328ppm T=19.9C flow=10.3L/min led=RED | SQLite pending=1
+09:53:43.261 | BDR-02 | PUB       | seq=44 ts=1794629323052 QoS1 PUBACK in 175 ms
+09:53:44.192 | BDR-01 | READ      | seq=64 ph=6.52 turb=520.1NTU tds=462ppm T=17.6C flow=12.6L/min led=RED | SQLite pending=1
+09:53:44.423 | BDR-01 | PUB       | seq=64 ts=1794629324188 QoS1 PUBACK in 171 ms
+09:53:45.069 | BDR-02 | READ      | seq=45 ph=6.73 turb=268.4NTU tds=336ppm T=19.8C flow=9.8L/min led=RED | SQLite pending=1
+09:53:45.396 | BDR-02 | PUB       | seq=45 ts=1794629325066 QoS1 PUBACK in 264 ms
+09:53:46.195 | BDR-01 | READ      | seq=65 ph=6.52 turb=520.4NTU tds=459ppm T=17.6C flow=12.7L/min led=RED | SQLite pending=1
+09:53:46.492 | BDR-01 | PUB       | seq=65 ts=1794629326192 QoS1 PUBACK in 233 ms
+09:53:46.995 | BDR-03 | READ      | seq=37 ph=7.11 turb=2.3NTU tds=229ppm T=18.5C flow=9.5L/min led=GREEN | SQLite pending=1
+09:53:47.074 | BDR-02 | READ      | seq=46 ph=6.71 turb=295.2NTU tds=346ppm T=19.7C flow=9.7L/min led=RED | SQLite pending=1
+09:53:47.310 | BDR-03 | PUB       | seq=37 ts=1794629326992 QoS1 PUBACK in 250 ms
+09:53:47.482 | BDR-02 | PUB       | seq=46 ts=1794629327072 QoS1 PUBACK in 344 ms
+09:53:48.206 | BDR-01 | READ      | seq=66 ph=6.54 turb=517.4NTU tds=457ppm T=17.7C flow=12.6L/min led=RED | SQLite pending=1
+09:53:48.543 | BDR-01 | PUB       | seq=66 ts=1794629328202 QoS1 PUBACK in 272 ms
+09:53:49.089 | BDR-02 | READ      | seq=47 ph=6.68 turb=307.0NTU tds=353ppm T=19.6C flow=9.9L/min led=RED | SQLite pending=1
+09:53:49.317 | BDR-02 | PUB       | seq=47 ts=1794629329086 QoS1 PUBACK in 213 ms
+09:53:50.219 | BDR-01 | READ      | seq=67 ph=6.54 turb=548.4NTU tds=456ppm T=17.7C flow=12.6L/min led=RED | SQLite pending=1
+09:53:50.485 | BDR-01 | PUB       | seq=67 ts=1794629330218 QoS1 PUBACK in 203 ms
+09:53:51.095 | BDR-02 | READ      | seq=48 ph=6.68 turb=302.8NTU tds=358ppm T=19.5C flow=10.1L/min led=RED | SQLite pending=1
+09:53:51.412 | BDR-02 | PUB       | seq=48 ts=1794629331091 QoS1 PUBACK in 273 ms
+09:53:51.997 | BDR-03 | READ      | seq=38 ph=7.13 turb=2.4NTU tds=230ppm T=18.6C flow=9.4L/min led=GREEN | SQLite pending=1
+09:53:52.231 | BDR-01 | READ      | seq=68 ph=6.55 turb=553.4NTU tds=454ppm T=17.7C flow=12.7L/min led=RED | SQLite pending=1
+09:53:52.236 | BDR-03 | PUB       | seq=38 ts=1794629331994 QoS1 PUBACK in 175 ms
+09:53:52.533 | BDR-01 | PUB       | seq=68 ts=1794629332229 QoS1 PUBACK in 239 ms
+09:53:53.107 | BDR-02 | READ      | seq=49 ph=6.68 turb=324.8NTU tds=365ppm T=19.5C flow=10.2L/min led=RED | SQLite pending=1
+09:53:53.456 | BDR-02 | PUB       | seq=49 ts=1794629333105 QoS1 PUBACK in 284 ms
+09:53:54.241 | BDR-01 | READ      | seq=69 ph=6.54 turb=530.0NTU tds=450ppm T=17.7C flow=13.1L/min led=RED | SQLite pending=1
+09:53:54.492 | BDR-01 | PUB       | seq=69 ts=1794629334237 QoS1 PUBACK in 236 ms
+09:53:55.115 | BDR-02 | READ      | seq=50 ph=6.67 turb=374.0NTU tds=368ppm T=19.5C flow=10.5L/min led=RED | SQLite pending=1
+09:53:55.405 | BDR-02 | PUB       | seq=50 ts=1794629335111 QoS1 PUBACK in 226 ms
+09:53:56.249 | BDR-01 | ALARM     | edge rule CLEAR: High TDS [CRITICAL] -> LED RED
+09:53:56.252 | BDR-01 | READ      | seq=70 ph=6.55 turb=538.8NTU tds=446ppm T=17.7C flow=13.3L/min led=RED | SQLite pending=1
+09:53:56.436 | BDR-01 | PUB       | seq=70 ts=1794629336250 QoS1 PUBACK in 169 ms
+09:53:57.006 | BDR-03 | READ      | seq=39 ph=7.12 turb=2.8NTU tds=231ppm T=18.6C flow=9.3L/min led=GREEN | SQLite pending=1
+09:53:57.116 | BDR-02 | READ      | seq=51 ph=6.66 turb=391.6NTU tds=374ppm T=19.4C flow=10.1L/min led=RED | SQLite pending=1
+09:53:57.244 | BDR-03 | PUB       | seq=39 ts=1794629337002 QoS1 PUBACK in 190 ms
+09:53:57.374 | BDR-02 | PUB       | seq=51 ts=1794629337114 QoS1 PUBACK in 195 ms
+09:53:58.264 | BDR-01 | READ      | seq=71 ph=6.55 turb=494.4NTU tds=443ppm T=17.8C flow=13.1L/min led=RED | SQLite pending=1
+09:53:58.500 | BDR-01 | PUB       | seq=71 ts=1794629338260 QoS1 PUBACK in 170 ms
+09:53:59.128 | BDR-02 | READ      | seq=52 ph=6.66 turb=407.8NTU tds=377ppm T=19.3C flow=10.1L/min led=RED | SQLite pending=1
+09:53:59.373 | BDR-02 | PUB       | seq=52 ts=1794629339125 QoS1 PUBACK in 180 ms
+09:54:00.279 | BDR-01 | READ      | seq=72 ph=6.55 turb=482.4NTU tds=441ppm T=17.8C flow=13.1L/min led=RED | SQLite pending=1
+09:54:00.516 | BDR-01 | PUB       | seq=72 ts=1794629340276 QoS1 PUBACK in 174 ms
+09:54:01.130 | BDR-02 | READ      | seq=53 ph=6.65 turb=391.2NTU tds=378ppm T=19.3C flow=10.0L/min led=RED | SQLite pending=1
+09:54:01.369 | BDR-02 | PUB       | seq=53 ts=1794629341128 QoS1 PUBACK in 175 ms
+09:54:02.012 | BDR-03 | READ      | seq=40 ph=7.12 turb=2.6NTU tds=231ppm T=18.5C flow=9.2L/min led=GREEN | SQLite pending=1
+09:54:02.263 | BDR-03 | PUB       | seq=40 ts=1794629342009 QoS1 PUBACK in 188 ms
+09:54:02.277 | BDR-01 | READ      | seq=73 ph=6.56 turb=495.6NTU tds=438ppm T=17.9C flow=13.1L/min led=RED | SQLite pending=1
+09:54:02.567 | BDR-01 | PUB       | seq=73 ts=1794629342277 QoS1 PUBACK in 226 ms
+09:54:03.146 | BDR-02 | READ      | seq=54 ph=6.64 turb=390.8NTU tds=381ppm T=19.3C flow=10.0L/min led=RED | SQLite pending=1
+09:54:03.489 | BDR-02 | PUB       | seq=54 ts=1794629343144 QoS1 PUBACK in 278 ms
+09:54:04.289 | BDR-01 | READ      | seq=74 ph=6.57 turb=502.9NTU tds=435ppm T=18.0C flow=13.2L/min led=RED | SQLite pending=1
+09:54:04.616 | BDR-01 | PUB       | seq=74 ts=1794629344286 QoS1 PUBACK in 261 ms
+09:54:05.156 | BDR-02 | READ      | seq=55 ph=6.64 turb=401.7NTU tds=385ppm T=19.3C flow=10.4L/min led=RED | SQLite pending=1
+09:54:05.435 | BDR-02 | PUB       | seq=55 ts=1794629345153 QoS1 PUBACK in 216 ms
+09:54:06.301 | BDR-01 | READ      | seq=75 ph=6.57 turb=500.1NTU tds=432ppm T=18.0C flow=13.1L/min led=RED | SQLite pending=1
+09:54:06.563 | BDR-01 | PUB       | seq=75 ts=1794629346299 QoS1 PUBACK in 213 ms
+09:54:06.721 | FLEET  | STATUS    | node   state        generated  pending total rows  alarms
+09:54:06.721 | FLEET  | STATUS    | BDR-01 ONLINE              75        0         75  High Turbidity, Gross Contamination, pH Out of Range
+09:54:06.722 | FLEET  | STATUS    | BDR-02 ONLINE              55        0         55  High Turbidity, Gross Contamination
+09:54:06.722 | FLEET  | STATUS    | BDR-03 ONLINE              40        0         40  -
+09:54:07.023 | BDR-03 | READ      | seq=41 ph=7.12 turb=2.7NTU tds=231ppm T=18.5C flow=9.3L/min led=GREEN | SQLite pending=1
+09:54:07.165 | BDR-02 | READ      | seq=56 ph=6.63 turb=388.8NTU tds=385ppm T=19.4C flow=10.6L/min led=RED | SQLite pending=1
+09:54:07.279 | BDR-03 | PUB       | seq=41 ts=1794629347021 QoS1 PUBACK in 192 ms
+09:54:07.483 | BDR-02 | PUB       | seq=56 ts=1794629347163 QoS1 PUBACK in 255 ms
+09:54:08.312 | BDR-01 | READ      | seq=76 ph=6.59 turb=464.1NTU tds=429ppm T=18.1C flow=13.4L/min led=RED | SQLite pending=1
+09:54:08.609 | BDR-01 | PUB       | seq=76 ts=1794629348302 QoS1 PUBACK in 271 ms
+09:54:09.170 | BDR-02 | READ      | seq=57 ph=6.63 turb=381.5NTU tds=386ppm T=19.4C flow=10.3L/min led=RED | SQLite pending=1
+09:54:09.531 | BDR-02 | PUB       | seq=57 ts=1794629349168 QoS1 PUBACK in 294 ms
+09:54:10.308 | BDR-01 | READ      | seq=77 ph=6.59 turb=442.8NTU tds=425ppm T=18.1C flow=13.3L/min led=RED | SQLite pending=1
+09:54:10.658 | BDR-01 | PUB       | seq=77 ts=1794629350304 QoS1 PUBACK in 285 ms
+09:54:11.177 | BDR-02 | READ      | seq=58 ph=6.64 turb=358.7NTU tds=389ppm T=19.3C flow=10.2L/min led=RED | SQLite pending=1
+09:54:11.477 | BDR-02 | PUB       | seq=58 ts=1794629351174 QoS1 PUBACK in 235 ms
+09:54:12.030 | BDR-03 | READ      | seq=42 ph=7.13 turb=2.6NTU tds=231ppm T=18.5C flow=9.3L/min led=GREEN | SQLite pending=1
+09:54:12.300 | BDR-03 | PUB       | seq=42 ts=1794629352027 QoS1 PUBACK in 205 ms
+09:54:12.316 | BDR-01 | READ      | seq=78 ph=6.59 turb=457.3NTU tds=424ppm T=18.2C flow=13.3L/min led=RED | SQLite pending=1
+09:54:12.603 | BDR-01 | PUB       | seq=78 ts=1794629352314 QoS1 PUBACK in 221 ms
+09:54:13.187 | BDR-02 | READ      | seq=59 ph=6.64 turb=370.9NTU tds=391ppm T=19.3C flow=10.4L/min led=RED | SQLite pending=1
+09:54:13.421 | BDR-02 | PUB       | seq=59 ts=1794629353184 QoS1 PUBACK in 205 ms
+09:54:14.324 | BDR-01 | READ      | seq=79 ph=6.60 turb=470.5NTU tds=423ppm T=18.2C flow=13.3L/min led=RED | SQLite pending=1
+09:54:14.516 | BDR-01 | PUB       | seq=79 ts=1794629354317 QoS1 PUBACK in 181 ms
+09:54:15.189 | BDR-02 | READ      | seq=60 ph=6.63 turb=389.2NTU tds=390ppm T=19.3C flow=10.5L/min led=RED | SQLite pending=1
+09:54:15.470 | BDR-02 | PUB       | seq=60 ts=1794629355186 QoS1 PUBACK in 247 ms
+09:54:16.338 | BDR-01 | READ      | seq=80 ph=6.60 turb=438.8NTU tds=419ppm T=18.2C flow=12.9L/min led=RED | SQLite pending=1
+09:54:16.571 | BDR-01 | PUB       | seq=80 ts=1794629356335 QoS1 PUBACK in 174 ms
+09:54:17.045 | BDR-03 | READ      | seq=43 ph=7.10 turb=2.5NTU tds=231ppm T=18.6C flow=9.2L/min led=GREEN | SQLite pending=1
+09:54:17.199 | BDR-02 | READ      | seq=61 ph=6.63 turb=371.4NTU tds=390ppm T=19.3C flow=10.7L/min led=RED | SQLite pending=1
+09:54:17.282 | BDR-03 | PUB       | seq=43 ts=1794629357042 QoS1 PUBACK in 175 ms
+09:54:17.462 | BDR-02 | PUB       | seq=61 ts=1794629357198 QoS1 PUBACK in 197 ms
+09:54:18.353 | BDR-01 | READ      | seq=81 ph=6.59 turb=441.8NTU tds=417ppm T=18.2C flow=12.9L/min led=RED | SQLite pending=1
+09:54:18.645 | BDR-01 | PUB       | seq=81 ts=1794629358349 QoS1 PUBACK in 234 ms
+09:54:19.202 | BDR-02 | READ      | seq=62 ph=6.63 turb=425.4NTU tds=389ppm T=19.3C flow=10.7L/min led=RED | SQLite pending=1
+09:54:19.463 | BDR-02 | PUB       | seq=62 ts=1794629359199 QoS1 PUBACK in 215 ms
+09:54:20.365 | BDR-01 | READ      | seq=82 ph=6.60 turb=444.9NTU tds=415ppm T=18.2C flow=13.4L/min led=RED | SQLite pending=1
+09:54:20.642 | BDR-01 | PUB       | seq=82 ts=1794629360363 QoS1 PUBACK in 198 ms
+09:54:21.215 | BDR-02 | READ      | seq=63 ph=6.63 turb=404.9NTU tds=389ppm T=19.3C flow=10.5L/min led=RED | SQLite pending=1
+09:54:21.460 | BDR-02 | PUB       | seq=63 ts=1794629361213 QoS1 PUBACK in 181 ms
+09:54:22.049 | BDR-03 | READ      | seq=44 ph=7.09 turb=2.6NTU tds=230ppm T=18.6C flow=9.3L/min led=GREEN | SQLite pending=1
+09:54:22.332 | BDR-03 | PUB       | seq=44 ts=1794629362046 QoS1 PUBACK in 222 ms
+09:54:22.374 | BDR-01 | READ      | seq=83 ph=6.60 turb=405.8NTU tds=413ppm T=18.2C flow=13.3L/min led=RED | SQLite pending=1
+09:54:22.641 | BDR-01 | PUB       | seq=83 ts=1794629362372 QoS1 PUBACK in 203 ms
+09:54:23.223 | BDR-02 | READ      | seq=64 ph=6.64 turb=416.9NTU tds=388ppm T=19.3C flow=10.8L/min led=RED | SQLite pending=1
+09:54:23.560 | BDR-02 | PUB       | seq=64 ts=1794629363220 QoS1 PUBACK in 273 ms
+09:54:24.388 | BDR-01 | READ      | seq=84 ph=6.61 turb=373.3NTU tds=408ppm T=18.2C flow=13.7L/min led=RED | SQLite pending=1
+09:54:24.687 | BDR-01 | PUB       | seq=84 ts=1794629364384 QoS1 PUBACK in 236 ms
+09:54:25.227 | BDR-02 | READ      | seq=65 ph=6.63 turb=395.7NTU tds=389ppm T=19.3C flow=10.7L/min led=RED | SQLite pending=1
+09:54:25.508 | BDR-02 | PUB       | seq=65 ts=1794629365222 QoS1 PUBACK in 220 ms
+09:54:26.389 | BDR-01 | READ      | seq=85 ph=6.63 turb=370.7NTU tds=404ppm T=18.2C flow=13.4L/min led=RED | SQLite pending=1
+09:54:26.632 | BDR-01 | PUB       | seq=85 ts=1794629366386 QoS1 PUBACK in 211 ms
+09:54:27.063 | BDR-03 | READ      | seq=45 ph=7.09 turb=2.7NTU tds=228ppm T=18.7C flow=9.2L/min led=GREEN | SQLite pending=1
+09:54:27.234 | BDR-02 | READ      | seq=66 ph=6.64 turb=394.6NTU tds=386ppm T=19.4C flow=10.5L/min led=RED | SQLite pending=1
+09:54:27.308 | BDR-03 | PUB       | seq=45 ts=1794629367061 QoS1 PUBACK in 182 ms
+09:54:27.551 | BDR-02 | PUB       | seq=66 ts=1794629367232 QoS1 PUBACK in 254 ms
+09:54:28.396 | BDR-01 | READ      | seq=86 ph=6.63 turb=377.4NTU tds=404ppm T=18.3C flow=13.6L/min led=RED | SQLite pending=1
+09:54:28.679 | BDR-01 | PUB       | seq=86 ts=1794629368394 QoS1 PUBACK in 267 ms
+09:54:29.250 | BDR-02 | READ      | seq=67 ph=6.64 turb=420.2NTU tds=386ppm T=19.4C flow=10.4L/min led=RED | SQLite pending=1
+09:54:29.602 | BDR-02 | PUB       | seq=67 ts=1794629369247 QoS1 PUBACK in 288 ms
+09:54:30.409 | BDR-01 | READ      | seq=87 ph=6.64 turb=363.8NTU tds=401ppm T=18.2C flow=13.6L/min led=RED | SQLite pending=1
+09:54:30.728 | BDR-01 | PUB       | seq=87 ts=1794629370402 QoS1 PUBACK in 258 ms
+09:54:31.261 | BDR-02 | READ      | seq=68 ph=6.64 turb=411.2NTU tds=385ppm T=19.4C flow=10.5L/min led=RED | SQLite pending=1
+09:54:31.549 | BDR-02 | PUB       | seq=68 ts=1794629371259 QoS1 PUBACK in 224 ms
+09:54:32.076 | BDR-03 | READ      | seq=46 ph=7.09 turb=2.9NTU tds=228ppm T=18.6C flow=9.1L/min led=GREEN | SQLite pending=1
+09:54:32.367 | BDR-03 | PUB       | seq=46 ts=1794629372074 QoS1 PUBACK in 227 ms
+09:54:32.419 | BDR-01 | READ      | seq=88 ph=6.65 turb=343.8NTU tds=398ppm T=18.3C flow=13.8L/min led=RED | SQLite pending=1
+09:54:32.745 | BDR-01 | PUB       | seq=88 ts=1794629372418 QoS1 PUBACK in 261 ms
+09:54:33.266 | BDR-02 | READ      | seq=69 ph=6.65 turb=387.8NTU tds=383ppm T=19.4C flow=10.6L/min led=RED | SQLite pending=1
+09:54:33.494 | BDR-02 | PUB       | seq=69 ts=1794629373264 QoS1 PUBACK in 211 ms
+09:54:34.425 | BDR-01 | READ      | seq=89 ph=6.66 turb=359.8NTU tds=396ppm T=18.3C flow=13.6L/min led=RED | SQLite pending=1
+09:54:34.721 | BDR-01 | PUB       | seq=89 ts=1794629374421 QoS1 PUBACK in 251 ms
+09:54:35.279 | BDR-02 | READ      | seq=70 ph=6.65 turb=367.7NTU tds=381ppm T=19.4C flow=10.4L/min led=RED | SQLite pending=1
+09:54:35.642 | BDR-02 | PUB       | seq=70 ts=1794629375277 QoS1 PUBACK in 298 ms
+09:54:36.437 | BDR-01 | READ      | seq=90 ph=6.67 turb=327.7NTU tds=394ppm T=18.3C flow=13.5L/min led=RED | SQLite pending=1
+09:54:36.769 | BDR-01 | PUB       | seq=90 ts=1794629376434 QoS1 PUBACK in 268 ms
+09:54:37.079 | BDR-03 | READ      | seq=47 ph=7.10 turb=2.9NTU tds=228ppm T=18.5C flow=9.2L/min led=GREEN | SQLite pending=1
+09:54:37.282 | BDR-02 | READ      | seq=71 ph=6.65 turb=353.4NTU tds=380ppm T=19.5C flow=10.1L/min led=RED | SQLite pending=1
+09:54:37.324 | BDR-03 | PUB       | seq=47 ts=1794629377076 QoS1 PUBACK in 183 ms
+09:54:37.587 | BDR-02 | PUB       | seq=71 ts=1794629377280 QoS1 PUBACK in 241 ms
+09:54:38.438 | BDR-01 | READ      | seq=91 ph=6.68 turb=327.9NTU tds=391ppm T=18.3C flow=13.5L/min led=RED | SQLite pending=1
+09:54:38.715 | BDR-01 | PUB       | seq=91 ts=1794629378436 QoS1 PUBACK in 213 ms
+09:54:39.286 | BDR-02 | READ      | seq=72 ph=6.66 turb=371.2NTU tds=379ppm T=19.4C flow=10.0L/min led=RED | SQLite pending=1
+09:54:39.535 | BDR-02 | PUB       | seq=72 ts=1794629379283 QoS1 PUBACK in 215 ms
+09:54:40.444 | BDR-01 | READ      | seq=92 ph=6.68 turb=335.6NTU tds=388ppm T=18.3C flow=13.3L/min led=RED | SQLite pending=1
+09:54:40.763 | BDR-01 | PUB       | seq=92 ts=1794629380441 QoS1 PUBACK in 255 ms
+09:54:41.291 | BDR-02 | READ      | seq=73 ph=6.67 turb=389.9NTU tds=379ppm T=19.4C flow=10.0L/min led=RED | SQLite pending=1
+09:54:41.522 | BDR-02 | PUB       | seq=73 ts=1794629381288 QoS1 PUBACK in 199 ms
+09:54:42.083 | BDR-03 | READ      | seq=48 ph=7.10 turb=2.6NTU tds=228ppm T=18.5C flow=9.0L/min led=GREEN | SQLite pending=1
+09:54:42.402 | BDR-03 | PUB       | seq=48 ts=1794629382081 QoS1 PUBACK in 254 ms
+09:54:42.456 | BDR-01 | READ      | seq=93 ph=6.69 turb=368.5NTU tds=386ppm T=18.4C flow=13.0L/min led=RED | SQLite pending=1
+09:54:42.709 | BDR-01 | PUB       | seq=93 ts=1794629382455 QoS1 PUBACK in 218 ms
+09:54:43.295 | BDR-02 | READ      | seq=74 ph=6.68 turb=401.9NTU tds=376ppm T=19.4C flow=10.1L/min led=RED | SQLite pending=1
+09:54:43.528 | BDR-02 | PUB       | seq=74 ts=1794629383291 QoS1 PUBACK in 218 ms
+09:54:44.465 | BDR-01 | READ      | seq=94 ph=6.69 turb=339.9NTU tds=383ppm T=18.4C flow=12.9L/min led=RED | SQLite pending=1
+09:54:44.756 | BDR-01 | PUB       | seq=94 ts=1794629384462 QoS1 PUBACK in 243 ms
+09:54:45.308 | BDR-02 | READ      | seq=75 ph=6.70 turb=388.6NTU tds=371ppm T=19.4C flow=9.9L/min led=RED | SQLite pending=1
+09:54:45.576 | BDR-02 | PUB       | seq=75 ts=1794629385301 QoS1 PUBACK in 241 ms
+09:54:46.468 | BDR-01 | ALARM     | edge rule CLEAR: pH Out of Range [CRITICAL] -> LED RED
+09:54:46.471 | BDR-01 | READ      | seq=95 ph=6.70 turb=346.3NTU tds=381ppm T=18.5C flow=12.9L/min led=RED | SQLite pending=1
+09:54:46.674 | FLEET  | SCENARIO  | STEP 5: cellular outage - watch SQLite pending rows grow, no crash
+09:54:46.680 | BDR-02 | STATE     | ONLINE -> OFFLINE  (link down - readings continue into SQLite)
+09:54:46.682 | BDR-03 | STATE     | ONLINE -> OFFLINE  (link down - readings continue into SQLite)
+09:54:46.682 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 1.6 s (attempt 1, pending=0)
+09:54:46.683 | FLEET  | SCENARIO  | CELLULAR OUTAGE STARTED - broker unreachable for 150 s
+09:54:46.684 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 1.8 s (attempt 1, pending=0)
+09:54:46.721 | BDR-01 | PUB_FAIL  | no PUBACK for seq 95-95 (1 rows, 11 dp) - rows stay pending
+09:54:46.724 | BDR-01 | STATE     | ONLINE -> OFFLINE  (link down - readings continue into SQLite)
+09:54:46.725 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 1.5 s (attempt 1, pending=1)
+09:54:47.087 | BDR-03 | READ      | seq=49 ph=7.09 turb=2.7NTU tds=229ppm T=18.5C flow=9.1L/min led=GREEN | SQLite pending=1  [BUFFERING - offline]
+09:54:47.308 | BDR-02 | READ      | seq=76 ph=6.71 turb=370.3NTU tds=371ppm T=19.5C flow=10.3L/min led=RED | SQLite pending=1  [BUFFERING - offline]
+09:54:48.340 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 2.8 s (attempt 2, pending=1)
+09:54:48.356 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 3.7 s (attempt 2, pending=1)
+09:54:48.484 | BDR-01 | READ      | seq=96 ph=6.73 turb=342.2NTU tds=380ppm T=18.5C flow=13.0L/min led=RED | SQLite pending=2  [BUFFERING - offline]
+09:54:48.716 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 2.2 s (attempt 2, pending=1)
+09:54:49.316 | BDR-02 | READ      | seq=77 ph=6.71 turb=374.2NTU tds=370ppm T=19.5C flow=10.3L/min led=RED | SQLite pending=2  [BUFFERING - offline]
+09:54:50.499 | BDR-01 | READ      | seq=97 ph=6.72 turb=348.6NTU tds=380ppm T=18.5C flow=13.2L/min led=RED | SQLite pending=3  [BUFFERING - offline]
+09:54:50.968 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 6.2 s (attempt 3, pending=1)
+09:54:51.330 | BDR-02 | READ      | seq=78 ph=6.70 turb=354.0NTU tds=368ppm T=19.5C flow=10.5L/min led=RED | SQLite pending=3  [BUFFERING - offline]
+09:54:51.331 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 4.7 s (attempt 3, pending=3)
+09:54:52.100 | BDR-03 | READ      | seq=50 ph=7.10 turb=2.6NTU tds=230ppm T=18.5C flow=9.1L/min led=GREEN | SQLite pending=2  [BUFFERING - offline]
+09:54:52.145 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 7.3 s (attempt 3, pending=3)
+09:54:52.508 | BDR-01 | READ      | seq=98 ph=6.70 turb=348.4NTU tds=379ppm T=18.5C flow=13.2L/min led=RED | SQLite pending=4  [BUFFERING - offline]
+09:54:53.342 | BDR-02 | READ      | seq=79 ph=6.71 turb=346.3NTU tds=369ppm T=19.5C flow=10.5L/min led=RED | SQLite pending=4  [BUFFERING - offline]
+09:54:54.516 | BDR-01 | READ      | seq=99 ph=6.71 turb=334.1NTU tds=377ppm T=18.5C flow=13.1L/min led=RED | SQLite pending=5  [BUFFERING - offline]
+09:54:55.350 | BDR-02 | READ      | seq=80 ph=6.70 turb=331.2NTU tds=366ppm T=19.5C flow=10.7L/min led=RED | SQLite pending=5  [BUFFERING - offline]
+09:54:56.173 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.2 s (attempt 4, pending=5)
+09:54:56.535 | BDR-01 | READ      | seq=100 ph=6.72 turb=336.9NTU tds=374ppm T=18.5C flow=12.9L/min led=RED | SQLite pending=6  [BUFFERING - offline]
+09:54:57.112 | BDR-03 | READ      | seq=51 ph=7.08 turb=2.5NTU tds=231ppm T=18.6C flow=9.1L/min led=GREEN | SQLite pending=3  [BUFFERING - offline]
+09:54:57.327 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.3 s (attempt 4, pending=3)
+09:54:57.364 | BDR-02 | READ      | seq=81 ph=6.69 turb=345.6NTU tds=365ppm T=19.6C flow=10.6L/min led=RED | SQLite pending=6  [BUFFERING - offline]
+09:54:58.542 | BDR-01 | READ      | seq=101 ph=6.72 turb=304.3NTU tds=370ppm T=18.5C flow=13.1L/min led=RED | SQLite pending=7  [BUFFERING - offline]
+09:54:59.378 | BDR-02 | READ      | seq=82 ph=6.69 turb=349.6NTU tds=363ppm T=19.6C flow=10.9L/min led=RED | SQLite pending=7  [BUFFERING - offline]
+09:54:59.562 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 9.6 s (attempt 4, pending=7)
+09:55:00.557 | BDR-01 | READ      | seq=102 ph=6.73 turb=311.9NTU tds=370ppm T=18.5C flow=13.0L/min led=RED | SQLite pending=8  [BUFFERING - offline]
+09:55:01.393 | BDR-02 | READ      | seq=83 ph=6.71 turb=329.7NTU tds=361ppm T=19.6C flow=10.7L/min led=RED | SQLite pending=8  [BUFFERING - offline]
+09:55:02.116 | BDR-03 | READ      | seq=52 ph=7.08 turb=2.5NTU tds=229ppm T=18.6C flow=8.9L/min led=GREEN | SQLite pending=4  [BUFFERING - offline]
+09:55:02.567 | BDR-01 | READ      | seq=103 ph=6.74 turb=288.8NTU tds=366ppm T=18.6C flow=13.1L/min led=RED | SQLite pending=9  [BUFFERING - offline]
+09:55:03.405 | BDR-02 | READ      | seq=84 ph=6.72 turb=322.5NTU tds=361ppm T=19.6C flow=10.6L/min led=RED | SQLite pending=9  [BUFFERING - offline]
+09:55:04.577 | BDR-01 | READ      | seq=104 ph=6.75 turb=285.5NTU tds=365ppm T=18.6C flow=13.7L/min led=RED | SQLite pending=10  [BUFFERING - offline]
+09:55:05.419 | BDR-02 | READ      | seq=85 ph=6.73 turb=323.6NTU tds=358ppm T=19.7C flow=10.7L/min led=RED | SQLite pending=10  [BUFFERING - offline]
+09:55:06.462 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.9 s (attempt 5, pending=10)
+09:55:06.573 | BDR-01 | READ      | seq=105 ph=6.74 turb=278.2NTU tds=363ppm T=18.7C flow=13.6L/min led=RED | SQLite pending=11  [BUFFERING - offline]
+09:55:07.120 | BDR-03 | READ      | seq=53 ph=7.08 turb=2.5NTU tds=230ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=5  [BUFFERING - offline]
+09:55:07.432 | BDR-02 | READ      | seq=86 ph=6.72 turb=314.6NTU tds=355ppm T=19.7C flow=10.8L/min led=RED | SQLite pending=11  [BUFFERING - offline]
+09:55:08.583 | BDR-01 | READ      | seq=106 ph=6.75 turb=269.9NTU tds=359ppm T=18.8C flow=13.3L/min led=RED | SQLite pending=12  [BUFFERING - offline]
+09:55:09.212 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.5 s (attempt 5, pending=12)
+09:55:09.433 | BDR-02 | READ      | seq=87 ph=6.70 turb=301.0NTU tds=356ppm T=19.7C flow=10.6L/min led=RED | SQLite pending=12  [BUFFERING - offline]
+09:55:10.587 | BDR-01 | READ      | seq=107 ph=6.74 turb=254.1NTU tds=358ppm T=18.7C flow=13.3L/min led=RED | SQLite pending=13  [BUFFERING - offline]
+09:55:11.441 | BDR-02 | READ      | seq=88 ph=6.70 turb=301.8NTU tds=354ppm T=19.8C flow=10.7L/min led=RED | SQLite pending=13  [BUFFERING - offline]
+09:55:12.135 | BDR-03 | READ      | seq=54 ph=7.08 turb=2.5NTU tds=228ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=6  [BUFFERING - offline]
+09:55:12.596 | BDR-01 | READ      | seq=108 ph=6.74 turb=236.2NTU tds=355ppm T=18.7C flow=13.4L/min led=RED | SQLite pending=14  [BUFFERING - offline]
+09:55:12.752 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 13.2 s (attempt 5, pending=6)
+09:55:13.444 | BDR-02 | READ      | seq=89 ph=6.71 turb=288.0NTU tds=353ppm T=19.7C flow=10.6L/min led=RED | SQLite pending=14  [BUFFERING - offline]
+09:55:14.608 | BDR-01 | READ      | seq=109 ph=6.75 turb=248.7NTU tds=354ppm T=18.8C flow=13.5L/min led=RED | SQLite pending=15  [BUFFERING - offline]
+09:55:15.444 | BDR-02 | READ      | seq=90 ph=6.71 turb=283.7NTU tds=353ppm T=19.8C flow=10.6L/min led=RED | SQLite pending=15  [BUFFERING - offline]
+09:55:16.609 | BDR-01 | READ      | seq=110 ph=6.76 turb=238.5NTU tds=350ppm T=18.8C flow=13.5L/min led=RED | SQLite pending=16  [BUFFERING - offline]
+09:55:17.150 | BDR-03 | READ      | seq=55 ph=7.09 turb=2.4NTU tds=228ppm T=18.5C flow=9.0L/min led=GREEN | SQLite pending=7  [BUFFERING - offline]
+09:55:17.463 | BDR-02 | READ      | seq=91 ph=6.70 turb=270.6NTU tds=352ppm T=19.8C flow=11.0L/min led=RED | SQLite pending=16  [BUFFERING - offline]
+09:55:17.463 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.2 s (attempt 6, pending=16)
+09:55:18.623 | BDR-01 | READ      | seq=111 ph=6.77 turb=214.6NTU tds=350ppm T=18.8C flow=13.6L/min led=RED | SQLite pending=17  [BUFFERING - offline]
+09:55:19.474 | BDR-02 | READ      | seq=92 ph=6.72 turb=287.6NTU tds=351ppm T=19.8C flow=11.0L/min led=RED | SQLite pending=17  [BUFFERING - offline]
+09:55:19.863 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 14.4 s (attempt 6, pending=17)
+09:55:20.636 | BDR-01 | READ      | seq=112 ph=6.78 turb=225.1NTU tds=348ppm T=18.9C flow=13.5L/min led=RED | SQLite pending=18  [BUFFERING - offline]
+09:55:21.482 | BDR-02 | READ      | seq=93 ph=6.72 turb=296.1NTU tds=348ppm T=19.8C flow=10.9L/min led=RED | SQLite pending=18  [BUFFERING - offline]
+09:55:22.155 | BDR-03 | READ      | seq=56 ph=7.09 turb=2.2NTU tds=230ppm T=18.5C flow=8.9L/min led=GREEN | SQLite pending=8  [BUFFERING - offline]
+09:55:22.644 | BDR-01 | READ      | seq=113 ph=6.80 turb=233.2NTU tds=346ppm T=18.8C flow=13.4L/min led=RED | SQLite pending=19  [BUFFERING - offline]
+09:55:23.491 | BDR-02 | READ      | seq=94 ph=6.73 turb=261.3NTU tds=346ppm T=19.8C flow=11.1L/min led=RED | SQLite pending=19  [BUFFERING - offline]
+09:55:24.650 | BDR-01 | READ      | seq=114 ph=6.79 turb=236.6NTU tds=345ppm T=18.9C flow=13.1L/min led=RED | SQLite pending=20  [BUFFERING - offline]
+09:55:25.498 | BDR-02 | READ      | seq=95 ph=6.74 turb=244.3NTU tds=346ppm T=19.8C flow=10.9L/min led=RED | SQLite pending=20  [BUFFERING - offline]
+09:55:26.082 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 20.0 s (attempt 6, pending=8)
+09:55:26.654 | BDR-01 | READ      | seq=115 ph=6.79 turb=213.7NTU tds=343ppm T=19.0C flow=13.0L/min led=RED | SQLite pending=21  [BUFFERING - offline]
+09:55:27.172 | BDR-03 | READ      | seq=57 ph=7.12 turb=2.3NTU tds=227ppm T=18.4C flow=9.0L/min led=GREEN | SQLite pending=9  [BUFFERING - offline]
+09:55:27.504 | BDR-02 | READ      | seq=96 ph=6.75 turb=269.5NTU tds=344ppm T=19.8C flow=11.0L/min led=RED | SQLite pending=21  [BUFFERING - offline]
+09:55:28.669 | BDR-01 | READ      | seq=116 ph=6.79 turb=209.6NTU tds=338ppm T=19.0C flow=12.9L/min led=RED | SQLite pending=22  [BUFFERING - offline]
+09:55:29.505 | BDR-02 | READ      | seq=97 ph=6.76 turb=270.9NTU tds=342ppm T=19.8C flow=10.8L/min led=RED | SQLite pending=22  [BUFFERING - offline]
+09:55:30.675 | BDR-01 | READ      | seq=117 ph=6.80 turb=224.8NTU tds=337ppm T=19.1C flow=13.1L/min led=RED | SQLite pending=23  [BUFFERING - offline]
+09:55:31.511 | BDR-02 | READ      | seq=98 ph=6.74 turb=273.9NTU tds=342ppm T=19.9C flow=10.9L/min led=RED | SQLite pending=23  [BUFFERING - offline]
+09:55:32.172 | BDR-03 | READ      | seq=58 ph=7.11 turb=2.2NTU tds=228ppm T=18.5C flow=8.9L/min led=GREEN | SQLite pending=10  [BUFFERING - offline]
+09:55:32.673 | BDR-01 | READ      | seq=118 ph=6.80 turb=221.0NTU tds=336ppm T=19.1C flow=13.1L/min led=RED | SQLite pending=24  [BUFFERING - offline]
+09:55:32.780 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.9 s (attempt 7, pending=23)
+09:55:33.523 | BDR-02 | READ      | seq=99 ph=6.74 turb=277.6NTU tds=342ppm T=19.9C flow=10.7L/min led=RED | SQLite pending=24  [BUFFERING - offline]
+09:55:34.304 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.3 s (attempt 7, pending=24)
+09:55:34.697 | BDR-01 | READ      | seq=119 ph=6.80 turb=214.1NTU tds=333ppm T=19.0C flow=13.1L/min led=RED | SQLite pending=25  [BUFFERING - offline]
+09:55:35.534 | BDR-02 | READ      | seq=100 ph=6.74 turb=261.8NTU tds=341ppm T=19.9C flow=10.6L/min led=RED | SQLite pending=25  [BUFFERING - offline]
+09:55:36.704 | BDR-01 | READ      | seq=120 ph=6.80 turb=219.9NTU tds=330ppm T=19.0C flow=13.2L/min led=RED | SQLite pending=26  [BUFFERING - offline]
+09:55:37.174 | BDR-03 | READ      | seq=59 ph=7.09 turb=2.3NTU tds=229ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=11  [BUFFERING - offline]
+09:55:37.548 | BDR-02 | READ      | seq=101 ph=6.75 turb=254.9NTU tds=340ppm T=19.9C flow=10.6L/min led=RED | SQLite pending=26  [BUFFERING - offline]
+09:55:38.714 | BDR-01 | READ      | seq=121 ph=6.80 turb=211.8NTU tds=329ppm T=19.0C flow=13.5L/min led=RED | SQLite pending=27  [BUFFERING - offline]
+09:55:39.564 | BDR-02 | READ      | seq=102 ph=6.76 turb=259.6NTU tds=338ppm T=19.9C flow=10.6L/min led=RED | SQLite pending=27  [BUFFERING - offline]
+09:55:40.725 | BDR-01 | READ      | seq=122 ph=6.82 turb=200.2NTU tds=328ppm T=19.0C flow=13.5L/min led=RED | SQLite pending=28  [BUFFERING - offline]
+09:55:41.580 | BDR-02 | READ      | seq=103 ph=6.76 turb=248.2NTU tds=334ppm T=19.9C flow=10.3L/min led=RED | SQLite pending=28  [BUFFERING - offline]
+09:55:42.179 | BDR-03 | READ      | seq=60 ph=7.08 turb=2.3NTU tds=229ppm T=18.4C flow=9.2L/min led=GREEN | SQLite pending=12  [BUFFERING - offline]
+09:55:42.733 | BDR-01 | READ      | seq=123 ph=6.84 turb=191.6NTU tds=328ppm T=19.1C flow=13.2L/min led=RED | SQLite pending=29  [BUFFERING - offline]
+09:55:43.581 | BDR-02 | READ      | seq=104 ph=6.77 turb=254.3NTU tds=332ppm T=20.0C flow=10.3L/min led=RED | SQLite pending=29  [BUFFERING - offline]
+09:55:43.796 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 12.6 s (attempt 8, pending=29)
+09:55:44.739 | BDR-01 | READ      | seq=124 ph=6.83 turb=196.4NTU tds=326ppm T=19.1C flow=13.5L/min led=RED | SQLite pending=30  [BUFFERING - offline]
+09:55:44.740 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 13.9 s (attempt 8, pending=30)
+09:55:45.591 | BDR-02 | READ      | seq=105 ph=6.78 turb=259.2NTU tds=331ppm T=20.0C flow=10.5L/min led=RED | SQLite pending=30  [BUFFERING - offline]
+09:55:46.269 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.8 s (attempt 7, pending=12)
+09:55:46.758 | BDR-01 | READ      | seq=125 ph=6.85 turb=195.0NTU tds=322ppm T=19.0C flow=13.4L/min led=RED | SQLite pending=31  [BUFFERING - offline]
+09:55:47.194 | BDR-03 | READ      | seq=61 ph=7.10 turb=2.6NTU tds=228ppm T=18.4C flow=9.3L/min led=GREEN | SQLite pending=13  [BUFFERING - offline]
+09:55:47.601 | BDR-02 | READ      | seq=106 ph=6.80 turb=241.8NTU tds=327ppm T=20.0C flow=10.5L/min led=RED | SQLite pending=31  [BUFFERING - offline]
+09:55:48.770 | BDR-01 | READ      | seq=126 ph=6.86 turb=184.0NTU tds=320ppm T=19.0C flow=13.3L/min led=RED | SQLite pending=32  [BUFFERING - offline]
+09:55:49.608 | BDR-02 | READ      | seq=107 ph=6.80 turb=239.9NTU tds=327ppm T=20.1C flow=10.6L/min led=RED | SQLite pending=32  [BUFFERING - offline]
+09:55:50.771 | BDR-01 | READ      | seq=127 ph=6.87 turb=184.9NTU tds=319ppm T=19.0C flow=13.0L/min led=RED | SQLite pending=33  [BUFFERING - offline]
+09:55:51.613 | BDR-02 | READ      | seq=108 ph=6.80 turb=242.6NTU tds=324ppm T=20.1C flow=10.6L/min led=RED | SQLite pending=33  [BUFFERING - offline]
+09:55:52.208 | BDR-03 | READ      | seq=62 ph=7.10 turb=2.7NTU tds=227ppm T=18.4C flow=9.1L/min led=GREEN | SQLite pending=14  [BUFFERING - offline]
+09:55:52.775 | BDR-01 | READ      | seq=128 ph=6.86 turb=177.9NTU tds=315ppm T=19.0C flow=13.3L/min led=RED | SQLite pending=34  [BUFFERING - offline]
+09:55:53.632 | BDR-02 | READ      | seq=109 ph=6.80 turb=236.3NTU tds=324ppm T=20.1C flow=10.7L/min led=RED | SQLite pending=34  [BUFFERING - offline]
+09:55:54.789 | BDR-01 | READ      | seq=129 ph=6.87 turb=176.1NTU tds=315ppm T=19.0C flow=13.2L/min led=RED | SQLite pending=35  [BUFFERING - offline]
+09:55:55.641 | BDR-02 | READ      | seq=110 ph=6.78 turb=225.0NTU tds=323ppm T=20.1C flow=10.8L/min led=RED | SQLite pending=35  [BUFFERING - offline]
+09:55:56.476 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 19.1 s (attempt 9, pending=35)
+09:55:56.793 | BDR-01 | READ      | seq=130 ph=6.87 turb=165.3NTU tds=315ppm T=19.0C flow=13.1L/min led=RED | SQLite pending=36  [BUFFERING - offline]
+09:55:57.138 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 19.9 s (attempt 8, pending=14)
+09:55:57.221 | BDR-03 | READ      | seq=63 ph=7.09 turb=2.5NTU tds=227ppm T=18.5C flow=9.2L/min led=GREEN | SQLite pending=15  [BUFFERING - offline]
+09:55:57.650 | BDR-02 | READ      | seq=111 ph=6.78 turb=224.7NTU tds=323ppm T=20.1C flow=10.9L/min led=RED | SQLite pending=36  [BUFFERING - offline]
+09:55:58.799 | BDR-01 | READ      | seq=131 ph=6.88 turb=163.2NTU tds=313ppm T=19.1C flow=13.4L/min led=RED | SQLite pending=37  [BUFFERING - offline]
+09:55:58.800 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 17.3 s (attempt 9, pending=37)
+09:55:59.659 | BDR-02 | READ      | seq=112 ph=6.81 turb=232.7NTU tds=322ppm T=20.1C flow=10.6L/min led=RED | SQLite pending=37  [BUFFERING - offline]
+09:56:00.803 | BDR-01 | READ      | seq=132 ph=6.88 turb=175.1NTU tds=314ppm T=19.1C flow=13.4L/min led=RED | SQLite pending=38  [BUFFERING - offline]
+09:56:01.664 | BDR-02 | READ      | seq=113 ph=6.83 turb=211.4NTU tds=323ppm T=20.1C flow=10.6L/min led=RED | SQLite pending=38  [BUFFERING - offline]
+09:56:02.230 | BDR-03 | READ      | seq=64 ph=7.08 turb=2.7NTU tds=229ppm T=18.5C flow=9.0L/min led=GREEN | SQLite pending=16  [BUFFERING - offline]
+09:56:02.817 | BDR-01 | READ      | seq=133 ph=6.87 turb=168.7NTU tds=313ppm T=19.1C flow=13.3L/min led=RED | SQLite pending=39  [BUFFERING - offline]
+09:56:03.669 | BDR-02 | READ      | seq=114 ph=6.84 turb=213.3NTU tds=322ppm T=20.1C flow=10.9L/min led=RED | SQLite pending=39  [BUFFERING - offline]
+09:56:04.820 | BDR-01 | READ      | seq=134 ph=6.88 turb=167.3NTU tds=311ppm T=19.1C flow=13.5L/min led=RED | SQLite pending=40  [BUFFERING - offline]
+09:56:05.681 | BDR-02 | READ      | seq=115 ph=6.85 turb=220.9NTU tds=321ppm T=20.2C flow=10.9L/min led=RED | SQLite pending=40  [BUFFERING - offline]
+09:56:06.824 | BDR-01 | READ      | seq=135 ph=6.87 turb=170.8NTU tds=309ppm T=19.2C flow=13.3L/min led=RED | SQLite pending=41  [BUFFERING - offline]
+09:56:07.245 | BDR-03 | READ      | seq=65 ph=7.09 turb=2.8NTU tds=229ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=17  [BUFFERING - offline]
+09:56:07.685 | BDR-02 | READ      | seq=116 ph=6.83 turb=215.8NTU tds=320ppm T=20.2C flow=10.8L/min led=RED | SQLite pending=41  [BUFFERING - offline]
+09:56:08.829 | BDR-01 | READ      | seq=136 ph=6.88 turb=175.0NTU tds=308ppm T=19.1C flow=13.5L/min led=RED | SQLite pending=42  [BUFFERING - offline]
+09:56:09.694 | BDR-02 | READ      | seq=117 ph=6.83 turb=206.3NTU tds=317ppm T=20.2C flow=10.9L/min led=RED | SQLite pending=42  [BUFFERING - offline]
+09:56:10.833 | BDR-01 | READ      | seq=137 ph=6.87 turb=165.3NTU tds=306ppm T=19.1C flow=13.3L/min led=RED | SQLite pending=43  [BUFFERING - offline]
+09:56:11.710 | BDR-02 | READ      | seq=118 ph=6.82 turb=204.3NTU tds=315ppm T=20.2C flow=10.7L/min led=RED | SQLite pending=43  [BUFFERING - offline]
+09:56:12.250 | BDR-03 | READ      | seq=66 ph=7.09 turb=2.7NTU tds=230ppm T=18.5C flow=8.7L/min led=GREEN | SQLite pending=18  [BUFFERING - offline]
+09:56:12.844 | BDR-01 | READ      | seq=138 ph=6.88 turb=160.1NTU tds=306ppm T=19.1C flow=13.3L/min led=RED | SQLite pending=44  [BUFFERING - offline]
+09:56:13.725 | BDR-02 | READ      | seq=119 ph=6.84 turb=199.7NTU tds=315ppm T=20.2C flow=10.6L/min led=RED | SQLite pending=44  [BUFFERING - offline]
+09:56:14.848 | BDR-01 | READ      | seq=139 ph=6.89 turb=154.7NTU tds=305ppm T=19.1C flow=13.2L/min led=RED | SQLite pending=45  [BUFFERING - offline]
+09:56:15.740 | BDR-02 | READ      | seq=120 ph=6.83 turb=188.0NTU tds=316ppm T=20.3C flow=10.6L/min led=RED | SQLite pending=45  [BUFFERING - offline]
+09:56:15.744 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 13.1 s (attempt 10, pending=45)
+09:56:16.289 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 19.0 s (attempt 10, pending=45)
+09:56:16.673 | FLEET  | STATUS    | node   state        generated  pending total rows  alarms
+09:56:16.673 | FLEET  | STATUS    | BDR-01 OFFLINE            139       45        139  High Turbidity, Gross Contamination
+09:56:16.673 | FLEET  | STATUS    | BDR-02 OFFLINE            120       45        120  High Turbidity, Gross Contamination
+09:56:16.673 | FLEET  | STATUS    | BDR-03 OFFLINE             66       18         66  -
+09:56:16.847 | BDR-01 | ALARM     | edge rule CLEAR: Gross Contamination [CRITICAL] -> LED AMBER
+09:56:16.851 | BDR-01 | READ      | seq=140 ph=6.90 turb=148.2NTU tds=304ppm T=19.1C flow=13.3L/min led=AMBER | SQLite pending=46  [BUFFERING - offline]
+09:56:17.177 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.2 s (attempt 9, pending=18)
+09:56:17.257 | BDR-03 | READ      | seq=67 ph=7.08 turb=2.5NTU tds=230ppm T=18.4C flow=8.4L/min led=GREEN | SQLite pending=19  [BUFFERING - offline]
+09:56:17.745 | BDR-02 | READ      | seq=121 ph=6.83 turb=183.6NTU tds=316ppm T=20.3C flow=10.5L/min led=RED | SQLite pending=46  [BUFFERING - offline]
+09:56:18.865 | BDR-01 | READ      | seq=141 ph=6.91 turb=145.4NTU tds=300ppm T=19.1C flow=13.1L/min led=AMBER | SQLite pending=47  [BUFFERING - offline]
+09:56:19.750 | BDR-02 | READ      | seq=122 ph=6.84 turb=176.3NTU tds=314ppm T=20.3C flow=10.9L/min led=RED | SQLite pending=47  [BUFFERING - offline]
+09:56:20.874 | BDR-01 | READ      | seq=142 ph=6.93 turb=153.1NTU tds=298ppm T=19.2C flow=13.1L/min led=AMBER | SQLite pending=48  [BUFFERING - offline]
+09:56:21.762 | BDR-02 | READ      | seq=123 ph=6.84 turb=189.7NTU tds=310ppm T=20.3C flow=10.7L/min led=RED | SQLite pending=48  [BUFFERING - offline]
+09:56:22.266 | BDR-03 | READ      | seq=68 ph=7.07 turb=2.6NTU tds=230ppm T=18.5C flow=8.6L/min led=GREEN | SQLite pending=20  [BUFFERING - offline]
+09:56:22.880 | BDR-01 | READ      | seq=143 ph=6.93 turb=153.1NTU tds=297ppm T=19.2C flow=13.2L/min led=AMBER | SQLite pending=49  [BUFFERING - offline]
+09:56:23.770 | BDR-02 | READ      | seq=124 ph=6.84 turb=192.9NTU tds=306ppm T=20.3C flow=10.8L/min led=RED | SQLite pending=49  [BUFFERING - offline]
+09:56:24.885 | BDR-01 | READ      | seq=144 ph=6.92 turb=139.9NTU tds=297ppm T=19.2C flow=13.2L/min led=AMBER | SQLite pending=50  [BUFFERING - offline]
+09:56:25.778 | BDR-02 | READ      | seq=125 ph=6.85 turb=212.8NTU tds=306ppm T=20.4C flow=10.8L/min led=RED | SQLite pending=50  [BUFFERING - offline]
+09:56:26.894 | BDR-01 | READ      | seq=145 ph=6.92 turb=147.8NTU tds=297ppm T=19.2C flow=13.4L/min led=AMBER | SQLite pending=51  [BUFFERING - offline]
+09:56:27.282 | BDR-03 | READ      | seq=69 ph=7.07 turb=2.6NTU tds=233ppm T=18.5C flow=8.6L/min led=GREEN | SQLite pending=21  [BUFFERING - offline]
+09:56:27.486 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.9 s (attempt 10, pending=21)
+09:56:27.789 | BDR-02 | READ      | seq=126 ph=6.85 turb=207.4NTU tds=306ppm T=20.4C flow=10.8L/min led=RED | SQLite pending=51  [BUFFERING - offline]
+09:56:28.906 | BDR-01 | READ      | seq=146 ph=6.92 turb=133.6NTU tds=295ppm T=19.2C flow=13.4L/min led=AMBER | SQLite pending=52  [BUFFERING - offline]
+09:56:29.028 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 10.1 s (attempt 11, pending=51)
+09:56:29.802 | BDR-02 | READ      | seq=127 ph=6.86 turb=202.5NTU tds=305ppm T=20.3C flow=10.7L/min led=RED | SQLite pending=52  [BUFFERING - offline]
+09:56:30.919 | BDR-01 | READ      | seq=147 ph=6.93 turb=137.3NTU tds=295ppm T=19.2C flow=12.9L/min led=AMBER | SQLite pending=53  [BUFFERING - offline]
+09:56:31.816 | BDR-02 | READ      | seq=128 ph=6.86 turb=190.5NTU tds=305ppm T=20.3C flow=10.6L/min led=RED | SQLite pending=53  [BUFFERING - offline]
+09:56:32.296 | BDR-03 | READ      | seq=70 ph=7.09 turb=2.6NTU tds=231ppm T=18.5C flow=8.7L/min led=GREEN | SQLite pending=22  [BUFFERING - offline]
+09:56:32.927 | BDR-01 | READ      | seq=148 ph=6.95 turb=131.8NTU tds=292ppm T=19.2C flow=13.0L/min led=AMBER | SQLite pending=54  [BUFFERING - offline]
+09:56:33.822 | BDR-02 | READ      | seq=129 ph=6.86 turb=180.5NTU tds=304ppm T=20.3C flow=10.6L/min led=RED | SQLite pending=54  [BUFFERING - offline]
+09:56:34.934 | BDR-01 | READ      | seq=149 ph=6.95 turb=129.7NTU tds=291ppm T=19.3C flow=13.3L/min led=AMBER | SQLite pending=55  [BUFFERING - offline]
+09:56:35.340 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 14.0 s (attempt 11, pending=55)
+09:56:35.831 | BDR-02 | READ      | seq=130 ph=6.87 turb=169.3NTU tds=304ppm T=20.3C flow=10.6L/min led=RED | SQLite pending=55  [BUFFERING - offline]
+09:56:36.937 | BDR-01 | READ      | seq=150 ph=6.95 turb=134.6NTU tds=288ppm T=19.3C flow=13.5L/min led=AMBER | SQLite pending=56  [BUFFERING - offline]
+09:56:37.313 | BDR-03 | READ      | seq=71 ph=7.10 turb=2.8NTU tds=232ppm T=18.5C flow=8.9L/min led=GREEN | SQLite pending=23  [BUFFERING - offline]
+09:56:37.831 | BDR-02 | READ      | seq=131 ph=6.87 turb=174.0NTU tds=303ppm T=20.3C flow=10.2L/min led=RED | SQLite pending=56  [BUFFERING - offline]
+09:56:38.552 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 17.0 s (attempt 11, pending=23)
+09:56:38.950 | BDR-01 | READ      | seq=151 ph=6.94 turb=136.0NTU tds=287ppm T=19.4C flow=13.4L/min led=AMBER | SQLite pending=57  [BUFFERING - offline]
+09:56:39.263 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.6 s (attempt 12, pending=56)
+09:56:39.848 | BDR-02 | READ      | seq=132 ph=6.88 turb=172.7NTU tds=301ppm T=20.4C flow=10.2L/min led=RED | SQLite pending=57  [BUFFERING - offline]
+09:56:40.965 | BDR-01 | READ      | seq=152 ph=6.95 turb=120.9NTU tds=288ppm T=19.3C flow=13.7L/min led=AMBER | SQLite pending=58  [BUFFERING - offline]
+09:56:41.848 | BDR-02 | READ      | seq=133 ph=6.88 turb=164.0NTU tds=298ppm T=20.4C flow=10.5L/min led=RED | SQLite pending=58  [BUFFERING - offline]
+09:56:42.326 | BDR-03 | READ      | seq=72 ph=7.10 turb=2.9NTU tds=234ppm T=18.5C flow=8.9L/min led=GREEN | SQLite pending=24  [BUFFERING - offline]
+09:56:42.977 | BDR-01 | READ      | seq=153 ph=6.96 turb=119.7NTU tds=285ppm T=19.4C flow=13.7L/min led=AMBER | SQLite pending=59  [BUFFERING - offline]
+09:56:43.857 | BDR-02 | READ      | seq=134 ph=6.87 turb=171.6NTU tds=299ppm T=20.4C flow=10.4L/min led=RED | SQLite pending=59  [BUFFERING - offline]
+09:56:44.984 | BDR-01 | READ      | seq=154 ph=6.95 turb=118.3NTU tds=284ppm T=19.4C flow=13.7L/min led=AMBER | SQLite pending=60  [BUFFERING - offline]
+09:56:45.865 | BDR-02 | READ      | seq=135 ph=6.88 turb=159.9NTU tds=298ppm T=20.4C flow=10.1L/min led=RED | SQLite pending=60  [BUFFERING - offline]
+09:56:47.000 | BDR-01 | READ      | seq=155 ph=6.94 turb=123.7NTU tds=281ppm T=19.4C flow=14.0L/min led=AMBER | SQLite pending=61  [BUFFERING - offline]
+09:56:47.339 | BDR-03 | READ      | seq=73 ph=7.09 turb=2.6NTU tds=234ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=25  [BUFFERING - offline]
+09:56:47.879 | BDR-02 | READ      | seq=136 ph=6.87 turb=155.4NTU tds=296ppm T=20.5C flow=10.1L/min led=RED | SQLite pending=61  [BUFFERING - offline]
+09:56:48.997 | BDR-01 | READ      | seq=156 ph=6.96 turb=123.5NTU tds=279ppm T=19.3C flow=14.1L/min led=AMBER | SQLite pending=62  [BUFFERING - offline]
+09:56:49.417 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.7 s (attempt 12, pending=62)
+09:56:49.888 | BDR-02 | READ      | seq=137 ph=6.88 turb=163.1NTU tds=293ppm T=20.5C flow=10.3L/min led=RED | SQLite pending=62  [BUFFERING - offline]
+09:56:51.007 | BDR-01 | READ      | seq=157 ph=6.98 turb=114.8NTU tds=278ppm T=19.4C flow=13.8L/min led=AMBER | SQLite pending=63  [BUFFERING - offline]
+09:56:51.892 | BDR-02 | READ      | seq=138 ph=6.88 turb=168.5NTU tds=292ppm T=20.5C flow=10.3L/min led=RED | SQLite pending=63  [BUFFERING - offline]
+09:56:52.384 | BDR-03 | READ      | seq=74 ph=7.11 turb=2.5NTU tds=235ppm T=18.5C flow=8.8L/min led=GREEN | SQLite pending=26  [BUFFERING - offline]
+09:56:53.015 | BDR-01 | READ      | seq=158 ph=6.98 turb=114.2NTU tds=278ppm T=19.4C flow=13.8L/min led=AMBER | SQLite pending=64  [BUFFERING - offline]
+09:56:53.896 | BDR-02 | READ      | seq=139 ph=6.90 turb=162.8NTU tds=292ppm T=20.5C flow=10.4L/min led=RED | SQLite pending=64  [BUFFERING - offline]
+09:56:54.926 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 18.3 s (attempt 13, pending=64)
+09:56:55.022 | BDR-01 | READ      | seq=159 ph=6.96 turb=109.5NTU tds=277ppm T=19.5C flow=14.2L/min led=AMBER | SQLite pending=65  [BUFFERING - offline]
+09:56:55.684 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.7 s (attempt 12, pending=26)
+09:56:55.905 | BDR-02 | READ      | seq=140 ph=6.88 turb=162.3NTU tds=294ppm T=20.5C flow=10.7L/min led=RED | SQLite pending=65  [BUFFERING - offline]
+09:56:57.023 | BDR-01 | READ      | seq=160 ph=6.98 turb=109.1NTU tds=276ppm T=19.5C flow=14.0L/min led=AMBER | SQLite pending=66  [BUFFERING - offline]
+09:56:57.400 | BDR-03 | READ      | seq=75 ph=7.11 turb=2.5NTU tds=234ppm T=18.6C flow=8.9L/min led=GREEN | SQLite pending=27  [BUFFERING - offline]
+09:56:57.906 | BDR-02 | READ      | seq=141 ph=6.87 turb=164.8NTU tds=293ppm T=20.4C flow=10.4L/min led=RED | SQLite pending=66  [BUFFERING - offline]
+09:56:59.039 | BDR-01 | READ      | seq=161 ph=6.97 turb=111.3NTU tds=277ppm T=19.5C flow=14.1L/min led=AMBER | SQLite pending=67  [BUFFERING - offline]
+09:56:59.917 | BDR-02 | READ      | seq=142 ph=6.87 turb=163.5NTU tds=293ppm T=20.5C flow=10.6L/min led=RED | SQLite pending=67  [BUFFERING - offline]
+09:57:01.047 | BDR-01 | READ      | seq=162 ph=6.97 turb=116.0NTU tds=275ppm T=19.5C flow=14.1L/min led=AMBER | SQLite pending=68  [BUFFERING - offline]
+09:57:01.932 | BDR-02 | READ      | seq=143 ph=6.88 turb=153.2NTU tds=293ppm T=20.5C flow=10.6L/min led=RED | SQLite pending=68  [BUFFERING - offline]
+09:57:02.401 | BDR-03 | READ      | seq=76 ph=7.12 turb=2.4NTU tds=233ppm T=18.6C flow=8.9L/min led=GREEN | SQLite pending=28  [BUFFERING - offline]
+09:57:03.063 | BDR-01 | READ      | seq=163 ph=6.98 turb=111.0NTU tds=273ppm T=19.4C flow=14.1L/min led=AMBER | SQLite pending=69  [BUFFERING - offline]
+09:57:03.941 | BDR-02 | ALARM     | edge rule CLEAR: Gross Contamination [CRITICAL] -> LED AMBER
+09:57:03.944 | BDR-02 | READ      | seq=144 ph=6.88 turb=149.6NTU tds=291ppm T=20.5C flow=10.7L/min led=AMBER | SQLite pending=69  [BUFFERING - offline]
+09:57:05.073 | BDR-01 | READ      | seq=164 ph=7.00 turb=103.6NTU tds=271ppm T=19.4C flow=14.1L/min led=AMBER | SQLite pending=70  [BUFFERING - offline]
+09:57:05.288 | BDR-01 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 19.0 s (attempt 13, pending=70)
+09:57:05.965 | BDR-02 | READ      | seq=145 ph=6.88 turb=138.9NTU tds=290ppm T=20.6C flow=10.6L/min led=AMBER | SQLite pending=70  [BUFFERING - offline]
+09:57:07.082 | BDR-01 | READ      | seq=165 ph=7.01 turb=103.1NTU tds=269ppm T=19.4C flow=13.7L/min led=AMBER | SQLite pending=71  [BUFFERING - offline]
+09:57:07.412 | BDR-03 | READ      | seq=77 ph=7.10 turb=2.5NTU tds=233ppm T=18.6C flow=8.9L/min led=GREEN | SQLite pending=29  [BUFFERING - offline]
+09:57:07.963 | BDR-02 | READ      | seq=146 ph=6.89 turb=139.9NTU tds=290ppm T=20.6C flow=10.6L/min led=AMBER | SQLite pending=71  [BUFFERING - offline]
+09:57:09.091 | BDR-01 | READ      | seq=166 ph=7.00 turb=99.2NTU tds=269ppm T=19.4C flow=13.8L/min led=AMBER | SQLite pending=72  [BUFFERING - offline]
+09:57:09.964 | BDR-02 | READ      | seq=147 ph=6.89 turb=134.7NTU tds=288ppm T=20.6C flow=10.8L/min led=AMBER | SQLite pending=72  [BUFFERING - offline]
+09:57:11.094 | BDR-01 | READ      | seq=167 ph=7.00 turb=96.5NTU tds=269ppm T=19.4C flow=13.8L/min led=AMBER | SQLite pending=73  [BUFFERING - offline]
+09:57:11.517 | BDR-03 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 18.3 s (attempt 13, pending=29)
+09:57:11.979 | BDR-02 | READ      | seq=148 ph=6.87 turb=134.7NTU tds=288ppm T=20.6C flow=10.5L/min led=AMBER | SQLite pending=73  [BUFFERING - offline]
+09:57:12.423 | BDR-03 | READ      | seq=78 ph=7.11 turb=2.3NTU tds=230ppm T=18.7C flow=8.9L/min led=GREEN | SQLite pending=30  [BUFFERING - offline]
+09:57:13.104 | BDR-01 | READ      | seq=168 ph=6.99 turb=99.6NTU tds=271ppm T=19.4C flow=13.7L/min led=AMBER | SQLite pending=74  [BUFFERING - offline]
+09:57:13.212 | BDR-02 | NET_FAIL  | simulated cellular outage (no bearer) -> retry in 15.4 s (attempt 14, pending=73)
+09:57:13.992 | BDR-02 | READ      | seq=149 ph=6.88 turb=130.7NTU tds=287ppm T=20.6C flow=10.5L/min led=AMBER | SQLite pending=74  [BUFFERING - offline]
+09:57:15.120 | BDR-01 | READ      | seq=169 ph=6.99 turb=94.6NTU tds=269ppm T=19.5C flow=13.8L/min led=AMBER | SQLite pending=75  [BUFFERING - offline]
+09:57:15.988 | BDR-02 | READ      | seq=150 ph=6.88 turb=125.3NTU tds=286ppm T=20.6C flow=10.7L/min led=AMBER | SQLite pending=75  [BUFFERING - offline]
+09:57:16.738 | FLEET  | SCENARIO  | CONNECTIVITY RESTORED - nodes will reconnect (back-off) and replay
+09:57:17.131 | BDR-01 | READ      | seq=170 ph=6.99 turb=106.0NTU tds=270ppm T=19.6C flow=13.9L/min led=AMBER | SQLite pending=76  [BUFFERING - offline]
+09:57:17.426 | BDR-03 | READ      | seq=79 ph=7.11 turb=2.3NTU tds=232ppm T=18.6C flow=9.3L/min led=GREEN | SQLite pending=31  [BUFFERING - offline]
+09:57:18.004 | BDR-02 | READ      | seq=151 ph=6.90 turb=116.3NTU tds=282ppm T=20.6C flow=10.8L/min led=AMBER | SQLite pending=76  [BUFFERING - offline]
+09:57:19.144 | BDR-01 | READ      | seq=171 ph=7.01 turb=101.4NTU tds=270ppm T=19.6C flow=13.8L/min led=AMBER | SQLite pending=77  [BUFFERING - offline]
+09:57:20.003 | BDR-02 | READ      | seq=152 ph=6.91 turb=119.4NTU tds=281ppm T=20.6C flow=10.7L/min led=AMBER | SQLite pending=77  [BUFFERING - offline]
+09:57:21.156 | BDR-01 | READ      | seq=172 ph=7.01 turb=98.7NTU tds=270ppm T=19.6C flow=13.5L/min led=AMBER | SQLite pending=78  [BUFFERING - offline]
+09:57:21.683 | FLEET  | SCENARIO  | STEP 6: connectivity back - automatic reconnect with back-off, batched replay
+09:57:22.012 | BDR-02 | READ      | seq=153 ph=6.92 turb=125.3NTU tds=281ppm T=20.6C flow=10.7L/min led=AMBER | SQLite pending=78  [BUFFERING - offline]
+09:57:22.437 | BDR-03 | READ      | seq=80 ph=7.11 turb=2.2NTU tds=232ppm T=18.6C flow=9.1L/min led=GREEN | SQLite pending=32  [BUFFERING - offline]
+09:57:23.160 | BDR-01 | READ      | seq=173 ph=7.02 turb=99.9NTU tds=269ppm T=19.6C flow=13.5L/min led=AMBER | SQLite pending=79  [BUFFERING - offline]
+09:57:24.027 | BDR-02 | READ      | seq=154 ph=6.92 turb=122.4NTU tds=281ppm T=20.7C flow=10.7L/min led=AMBER | SQLite pending=79  [BUFFERING - offline]
+09:57:25.175 | BDR-01 | READ      | seq=174 ph=7.03 turb=95.3NTU tds=266ppm T=19.6C flow=13.2L/min led=AMBER | SQLite pending=80  [BUFFERING - offline]
+09:57:26.037 | BDR-02 | READ      | seq=155 ph=6.93 turb=126.1NTU tds=282ppm T=20.7C flow=10.8L/min led=AMBER | SQLite pending=80  [BUFFERING - offline]
+09:57:26.135 | BDR-01 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:57:26.756 | BDR-01 | STATE     | ONLINE -> REPLAYING  (backlog of 80 buffered rows)
+09:57:26.758 | BDR-01 | REPLAY    | start: 80 rows, batch <= 50, rate limit 8 dp/s (burst 30)
+09:57:27.084 | BDR-01 | FLUSH     | 2 rows seq 95-96 (ts 09:54:46..09:54:48, original timestamps) PUBACK in 318 ms, remaining=78
+09:57:27.178 | BDR-01 | READ      | seq=175 ph=7.04 turb=88.4NTU tds=264ppm T=19.7C flow=13.0L/min led=AMBER | SQLite pending=79
+09:57:27.443 | BDR-03 | READ      | seq=81 ph=7.12 turb=2.4NTU tds=233ppm T=18.7C flow=9.1L/min led=GREEN | SQLite pending=33  [BUFFERING - offline]
+09:57:28.040 | BDR-02 | READ      | seq=156 ph=6.95 turb=129.1NTU tds=282ppm T=20.8C flow=10.8L/min led=AMBER | SQLite pending=81  [BUFFERING - offline]
+09:57:28.801 | BDR-01 | FLUSH     | 2 rows seq 97-98 (ts 09:54:50..09:54:52, original timestamps) PUBACK in 216 ms, remaining=77
+09:57:29.192 | BDR-01 | READ      | seq=176 ph=7.03 turb=93.9NTU tds=263ppm T=19.7C flow=13.1L/min led=AMBER | SQLite pending=78
+09:57:30.025 | BDR-02 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:57:30.052 | BDR-02 | READ      | seq=157 ph=6.94 turb=132.5NTU tds=278ppm T=20.7C flow=10.8L/min led=AMBER | SQLite pending=82
+09:57:31.197 | BDR-01 | READ      | seq=177 ph=7.04 turb=94.6NTU tds=263ppm T=19.8C flow=13.4L/min led=AMBER | SQLite pending=79
+09:57:31.210 | BDR-02 | STATE     | ONLINE -> REPLAYING  (backlog of 82 buffered rows)
+09:57:31.212 | BDR-02 | REPLAY    | start: 82 rows, batch <= 50, rate limit 8 dp/s (burst 30)
+09:57:31.348 | BDR-03 | STATE     | OFFLINE -> ONLINE  (connected to eu.thingsboard.cloud:8883 (TLS))
+09:57:31.474 | BDR-02 | FLUSH     | 2 rows seq 76-77 (ts 09:54:47..09:54:49, original timestamps) PUBACK in 258 ms, remaining=80
+09:57:31.543 | BDR-01 | FLUSH     | 2 rows seq 99-100 (ts 09:54:54..09:54:56, original timestamps) PUBACK in 225 ms, remaining=77
+09:57:31.774 | BDR-03 | STATE     | ONLINE -> REPLAYING  (backlog of 33 buffered rows)
+09:57:31.777 | BDR-03 | REPLAY    | start: 33 rows, batch <= 50, rate limit 8 dp/s (burst 30)
+09:57:32.061 | BDR-02 | READ      | seq=158 ph=6.94 turb=130.8NTU tds=279ppm T=20.7C flow=10.7L/min led=AMBER | SQLite pending=81
+09:57:32.091 | BDR-03 | FLUSH     | 2 rows seq 49-50 (ts 09:54:47..09:54:52, original timestamps) PUBACK in 309 ms, remaining=31
+09:57:32.452 | BDR-03 | READ      | seq=82 ph=7.13 turb=2.3NTU tds=231ppm T=18.7C flow=8.9L/min led=GREEN | SQLite pending=32
+09:57:33.204 | BDR-01 | READ      | seq=178 ph=7.04 turb=95.4NTU tds=262ppm T=19.8C flow=13.3L/min led=AMBER | SQLite pending=78
+09:57:33.263 | BDR-02 | FLUSH     | 2 rows seq 78-79 (ts 09:54:51..09:54:53, original timestamps) PUBACK in 243 ms, remaining=79
+09:57:33.917 | BDR-03 | FLUSH     | 2 rows seq 51-52 (ts 09:54:57..09:55:02, original timestamps) PUBACK in 326 ms, remaining=30
+09:57:34.066 | BDR-02 | READ      | seq=159 ph=6.94 turb=145.6NTU tds=278ppm T=20.8C flow=10.8L/min led=AMBER | SQLite pending=80
+09:57:34.328 | BDR-01 | FLUSH     | 2 rows seq 101-102 (ts 09:54:58..09:55:00, original timestamps) PUBACK in 247 ms, remaining=76
+09:57:35.210 | BDR-01 | READ      | seq=179 ph=7.04 turb=85.6NTU tds=260ppm T=19.8C flow=13.2L/min led=AMBER | SQLite pending=77
+09:57:35.965 | BDR-02 | FLUSH     | 2 rows seq 80-81 (ts 09:54:55..09:54:57, original timestamps) PUBACK in 194 ms, remaining=78
+09:57:36.075 | BDR-02 | READ      | seq=160 ph=6.94 turb=125.3NTU tds=278ppm T=20.8C flow=10.5L/min led=AMBER | SQLite pending=79
+09:57:36.585 | BDR-03 | FLUSH     | 2 rows seq 53-54 (ts 09:55:07..09:55:12, original timestamps) PUBACK in 239 ms, remaining=28
+09:57:37.093 | BDR-01 | FLUSH     | 2 rows seq 103-104 (ts 09:55:02..09:55:04, original timestamps) PUBACK in 257 ms, remaining=75
+09:57:37.217 | BDR-01 | READ      | seq=180 ph=7.03 turb=87.9NTU tds=258ppm T=19.8C flow=13.3L/min led=AMBER | SQLite pending=76
+09:57:37.466 | BDR-03 | READ      | seq=83 ph=7.12 turb=2.5NTU tds=231ppm T=18.7C flow=8.9L/min led=GREEN | SQLite pending=29
+09:57:38.090 | BDR-02 | READ      | seq=161 ph=6.93 turb=112.4NTU tds=276ppm T=20.8C flow=10.4L/min led=AMBER | SQLite pending=80
+09:57:38.730 | BDR-02 | FLUSH     | 2 rows seq 82-83 (ts 09:54:59..09:55:01, original timestamps) PUBACK in 210 ms, remaining=78
+09:57:39.220 | BDR-01 | READ      | seq=181 ph=7.03 turb=89.2NTU tds=258ppm T=19.8C flow=13.2L/min led=AMBER | SQLite pending=77
+09:57:39.343 | BDR-03 | FLUSH     | 2 rows seq 55-56 (ts 09:55:17..09:55:22, original timestamps) PUBACK in 246 ms, remaining=27
+09:57:39.860 | BDR-01 | FLUSH     | 2 rows seq 105-106 (ts 09:55:06..09:55:08, original timestamps) PUBACK in 288 ms, remaining=75
+09:57:40.095 | BDR-02 | READ      | seq=162 ph=6.95 turb=115.6NTU tds=277ppm T=20.8C flow=10.6L/min led=AMBER | SQLite pending=79
+09:57:41.227 | BDR-01 | READ      | seq=182 ph=7.05 turb=85.3NTU tds=257ppm T=19.8C flow=12.8L/min led=AMBER | SQLite pending=76
+09:57:41.496 | BDR-02 | FLUSH     | 2 rows seq 84-85 (ts 09:55:03..09:55:05, original timestamps) PUBACK in 224 ms, remaining=77
+09:57:42.104 | BDR-02 | READ      | seq=163 ph=6.94 turb=111.0NTU tds=278ppm T=20.7C flow=10.5L/min led=AMBER | SQLite pending=78
+09:57:42.108 | BDR-03 | FLUSH     | 2 rows seq 57-58 (ts 09:55:27..09:55:32, original timestamps) PUBACK in 275 ms, remaining=25
+09:57:42.465 | BDR-03 | READ      | seq=84 ph=7.11 turb=2.5NTU tds=231ppm T=18.7C flow=8.8L/min led=GREEN | SQLite pending=26
+09:57:42.621 | BDR-01 | FLUSH     | 2 rows seq 107-108 (ts 09:55:10..09:55:12, original timestamps) PUBACK in 288 ms, remaining=74
+09:57:43.241 | BDR-01 | READ      | seq=183 ph=7.05 turb=84.5NTU tds=254ppm T=19.8C flow=12.7L/min led=AMBER | SQLite pending=75
+09:57:44.106 | BDR-02 | READ      | seq=164 ph=6.93 turb=116.9NTU tds=278ppm T=20.8C flow=10.5L/min led=AMBER | SQLite pending=79
+09:57:44.259 | BDR-02 | FLUSH     | 2 rows seq 86-87 (ts 09:55:07..09:55:09, original timestamps) PUBACK in 234 ms, remaining=77
+09:57:44.877 | BDR-03 | FLUSH     | 2 rows seq 59-60 (ts 09:55:37..09:55:42, original timestamps) PUBACK in 290 ms, remaining=24
+09:57:45.271 | BDR-01 | READ      | seq=184 ph=7.06 turb=83.7NTU tds=253ppm T=19.8C flow=12.7L/min led=AMBER | SQLite pending=76
+09:57:45.284 | BDR-01 | FLUSH     | 2 rows seq 109-110 (ts 09:55:14..09:55:16, original timestamps) PUBACK in 203 ms, remaining=74
+09:57:46.118 | BDR-02 | READ      | seq=165 ph=6.94 turb=115.9NTU tds=275ppm T=20.8C flow=10.6L/min led=AMBER | SQLite pending=78
+09:57:47.028 | BDR-02 | FLUSH     | 2 rows seq 88-89 (ts 09:55:11..09:55:13, original timestamps) PUBACK in 255 ms, remaining=76
+09:57:47.273 | BDR-01 | READ      | seq=185 ph=7.06 turb=79.0NTU tds=253ppm T=19.8C flow=12.9L/min led=AMBER | SQLite pending=75
+09:57:47.478 | BDR-03 | READ      | seq=85 ph=7.12 turb=2.3NTU tds=232ppm T=18.7C flow=8.8L/min led=GREEN | SQLite pending=25
+09:57:47.535 | BDR-03 | FLUSH     | 2 rows seq 61-62 (ts 09:55:47..09:55:52, original timestamps) PUBACK in 190 ms, remaining=23
+09:57:48.051 | BDR-01 | FLUSH     | 2 rows seq 111-112 (ts 09:55:18..09:55:20, original timestamps) PUBACK in 229 ms, remaining=73
+09:57:48.120 | BDR-02 | READ      | seq=166 ph=6.94 turb=113.4NTU tds=273ppm T=20.8C flow=10.3L/min led=AMBER | SQLite pending=77
+09:57:49.281 | BDR-01 | READ      | seq=186 ph=7.06 turb=71.4NTU tds=253ppm T=19.8C flow=12.9L/min led=AMBER | SQLite pending=74
+09:57:49.791 | BDR-02 | FLUSH     | 2 rows seq 90-91 (ts 09:55:15..09:55:17, original timestamps) PUBACK in 270 ms, remaining=75
+09:57:50.128 | BDR-02 | READ      | seq=167 ph=6.94 turb=117.3NTU tds=274ppm T=20.8C flow=10.4L/min led=AMBER | SQLite pending=76
+09:57:50.301 | BDR-03 | FLUSH     | 2 rows seq 63-64 (ts 09:55:57..09:56:02, original timestamps) PUBACK in 218 ms, remaining=21
+09:57:50.816 | BDR-01 | FLUSH     | 2 rows seq 113-114 (ts 09:55:22..09:55:24, original timestamps) PUBACK in 245 ms, remaining=72
+09:57:51.294 | BDR-01 | READ      | seq=187 ph=7.05 turb=77.5NTU tds=252ppm T=19.8C flow=12.9L/min led=AMBER | SQLite pending=73
+09:57:52.138 | BDR-02 | READ      | seq=168 ph=6.94 turb=118.5NTU tds=272ppm T=20.8C flow=10.3L/min led=AMBER | SQLite pending=77
+09:57:52.495 | BDR-03 | READ      | seq=86 ph=7.11 turb=2.4NTU tds=232ppm T=18.6C flow=8.8L/min led=GREEN | SQLite pending=22
+09:57:52.552 | BDR-02 | FLUSH     | 2 rows seq 92-93 (ts 09:55:19..09:55:21, original timestamps) PUBACK in 275 ms, remaining=75
+09:57:53.067 | BDR-03 | FLUSH     | 2 rows seq 65-66 (ts 09:56:07..09:56:12, original timestamps) PUBACK in 229 ms, remaining=20
+09:57:53.304 | BDR-01 | READ      | seq=188 ph=7.05 turb=72.3NTU tds=251ppm T=19.8C flow=12.8L/min led=AMBER | SQLite pending=74
+09:57:53.578 | BDR-01 | FLUSH     | 2 rows seq 115-116 (ts 09:55:26..09:55:28, original timestamps) PUBACK in 249 ms, remaining=72
+09:57:54.153 | BDR-02 | READ      | seq=169 ph=6.95 turb=113.1NTU tds=272ppm T=20.8C flow=10.6L/min led=AMBER | SQLite pending=76
+09:57:55.313 | BDR-01 | READ      | seq=189 ph=7.05 turb=74.0NTU tds=249ppm T=19.8C flow=12.6L/min led=AMBER | SQLite pending=73
+09:57:55.317 | BDR-02 | FLUSH     | 2 rows seq 94-95 (ts 09:55:23..09:55:25, original timestamps) PUBACK in 285 ms, remaining=74
+09:57:55.833 | BDR-03 | FLUSH     | 2 rows seq 67-68 (ts 09:56:17..09:56:22, original timestamps) PUBACK in 247 ms, remaining=18
+09:57:56.156 | BDR-02 | READ      | seq=170 ph=6.95 turb=108.6NTU tds=272ppm T=20.8C flow=10.4L/min led=AMBER | SQLite pending=75
+09:57:56.268 | BDR-01 | FLUSH     | 2 rows seq 117-118 (ts 09:55:30..09:55:32, original timestamps) PUBACK in 186 ms, remaining=71
+09:57:57.321 | BDR-01 | READ      | seq=190 ph=7.04 turb=68.2NTU tds=247ppm T=19.9C flow=13.0L/min led=AMBER | SQLite pending=72
+09:57:57.502 | BDR-03 | READ      | seq=87 ph=7.11 turb=2.2NTU tds=231ppm T=18.6C flow=8.8L/min led=GREEN | SQLite pending=19
+09:57:57.982 | BDR-02 | FLUSH     | 2 rows seq 96-97 (ts 09:55:27..09:55:29, original timestamps) PUBACK in 210 ms, remaining=73
+09:57:58.163 | BDR-02 | READ      | seq=171 ph=6.96 turb=102.3NTU tds=271ppm T=20.8C flow=10.3L/min led=AMBER | SQLite pending=74
+09:57:58.596 | BDR-03 | FLUSH     | 2 rows seq 69-70 (ts 09:56:27..09:56:32, original timestamps) PUBACK in 262 ms, remaining=17
+09:57:59.108 | BDR-01 | FLUSH     | 2 rows seq 119-120 (ts 09:55:34..09:55:36, original timestamps) PUBACK in 287 ms, remaining=70
+09:57:59.321 | BDR-01 | READ      | seq=191 ph=7.05 turb=62.6NTU tds=246ppm T=19.9C flow=12.8L/min led=AMBER | SQLite pending=71
+09:58:00.176 | BDR-02 | READ      | seq=172 ph=6.95 turb=105.8NTU tds=269ppm T=20.8C flow=10.4L/min led=AMBER | SQLite pending=75
+09:58:00.747 | BDR-02 | FLUSH     | 2 rows seq 98-99 (ts 09:55:31..09:55:33, original timestamps) PUBACK in 227 ms, remaining=73
+09:58:01.338 | BDR-01 | READ      | seq=192 ph=7.06 turb=63.3NTU tds=247ppm T=20.0C flow=12.6L/min led=AMBER | SQLite pending=72
+09:58:01.420 | BDR-03 | FLUSH     | 2 rows seq 71-72 (ts 09:56:37..09:56:42, original timestamps) PUBACK in 323 ms, remaining=15
+09:58:01.791 | BDR-01 | FLUSH     | 2 rows seq 121-122 (ts 09:55:38..09:55:40, original timestamps) PUBACK in 223 ms, remaining=70
+09:58:02.199 | BDR-02 | READ      | seq=173 ph=6.96 turb=105.3NTU tds=268ppm T=20.8C flow=10.4L/min led=AMBER | SQLite pending=74
+09:58:02.511 | BDR-03 | READ      | seq=88 ph=7.10 turb=2.4NTU tds=230ppm T=18.6C flow=8.7L/min led=GREEN | SQLite pending=16
+09:58:03.355 | BDR-01 | READ      | seq=193 ph=7.06 turb=67.6NTU tds=245ppm T=20.0C flow=12.9L/min led=AMBER | SQLite pending=71
+09:58:03.510 | BDR-02 | FLUSH     | 2 rows seq 100-101 (ts 09:55:35..09:55:37, original timestamps) PUBACK in 228 ms, remaining=72
+09:58:04.127 | BDR-03 | FLUSH     | 2 rows seq 73-74 (ts 09:56:47..09:56:52, original timestamps) PUBACK in 289 ms, remaining=14
+09:58:04.202 | BDR-02 | READ      | seq=174 ph=6.96 turb=96.5NTU tds=267ppm T=20.9C flow=10.9L/min led=AMBER | SQLite pending=73
+09:58:04.534 | BDR-01 | FLUSH     | 2 rows seq 123-124 (ts 09:55:42..09:55:44, original timestamps) PUBACK in 203 ms, remaining=69
+09:58:05.365 | BDR-01 | READ      | seq=194 ph=7.06 turb=62.8NTU tds=244ppm T=20.0C flow=12.8L/min led=AMBER | SQLite pending=70
+09:58:06.220 | BDR-02 | READ      | seq=175 ph=6.98 turb=95.8NTU tds=267ppm T=20.9C flow=10.7L/min led=AMBER | SQLite pending=74
+09:58:06.733 | BDR-02 | FLUSH     | 2 rows seq 102-103 (ts 09:55:39..09:55:41, original timestamps) PUBACK in 700 ms, remaining=72
+09:58:06.750 | BDR-03 | FLUSH     | 2 rows seq 75-76 (ts 09:56:57..09:57:02, original timestamps) PUBACK in 168 ms, remaining=12
+09:58:07.265 | BDR-01 | FLUSH     | 2 rows seq 125-126 (ts 09:55:46..09:55:48, original timestamps) PUBACK in 172 ms, remaining=68
+09:58:07.372 | BDR-01 | READ      | seq=195 ph=7.07 turb=62.1NTU tds=243ppm T=20.0C flow=13.1L/min led=AMBER | SQLite pending=69
+09:58:07.518 | BDR-03 | READ      | seq=89 ph=7.10 turb=2.3NTU tds=230ppm T=18.7C flow=8.9L/min led=GREEN | SQLite pending=13
+09:58:08.236 | BDR-02 | READ      | seq=176 ph=6.97 turb=95.2NTU tds=266ppm T=20.8C flow=10.8L/min led=AMBER | SQLite pending=73
+09:58:09.041 | BDR-02 | FLUSH     | 2 rows seq 104-105 (ts 09:55:43..09:55:45, original timestamps) PUBACK in 270 ms, remaining=71
+09:58:09.384 | BDR-01 | READ      | seq=196 ph=7.07 turb=59.9NTU tds=243ppm T=20.0C flow=13.1L/min led=AMBER | SQLite pending=70
+09:58:09.563 | BDR-03 | FLUSH     | 2 rows seq 77-78 (ts 09:57:07..09:57:12, original timestamps) PUBACK in 245 ms, remaining=11
+09:58:10.065 | BDR-01 | FLUSH     | 2 rows seq 127-128 (ts 09:55:50..09:55:52, original timestamps) PUBACK in 240 ms, remaining=68
+09:58:10.232 | BDR-02 | READ      | seq=177 ph=6.97 turb=93.0NTU tds=264ppm T=20.8C flow=10.7L/min led=AMBER | SQLite pending=72
+09:58:11.385 | BDR-01 | READ      | seq=197 ph=7.08 turb=62.0NTU tds=243ppm T=20.0C flow=13.2L/min led=AMBER | SQLite pending=69
+09:58:11.692 | BDR-02 | FLUSH     | 2 rows seq 106-107 (ts 09:55:47..09:55:49, original timestamps) PUBACK in 174 ms, remaining=70
+09:58:12.236 | BDR-02 | READ      | seq=178 ph=6.95 turb=89.4NTU tds=264ppm T=20.8C flow=10.8L/min led=AMBER | SQLite pending=71
+09:58:12.279 | BDR-03 | FLUSH     | 2 rows seq 79-80 (ts 09:57:17..09:57:22, original timestamps) PUBACK in 196 ms, remaining=9
+09:58:12.520 | BDR-03 | READ      | seq=90 ph=7.11 turb=2.4NTU tds=227ppm T=18.8C flow=8.7L/min led=GREEN | SQLite pending=10
+09:58:12.833 | BDR-01 | FLUSH     | 2 rows seq 129-130 (ts 09:55:54..09:55:56, original timestamps) PUBACK in 265 ms, remaining=67
+09:58:13.385 | BDR-01 | READ      | seq=198 ph=7.07 turb=65.6NTU tds=244ppm T=20.1C flow=13.4L/min led=AMBER | SQLite pending=68
+09:58:14.251 | BDR-02 | READ      | seq=179 ph=6.97 turb=90.3NTU tds=264ppm T=20.9C flow=10.5L/min led=AMBER | SQLite pending=72
+09:58:14.418 | BDR-02 | FLUSH     | 2 rows seq 108-109 (ts 09:55:51..09:55:53, original timestamps) PUBACK in 169 ms, remaining=70
+09:58:14.999 | BDR-03 | FLUSH     | 2 rows seq 81-82 (ts 09:57:27..09:57:32, original timestamps) PUBACK in 167 ms, remaining=8
+09:58:15.399 | BDR-01 | READ      | seq=199 ph=7.08 turb=69.8NTU tds=243ppm T=20.1C flow=13.5L/min led=AMBER | SQLite pending=69
+09:58:15.501 | BDR-01 | FLUSH     | 2 rows seq 131-132 (ts 09:55:58..09:56:00, original timestamps) PUBACK in 182 ms, remaining=67
+09:58:16.262 | BDR-02 | READ      | seq=180 ph=6.99 turb=96.4NTU tds=260ppm T=20.9C flow=10.4L/min led=AMBER | SQLite pending=71
+09:58:17.234 | BDR-02 | FLUSH     | 2 rows seq 110-111 (ts 09:55:55..09:55:57, original timestamps) PUBACK in 205 ms, remaining=69
+09:58:17.399 | BDR-01 | READ      | seq=200 ph=7.09 turb=64.1NTU tds=240ppm T=20.1C flow=13.5L/min led=AMBER | SQLite pending=68
+09:58:17.525 | BDR-03 | READ      | seq=91 ph=7.11 turb=2.4NTU tds=226ppm T=18.8C flow=8.8L/min led=GREEN | SQLite pending=9
+09:58:17.851 | BDR-03 | FLUSH     | 2 rows seq 83-84 (ts 09:57:37..09:57:42, original timestamps) PUBACK in 263 ms, remaining=7
+09:58:18.274 | BDR-02 | READ      | seq=181 ph=6.98 turb=92.6NTU tds=258ppm T=20.9C flow=10.5L/min led=AMBER | SQLite pending=70
+09:58:18.358 | BDR-01 | FLUSH     | 2 rows seq 133-134 (ts 09:56:02..09:56:04, original timestamps) PUBACK in 276 ms, remaining=66
+09:58:19.415 | BDR-01 | READ      | seq=201 ph=7.09 turb=65.4NTU tds=240ppm T=20.1C flow=13.3L/min led=AMBER | SQLite pending=67
+09:58:19.998 | BDR-02 | FLUSH     | 2 rows seq 112-113 (ts 09:55:59..09:56:01, original timestamps) PUBACK in 226 ms, remaining=68
+09:58:20.287 | BDR-02 | READ      | seq=182 ph=6.98 turb=90.6NTU tds=257ppm T=20.9C flow=10.4L/min led=AMBER | SQLite pending=69
+09:58:20.611 | BDR-03 | FLUSH     | 2 rows seq 85-86 (ts 09:57:47..09:57:52, original timestamps) PUBACK in 277 ms, remaining=5
+09:58:21.124 | BDR-01 | FLUSH     | 2 rows seq 135-136 (ts 09:56:06..09:56:08, original timestamps) PUBACK in 292 ms, remaining=65
+09:58:21.417 | BDR-01 | READ      | seq=202 ph=7.09 turb=66.2NTU tds=241ppm T=20.0C flow=13.1L/min led=AMBER | SQLite pending=66
+09:58:22.294 | BDR-02 | READ      | seq=183 ph=7.00 turb=91.1NTU tds=256ppm T=20.9C flow=10.0L/min led=AMBER | SQLite pending=70
+09:58:22.538 | BDR-03 | READ      | seq=92 ph=7.10 turb=2.5NTU tds=227ppm T=18.7C flow=8.9L/min led=GREEN | SQLite pending=6
+09:58:22.777 | BDR-02 | FLUSH     | 2 rows seq 114-115 (ts 09:56:03..09:56:05, original timestamps) PUBACK in 244 ms, remaining=68
+09:58:23.432 | BDR-01 | READ      | seq=203 ph=7.09 turb=61.2NTU tds=239ppm T=20.0C flow=13.1L/min led=AMBER | SQLite pending=67
+09:58:23.454 | BDR-03 | FLUSH     | 2 rows seq 87-88 (ts 09:57:57..09:58:02, original timestamps) PUBACK in 354 ms, remaining=4
+09:58:23.994 | BDR-01 | FLUSH     | 2 rows seq 137-138 (ts 09:56:10..09:56:12, original timestamps) PUBACK in 412 ms, remaining=65
+09:58:24.301 | BDR-02 | READ      | seq=184 ph=7.00 turb=88.7NTU tds=255ppm T=20.9C flow=10.3L/min led=AMBER | SQLite pending=69
+09:58:25.444 | BDR-01 | READ      | seq=204 ph=7.09 turb=55.5NTU tds=240ppm T=20.0C flow=13.4L/min led=AMBER | SQLite pending=66
+09:58:25.644 | BDR-02 | FLUSH     | 2 rows seq 116-117 (ts 09:56:07..09:56:09, original timestamps) PUBACK in 364 ms, remaining=67
+09:58:26.054 | BDR-03 | FLUSH     | 2 rows seq 89-90 (ts 09:58:07..09:58:12, original timestamps) PUBACK in 250 ms, remaining=2
+09:58:26.309 | BDR-02 | READ      | seq=185 ph=7.00 turb=92.8NTU tds=253ppm T=20.9C flow=10.2L/min led=AMBER | SQLite pending=68
+09:58:26.567 | BDR-01 | FLUSH     | 2 rows seq 139-140 (ts 09:56:14..09:56:16, original timestamps) PUBACK in 233 ms, remaining=64
+09:58:27.455 | BDR-01 | READ      | seq=205 ph=7.10 turb=52.9NTU tds=241ppm T=20.1C flow=13.6L/min led=AMBER | SQLite pending=65
+09:58:27.550 | BDR-03 | READ      | seq=93 ph=7.10 turb=2.3NTU tds=226ppm T=18.8C flow=9.2L/min led=GREEN | SQLite pending=3
+09:58:28.190 | BDR-02 | FLUSH     | 2 rows seq 118-119 (ts 09:56:11..09:56:13, original timestamps) PUBACK in 217 ms, remaining=66
+09:58:28.316 | BDR-02 | READ      | seq=186 ph=6.98 turb=87.5NTU tds=254ppm T=20.9C flow=10.4L/min led=AMBER | SQLite pending=67
+09:58:28.806 | BDR-03 | FLUSH     | 2 rows seq 91-92 (ts 09:58:17..09:58:22, original timestamps) PUBACK in 209 ms, remaining=1
+09:58:29.268 | BDR-01 | FLUSH     | 2 rows seq 141-142 (ts 09:56:18..09:56:20, original timestamps) PUBACK in 185 ms, remaining=63
+09:58:29.458 | BDR-01 | READ      | seq=206 ph=7.10 turb=53.2NTU tds=240ppm T=20.1C flow=14.1L/min led=AMBER | SQLite pending=64
+09:58:30.327 | BDR-02 | READ      | seq=187 ph=6.98 turb=82.1NTU tds=253ppm T=20.9C flow=10.6L/min led=AMBER | SQLite pending=68
+09:58:30.750 | BDR-03 | FLUSH     | 1 rows seq 93-93 (ts 09:58:27..09:58:27, original timestamps) PUBACK in 787 ms, remaining=0
+09:58:30.751 | BDR-03 | DRAINED   | buffer empty: 45 rows replayed in 58.97 s (0.8 msg/s)
+09:58:30.753 | BDR-03 | STATE     | REPLAYING -> ONLINE  (backfill complete)
+09:58:30.958 | BDR-02 | FLUSH     | 2 rows seq 120-121 (ts 09:56:15..09:56:17, original timestamps) PUBACK in 188 ms, remaining=66
+09:58:31.470 | BDR-01 | READ      | seq=207 ph=7.09 turb=52.6NTU tds=239ppm T=20.0C flow=14.0L/min led=AMBER | SQLite pending=65
+09:58:32.089 | BDR-01 | FLUSH     | 2 rows seq 143-144 (ts 09:56:22..09:56:24, original timestamps) PUBACK in 266 ms, remaining=63
+09:58:32.336 | BDR-02 | READ      | seq=188 ph=6.98 turb=83.4NTU tds=251ppm T=20.9C flow=10.3L/min led=AMBER | SQLite pending=67
+09:58:32.555 | BDR-03 | READ      | seq=94 ph=7.10 turb=2.5NTU tds=227ppm T=18.7C flow=9.0L/min led=GREEN | SQLite pending=1
+09:58:32.868 | BDR-03 | PUB       | seq=94 ts=1794629612553 QoS1 PUBACK in 263 ms
+09:58:33.475 | BDR-01 | READ      | seq=208 ph=7.11 turb=53.2NTU tds=239ppm T=20.0C flow=13.8L/min led=AMBER | SQLite pending=64
+09:58:33.702 | BDR-02 | FLUSH     | 2 rows seq 122-123 (ts 09:56:19..09:56:21, original timestamps) PUBACK in 185 ms, remaining=65
+09:58:34.341 | BDR-02 | READ      | seq=189 ph=6.98 turb=86.1NTU tds=252ppm T=21.0C flow=10.6L/min led=AMBER | SQLite pending=66
+09:58:35.255 | BDR-01 | FLUSH     | 2 rows seq 145-146 (ts 09:56:26..09:56:28, original timestamps) PUBACK in 673 ms, remaining=62
+09:58:35.485 | BDR-01 | READ      | seq=209 ph=7.09 turb=54.8NTU tds=237ppm T=20.0C flow=13.6L/min led=AMBER | SQLite pending=63
+09:58:36.347 | BDR-02 | READ      | seq=190 ph=6.99 turb=92.1NTU tds=250ppm T=20.9C flow=10.6L/min led=AMBER | SQLite pending=67
+09:58:36.520 | BDR-02 | FLUSH     | 2 rows seq 124-125 (ts 09:56:23..09:56:25, original timestamps) PUBACK in 267 ms, remaining=65
+09:58:37.493 | BDR-01 | READ      | seq=210 ph=7.08 turb=54.6NTU tds=237ppm T=20.0C flow=13.7L/min led=AMBER | SQLite pending=64
+09:58:37.555 | BDR-03 | READ      | seq=95 ph=7.08 turb=2.5NTU tds=228ppm T=18.7C flow=9.3L/min led=GREEN | SQLite pending=1
+09:58:37.730 | BDR-01 | FLUSH     | 2 rows seq 147-148 (ts 09:56:30..09:56:32, original timestamps) PUBACK in 412 ms, remaining=62
+09:58:37.790 | BDR-03 | PUB       | seq=95 ts=1794629617554 QoS1 PUBACK in 200 ms
+09:58:38.361 | BDR-02 | READ      | seq=191 ph=6.98 turb=85.5NTU tds=252ppm T=21.0C flow=10.5L/min led=AMBER | SQLite pending=66
+09:58:39.504 | BDR-01 | READ      | seq=211 ph=7.09 turb=53.1NTU tds=236ppm T=20.0C flow=13.9L/min led=AMBER | SQLite pending=63
+09:58:39.504 | BDR-02 | FLUSH     | 2 rows seq 126-127 (ts 09:56:27..09:56:29, original timestamps) PUBACK in 485 ms, remaining=64
+09:58:40.308 | BDR-01 | FLUSH     | 2 rows seq 149-150 (ts 09:56:34..09:56:36, original timestamps) PUBACK in 259 ms, remaining=61
+09:58:40.376 | BDR-02 | READ      | seq=192 ph=6.97 turb=82.7NTU tds=252ppm T=21.0C flow=10.6L/min led=AMBER | SQLite pending=65
+09:58:41.508 | BDR-01 | READ      | seq=212 ph=7.10 turb=53.4NTU tds=237ppm T=20.1C flow=13.9L/min led=AMBER | SQLite pending=62
+09:58:42.011 | BDR-02 | FLUSH     | 2 rows seq 128-129 (ts 09:56:31..09:56:33, original timestamps) PUBACK in 229 ms, remaining=63
+09:58:42.382 | BDR-02 | READ      | seq=193 ph=6.98 turb=77.7NTU tds=251ppm T=21.0C flow=10.4L/min led=AMBER | SQLite pending=64
+09:58:42.568 | BDR-03 | READ      | seq=96 ph=7.10 turb=2.5NTU tds=228ppm T=18.7C flow=9.4L/min led=GREEN | SQLite pending=1
+09:58:42.830 | BDR-03 | PUB       | seq=96 ts=1794629622567 QoS1 PUBACK in 199 ms
+09:58:43.036 | BDR-01 | FLUSH     | 2 rows seq 151-152 (ts 09:56:38..09:56:40, original timestamps) PUBACK in 208 ms, remaining=60
+09:58:43.512 | BDR-01 | READ      | seq=213 ph=7.11 turb=54.2NTU tds=238ppm T=20.1C flow=13.4L/min led=AMBER | SQLite pending=61
+09:58:44.391 | BDR-02 | READ      | seq=194 ph=6.98 turb=75.3NTU tds=254ppm T=21.0C flow=10.5L/min led=AMBER | SQLite pending=65
+09:58:44.779 | BDR-02 | FLUSH     | 2 rows seq 130-131 (ts 09:56:35..09:56:37, original timestamps) PUBACK in 246 ms, remaining=63
+09:58:45.527 | BDR-01 | READ      | seq=214 ph=7.10 turb=50.6NTU tds=236ppm T=20.1C flow=13.2L/min led=AMBER | SQLite pending=62
+09:58:45.803 | BDR-01 | FLUSH     | 2 rows seq 153-154 (ts 09:56:42..09:56:44, original timestamps) PUBACK in 220 ms, remaining=60
+09:58:46.405 | BDR-02 | READ      | seq=195 ph=6.99 turb=76.3NTU tds=253ppm T=21.1C flow=10.5L/min led=AMBER | SQLite pending=64
+09:58:46.677 | FLEET  | STATUS    | node   state        generated  pending total rows  alarms
+09:58:46.677 | FLEET  | STATUS    | BDR-01 REPLAYING          214       60        214  High Turbidity
+09:58:46.678 | FLEET  | STATUS    | BDR-02 REPLAYING          195       64        195  High Turbidity
+09:58:46.678 | FLEET  | STATUS    | BDR-03 ONLINE              96        0         96  -
+09:58:47.454 | BDR-02 | FLUSH     | 2 rows seq 132-133 (ts 09:56:39..09:56:41, original timestamps) PUBACK in 182 ms, remaining=62
+09:58:47.540 | BDR-01 | READ      | seq=215 ph=7.11 turb=50.9NTU tds=237ppm T=20.1C flow=13.4L/min led=AMBER | SQLite pending=61
+09:58:47.572 | BDR-03 | READ      | seq=97 ph=7.10 turb=2.7NTU tds=229ppm T=18.7C flow=9.4L/min led=GREEN | SQLite pending=1
+09:58:47.820 | BDR-03 | PUB       | seq=97 ts=1794629627570 QoS1 PUBACK in 182 ms
+09:58:48.403 | BDR-02 | READ      | seq=196 ph=6.98 turb=74.3NTU tds=252ppm T=21.1C flow=10.5L/min led=AMBER | SQLite pending=63
+09:58:48.592 | BDR-01 | FLUSH     | 2 rows seq 155-156 (ts 09:56:46..09:56:48, original timestamps) PUBACK in 258 ms, remaining=59
+09:58:49.549 | BDR-01 | READ      | seq=216 ph=7.11 turb=44.3NTU tds=235ppm T=20.1C flow=13.5L/min led=AMBER | SQLite pending=60
+09:58:50.311 | BDR-02 | FLUSH     | 2 rows seq 134-135 (ts 09:56:43..09:56:45, original timestamps) PUBACK in 294 ms, remaining=61
+09:58:50.434 | BDR-02 | READ      | seq=197 ph=6.99 turb=76.5NTU tds=253ppm T=21.1C flow=10.6L/min led=AMBER | SQLite pending=62
+09:58:51.333 | BDR-01 | FLUSH     | 2 rows seq 157-158 (ts 09:56:51..09:56:53, original timestamps) PUBACK in 264 ms, remaining=58
+09:58:51.557 | BDR-01 | READ      | seq=217 ph=7.10 turb=41.6NTU tds=232ppm T=20.2C flow=13.4L/min led=AMBER | SQLite pending=59
+09:58:52.440 | BDR-02 | READ      | seq=198 ph=7.00 turb=78.0NTU tds=251ppm T=21.2C flow=10.4L/min led=AMBER | SQLite pending=63
+09:58:52.581 | BDR-03 | READ      | seq=98 ph=7.09 turb=2.5NTU tds=230ppm T=18.7C flow=9.3L/min led=GREEN | SQLite pending=1
+09:58:52.866 | BDR-03 | PUB       | seq=98 ts=1794629632580 QoS1 PUBACK in 219 ms
+09:58:52.968 | BDR-02 | FLUSH     | 2 rows seq 136-137 (ts 09:56:47..09:56:49, original timestamps) PUBACK in 197 ms, remaining=61
+09:58:53.569 | BDR-01 | READ      | seq=218 ph=7.11 turb=40.9NTU tds=232ppm T=20.2C flow=13.0L/min led=AMBER | SQLite pending=60
+09:58:54.007 | BDR-01 | FLUSH     | 2 rows seq 159-160 (ts 09:56:55..09:56:57, original timestamps) PUBACK in 187 ms, remaining=58
+09:58:54.448 | BDR-02 | READ      | seq=199 ph=7.00 turb=73.3NTU tds=251ppm T=21.2C flow=10.3L/min led=AMBER | SQLite pending=62
+09:58:55.583 | BDR-01 | READ      | seq=219 ph=7.12 turb=42.3NTU tds=229ppm T=20.1C flow=13.0L/min led=AMBER | SQLite pending=59
+09:58:55.733 | BDR-02 | FLUSH     | 2 rows seq 138-139 (ts 09:56:51..09:56:53, original timestamps) PUBACK in 209 ms, remaining=60
+09:58:56.469 | BDR-02 | READ      | seq=200 ph=7.00 turb=67.9NTU tds=252ppm T=21.2C flow=10.3L/min led=AMBER | SQLite pending=61
+09:58:56.760 | BDR-01 | FLUSH     | 2 rows seq 161-162 (ts 09:56:59..09:57:01, original timestamps) PUBACK in 218 ms, remaining=57
+09:58:57.596 | BDR-03 | READ      | seq=99 ph=7.11 turb=2.5NTU tds=229ppm T=18.7C flow=9.1L/min led=GREEN | SQLite pending=1
+09:58:57.596 | BDR-01 | READ      | seq=220 ph=7.13 turb=40.6NTU tds=230ppm T=20.1C flow=12.4L/min led=AMBER | SQLite pending=58
+09:58:57.886 | BDR-03 | PUB       | seq=99 ts=1794629637592 QoS1 PUBACK in 225 ms
+09:58:58.469 | BDR-02 | READ      | seq=201 ph=7.02 turb=69.8NTU tds=250ppm T=21.2C flow=10.4L/min led=AMBER | SQLite pending=62
+09:58:58.548 | BDR-02 | FLUSH     | 2 rows seq 140-141 (ts 09:56:55..09:56:57, original timestamps) PUBACK in 280 ms, remaining=60
+09:58:59.537 | BDR-01 | FLUSH     | 2 rows seq 163-164 (ts 09:57:03..09:57:05, original timestamps) PUBACK in 219 ms, remaining=56
+09:58:59.603 | BDR-01 | READ      | seq=221 ph=7.14 turb=40.5NTU tds=230ppm T=20.1C flow=12.2L/min led=AMBER | SQLite pending=57
+09:59:00.485 | BDR-02 | READ      | seq=202 ph=7.01 turb=66.3NTU tds=251ppm T=21.2C flow=10.3L/min led=AMBER | SQLite pending=61
+09:59:01.184 | BDR-02 | FLUSH     | 2 rows seq 142-143 (ts 09:56:59..09:57:01, original timestamps) PUBACK in 166 ms, remaining=59
+09:59:01.613 | BDR-01 | READ      | seq=222 ph=7.15 turb=42.9NTU tds=229ppm T=20.1C flow=11.9L/min led=AMBER | SQLite pending=58
+09:59:02.388 | BDR-01 | FLUSH     | 2 rows seq 165-166 (ts 09:57:07..09:57:09, original timestamps) PUBACK in 317 ms, remaining=56
+09:59:02.489 | BDR-02 | READ      | seq=203 ph=7.02 turb=65.4NTU tds=251ppm T=21.3C flow=10.4L/min led=AMBER | SQLite pending=60
+09:59:02.598 | BDR-03 | READ      | seq=100 ph=7.11 turb=2.7NTU tds=229ppm T=18.7C flow=9.2L/min led=GREEN | SQLite pending=1
+09:59:02.901 | BDR-03 | PUB       | seq=100 ts=1794629642596 QoS1 PUBACK in 240 ms
+09:59:03.615 | BDR-01 | READ      | seq=223 ph=7.15 turb=45.6NTU tds=228ppm T=20.1C flow=12.0L/min led=AMBER | SQLite pending=57
+09:59:03.937 | BDR-02 | FLUSH     | 2 rows seq 144-145 (ts 09:57:03..09:57:05, original timestamps) PUBACK in 197 ms, remaining=58
+09:59:04.506 | BDR-02 | READ      | seq=204 ph=7.05 turb=59.8NTU tds=251ppm T=21.3C flow=10.4L/min led=AMBER | SQLite pending=59
+09:59:05.051 | BDR-01 | FLUSH     | 2 rows seq 167-168 (ts 09:57:11..09:57:13, original timestamps) PUBACK in 220 ms, remaining=55
+09:59:05.630 | BDR-01 | READ      | seq=224 ph=7.15 turb=47.0NTU tds=228ppm T=20.2C flow=12.6L/min led=AMBER | SQLite pending=56
+09:59:06.507 | BDR-02 | READ      | seq=205 ph=7.04 turb=61.6NTU tds=249ppm T=21.3C flow=10.5L/min led=AMBER | SQLite pending=60
+09:59:06.798 | BDR-02 | FLUSH     | 2 rows seq 146-147 (ts 09:57:07..09:57:09, original timestamps) PUBACK in 278 ms, remaining=58
+09:59:07.611 | BDR-03 | READ      | seq=101 ph=7.12 turb=2.7NTU tds=231ppm T=18.8C flow=9.1L/min led=GREEN | SQLite pending=1
+09:59:07.645 | BDR-01 | READ      | seq=225 ph=7.15 turb=44.1NTU tds=227ppm T=20.3C flow=13.0L/min led=AMBER | SQLite pending=57
+09:59:07.817 | BDR-01 | FLUSH     | 2 rows seq 169-170 (ts 09:57:15..09:57:17, original timestamps) PUBACK in 247 ms, remaining=55
+09:59:07.870 | BDR-03 | PUB       | seq=101 ts=1794629647608 QoS1 PUBACK in 197 ms
+09:59:08.520 | BDR-02 | READ      | seq=206 ph=7.05 turb=67.9NTU tds=246ppm T=21.3C flow=10.6L/min led=AMBER | SQLite pending=59
+09:59:09.572 | BDR-02 | FLUSH     | 2 rows seq 148-149 (ts 09:57:11..09:57:13, original timestamps) PUBACK in 291 ms, remaining=57
+09:59:09.655 | BDR-01 | READ      | seq=226 ph=7.15 turb=46.7NTU tds=226ppm T=20.3C flow=13.4L/min led=AMBER | SQLite pending=56
+09:59:10.535 | BDR-02 | READ      | seq=207 ph=7.06 turb=66.9NTU tds=246ppm T=21.3C flow=10.6L/min led=AMBER | SQLite pending=58
+09:59:11.097 | BDR-01 | FLUSH     | 2 rows seq 171-172 (ts 09:57:19..09:57:21, original timestamps) PUBACK in 776 ms, remaining=54
+09:59:11.657 | BDR-01 | READ      | seq=227 ph=7.17 turb=45.3NTU tds=225ppm T=20.3C flow=13.5L/min led=AMBER | SQLite pending=55
+09:59:12.220 | BDR-02 | FLUSH     | 2 rows seq 150-151 (ts 09:57:15..09:57:18, original timestamps) PUBACK in 196 ms, remaining=56
+09:59:12.542 | BDR-02 | READ      | seq=208 ph=7.05 turb=65.0NTU tds=245ppm T=21.3C flow=10.8L/min led=AMBER | SQLite pending=57
+09:59:12.622 | BDR-03 | READ      | seq=102 ph=7.11 turb=2.7NTU tds=231ppm T=18.8C flow=8.9L/min led=GREEN | SQLite pending=1
+09:59:13.097 | BDR-03 | PUB       | seq=102 ts=1794629652620 QoS1 PUBACK in 410 ms
+09:59:13.252 | BDR-01 | FLUSH     | 2 rows seq 173-174 (ts 09:57:23..09:57:25, original timestamps) PUBACK in 179 ms, remaining=53
+09:59:13.666 | BDR-01 | READ      | seq=228 ph=7.18 turb=41.4NTU tds=226ppm T=20.2C flow=13.8L/min led=AMBER | SQLite pending=54
+09:59:14.556 | BDR-02 | READ      | seq=209 ph=7.06 turb=58.1NTU tds=245ppm T=21.3C flow=10.6L/min led=AMBER | SQLite pending=58
+09:59:14.991 | BDR-02 | FLUSH     | 2 rows seq 152-153 (ts 09:57:20..09:57:22, original timestamps) PUBACK in 221 ms, remaining=56
+09:59:15.673 | BDR-01 | READ      | seq=229 ph=7.17 turb=42.0NTU tds=227ppm T=20.3C flow=14.0L/min led=AMBER | SQLite pending=55
+09:59:16.112 | BDR-01 | FLUSH     | 2 rows seq 175-176 (ts 09:57:27..09:57:29, original timestamps) PUBACK in 280 ms, remaining=53
+09:59:16.565 | BDR-02 | READ      | seq=210 ph=7.06 turb=53.4NTU tds=246ppm T=21.3C flow=10.5L/min led=AMBER | SQLite pending=57
+09:59:17.631 | BDR-03 | READ      | seq=103 ph=7.12 turb=2.7NTU tds=230ppm T=18.8C flow=9.0L/min led=GREEN | SQLite pending=1
+09:59:17.677 | BDR-01 | READ      | seq=230 ph=7.17 turb=41.2NTU tds=226ppm T=20.3C flow=14.0L/min led=AMBER | SQLite pending=54
+09:59:17.708 | BDR-02 | FLUSH     | 2 rows seq 154-155 (ts 09:57:24..09:57:26, original timestamps) PUBACK in 189 ms, remaining=55
+09:59:17.959 | BDR-03 | PUB       | seq=103 ts=1794629657629 QoS1 PUBACK in 263 ms
+09:59:18.568 | BDR-02 | READ      | seq=211 ph=7.08 turb=53.6NTU tds=245ppm T=21.3C flow=10.4L/min led=AMBER | SQLite pending=56
+09:59:18.875 | BDR-01 | FLUSH     | 2 rows seq 177-178 (ts 09:57:31..09:57:33, original timestamps) PUBACK in 295 ms, remaining=52
+09:59:19.681 | BDR-01 | READ      | seq=231 ph=7.16 turb=40.5NTU tds=226ppm T=20.3C flow=13.8L/min led=AMBER | SQLite pending=53
+09:59:20.517 | BDR-02 | FLUSH     | 2 rows seq 156-157 (ts 09:57:28..09:57:30, original timestamps) PUBACK in 246 ms, remaining=54
+09:59:20.572 | BDR-02 | READ      | seq=212 ph=7.07 turb=56.6NTU tds=247ppm T=21.3C flow=10.1L/min led=AMBER | SQLite pending=55
+09:59:21.538 | BDR-01 | FLUSH     | 2 rows seq 179-180 (ts 09:57:35..09:57:37, original timestamps) PUBACK in 218 ms, remaining=51
+09:59:21.684 | BDR-01 | READ      | seq=232 ph=7.16 turb=40.2NTU tds=226ppm T=20.3C flow=14.1L/min led=AMBER | SQLite pending=52
+09:59:22.587 | BDR-02 | READ      | seq=213 ph=7.08 turb=58.5NTU tds=246ppm T=21.3C flow=10.1L/min led=AMBER | SQLite pending=56
+09:59:22.633 | BDR-03 | READ      | seq=104 ph=7.12 turb=2.5NTU tds=231ppm T=18.8C flow=9.1L/min led=GREEN | SQLite pending=1
+09:59:22.973 | BDR-03 | PUB       | seq=104 ts=1794629662631 QoS1 PUBACK in 274 ms
+09:59:23.281 | BDR-02 | FLUSH     | 2 rows seq 158-159 (ts 09:57:32..09:57:34, original timestamps) PUBACK in 261 ms, remaining=54
+09:59:23.683 | BDR-01 | ALARM     | edge rule CLEAR: High Turbidity [WARNING] -> LED GREEN
+09:59:23.686 | BDR-01 | READ      | seq=233 ph=7.13 turb=39.0NTU tds=224ppm T=20.3C flow=14.0L/min led=GREEN | SQLite pending=53
+09:59:24.303 | BDR-01 | FLUSH     | 2 rows seq 181-182 (ts 09:57:39..09:57:41, original timestamps) PUBACK in 219 ms, remaining=51
+09:59:24.597 | BDR-02 | READ      | seq=214 ph=7.06 turb=57.9NTU tds=246ppm T=21.3C flow=10.4L/min led=AMBER | SQLite pending=55
+09:59:26.045 | BDR-02 | FLUSH     | 2 rows seq 160-161 (ts 09:57:36..09:57:38, original timestamps) PUBACK in 272 ms, remaining=53
+09:59:26.605 | BDR-02 | READ      | seq=215 ph=7.06 turb=61.9NTU tds=245ppm T=21.3C flow=10.5L/min led=AMBER | SQLite pending=54
+09:59:27.067 | BDR-01 | FLUSH     | 2 rows seq 183-184 (ts 09:57:43..09:57:45, original timestamps) PUBACK in 248 ms, remaining=49
+09:59:27.641 | BDR-03 | READ      | seq=105 ph=7.13 turb=2.6NTU tds=230ppm T=18.8C flow=9.0L/min led=GREEN | SQLite pending=1
+09:59:27.989 | BDR-03 | PUB       | seq=105 ts=1794629667638 QoS1 PUBACK in 284 ms
+09:59:28.615 | BDR-02 | READ      | seq=216 ph=7.06 turb=61.1NTU tds=244ppm T=21.3C flow=10.6L/min led=AMBER | SQLite pending=55
+09:59:28.695 | BDR-01 | READ      | seq=234 ph=7.15 turb=36.0NTU tds=223ppm T=20.3C flow=14.0L/min led=GREEN | SQLite pending=50
+09:59:28.910 | BDR-02 | FLUSH     | 2 rows seq 162-163 (ts 09:57:40..09:57:42, original timestamps) PUBACK in 387 ms, remaining=53
+09:59:29.796 | BDR-01 | FLUSH     | 2 rows seq 185-186 (ts 09:57:47..09:57:49, original timestamps) PUBACK in 226 ms, remaining=48
+09:59:30.617 | BDR-02 | READ      | seq=217 ph=7.05 turb=60.7NTU tds=244ppm T=21.4C flow=10.4L/min led=AMBER | SQLite pending=54
+09:59:31.484 | BDR-02 | FLUSH     | 2 rows seq 164-165 (ts 09:57:44..09:57:46, original timestamps) PUBACK in 209 ms, remaining=52
+09:59:32.600 | BDR-01 | FLUSH     | 2 rows seq 187-188 (ts 09:57:51..09:57:53, original timestamps) PUBACK in 266 ms, remaining=46
+09:59:32.631 | BDR-02 | READ      | seq=218 ph=7.05 turb=59.2NTU tds=244ppm T=21.4C flow=10.4L/min led=AMBER | SQLite pending=53
+09:59:32.648 | BDR-03 | READ      | seq=106 ph=7.11 turb=2.8NTU tds=229ppm T=18.8C flow=8.9L/min led=GREEN | SQLite pending=1
+09:59:32.903 | BDR-03 | PUB       | seq=106 ts=1794629672645 QoS1 PUBACK in 193 ms
+09:59:33.711 | BDR-01 | READ      | seq=235 ph=7.17 turb=35.1NTU tds=222ppm T=20.3C flow=14.0L/min led=GREEN | SQLite pending=47
+09:59:34.234 | BDR-02 | FLUSH     | 2 rows seq 166-167 (ts 09:57:48..09:57:50, original timestamps) PUBACK in 200 ms, remaining=51
+09:59:34.637 | BDR-02 | READ      | seq=219 ph=7.06 turb=58.4NTU tds=242ppm T=21.4C flow=9.9L/min led=AMBER | SQLite pending=52
+09:59:35.384 | BDR-01 | FLUSH     | 2 rows seq 189-190 (ts 09:57:55..09:57:57, original timestamps) PUBACK in 311 ms, remaining=45
+09:59:36.646 | BDR-02 | READ      | seq=220 ph=7.06 turb=59.3NTU tds=240ppm T=21.4C flow=10.1L/min led=AMBER | SQLite pending=53
+09:59:37.001 | BDR-02 | FLUSH     | 2 rows seq 168-169 (ts 09:57:52..09:57:54, original timestamps) PUBACK in 228 ms, remaining=51
+09:59:37.652 | BDR-03 | READ      | seq=107 ph=7.13 turb=2.6NTU tds=229ppm T=18.8C flow=8.7L/min led=GREEN | SQLite pending=1
+09:59:37.923 | BDR-03 | PUB       | seq=107 ts=1794629677650 QoS1 PUBACK in 206 ms
+09:59:38.024 | BDR-01 | FLUSH     | 2 rows seq 191-192 (ts 09:57:59..09:58:01, original timestamps) PUBACK in 203 ms, remaining=43
+09:59:38.651 | BDR-02 | READ      | seq=221 ph=7.09 turb=57.3NTU tds=240ppm T=21.4C flow=10.5L/min led=AMBER | SQLite pending=52
+09:59:38.715 | BDR-01 | READ      | seq=236 ph=7.16 turb=35.2NTU tds=220ppm T=20.3C flow=13.8L/min led=GREEN | SQLite pending=44
+09:59:39.768 | BDR-02 | FLUSH     | 2 rows seq 170-171 (ts 09:57:56..09:57:58, original timestamps) PUBACK in 232 ms, remaining=50
+09:59:40.661 | BDR-02 | READ      | seq=222 ph=7.09 turb=58.0NTU tds=239ppm T=21.4C flow=10.6L/min led=AMBER | SQLite pending=51
+09:59:40.791 | BDR-01 | FLUSH     | 2 rows seq 193-194 (ts 09:58:03..09:58:05, original timestamps) PUBACK in 224 ms, remaining=42
+09:59:42.531 | BDR-02 | FLUSH     | 2 rows seq 172-173 (ts 09:58:00..09:58:02, original timestamps) PUBACK in 261 ms, remaining=49
+09:59:42.666 | BDR-02 | READ      | seq=223 ph=7.07 turb=53.9NTU tds=238ppm T=21.5C flow=10.2L/min led=AMBER | SQLite pending=50
+09:59:42.666 | BDR-03 | READ      | seq=108 ph=7.13 turb=2.7NTU tds=229ppm T=18.8C flow=8.7L/min led=GREEN | SQLite pending=1
+09:59:42.942 | BDR-03 | PUB       | seq=108 ts=1794629682665 QoS1 PUBACK in 209 ms
+09:59:43.556 | BDR-01 | FLUSH     | 2 rows seq 195-196 (ts 09:58:07..09:58:09, original timestamps) PUBACK in 236 ms, remaining=40
+09:59:43.726 | BDR-01 | READ      | seq=237 ph=7.16 turb=33.1NTU tds=221ppm T=20.3C flow=13.9L/min led=GREEN | SQLite pending=41
+09:59:44.666 | BDR-02 | READ      | seq=224 ph=7.06 turb=55.7NTU tds=238ppm T=21.5C flow=10.3L/min led=AMBER | SQLite pending=51
+09:59:45.260 | BDR-02 | FLUSH     | 2 rows seq 174-175 (ts 09:58:04..09:58:06, original timestamps) PUBACK in 225 ms, remaining=49
+09:59:46.405 | BDR-01 | FLUSH     | 2 rows seq 197-198 (ts 09:58:11..09:58:13, original timestamps) PUBACK in 324 ms, remaining=39
+09:59:46.669 | BDR-02 | READ      | seq=225 ph=7.06 turb=54.4NTU tds=237ppm T=21.5C flow=10.3L/min led=AMBER | SQLite pending=50
+09:59:46.682 | FLEET  | SCENARIO  | Extra: supply interruption at the holding-centre tubewell
+09:59:46.682 | FLEET  | SCENARIO  | supply interruption at BDR-03 for 90 s (real)
+09:59:47.676 | BDR-03 | READ      | seq=109 ph=7.14 turb=2.5NTU tds=229ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+09:59:47.961 | BDR-03 | PUB       | seq=109 ts=1794629687671 QoS1 PUBACK in 223 ms
+09:59:47.962 | BDR-02 | FLUSH     | 2 rows seq 176-177 (ts 09:58:08..09:58:10, original timestamps) PUBACK in 192 ms, remaining=48
+09:59:48.692 | BDR-02 | READ      | seq=226 ph=7.05 turb=54.7NTU tds=236ppm T=21.5C flow=10.4L/min led=AMBER | SQLite pending=49
+09:59:48.741 | BDR-01 | READ      | seq=238 ph=7.16 turb=32.9NTU tds=220ppm T=20.3C flow=13.7L/min led=GREEN | SQLite pending=40
+09:59:49.086 | BDR-01 | FLUSH     | 2 rows seq 199-200 (ts 09:58:15..09:58:17, original timestamps) PUBACK in 265 ms, remaining=38
+09:59:50.704 | BDR-02 | FLUSH     | 2 rows seq 178-179 (ts 09:58:12..09:58:14, original timestamps) PUBACK in 171 ms, remaining=47
+09:59:50.724 | BDR-02 | READ      | seq=227 ph=7.06 turb=52.3NTU tds=236ppm T=21.4C flow=10.4L/min led=AMBER | SQLite pending=48
+09:59:51.799 | BDR-01 | FLUSH     | 2 rows seq 201-202 (ts 09:58:19..09:58:21, original timestamps) PUBACK in 214 ms, remaining=36
+09:59:52.683 | BDR-03 | READ      | seq=110 ph=7.15 turb=2.4NTU tds=229ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+09:59:52.713 | BDR-02 | READ      | seq=228 ph=7.06 turb=52.0NTU tds=236ppm T=21.5C flow=10.6L/min led=AMBER | SQLite pending=49
+09:59:52.985 | BDR-03 | PUB       | seq=110 ts=1794629692681 QoS1 PUBACK in 238 ms
+09:59:53.492 | BDR-02 | FLUSH     | 2 rows seq 180-181 (ts 09:58:16..09:58:18, original timestamps) PUBACK in 208 ms, remaining=47
+09:59:53.752 | BDR-01 | READ      | seq=239 ph=7.15 turb=30.0NTU tds=220ppm T=20.3C flow=13.9L/min led=GREEN | SQLite pending=37
+09:59:54.510 | BDR-01 | FLUSH     | 2 rows seq 203-204 (ts 09:58:23..09:58:25, original timestamps) PUBACK in 190 ms, remaining=35
+09:59:54.717 | BDR-02 | READ      | seq=229 ph=7.07 turb=49.5NTU tds=235ppm T=21.5C flow=10.6L/min led=AMBER | SQLite pending=48
+09:59:56.256 | BDR-02 | FLUSH     | 2 rows seq 182-183 (ts 09:58:20..09:58:22, original timestamps) PUBACK in 221 ms, remaining=46
+09:59:56.730 | BDR-02 | READ      | seq=230 ph=7.06 turb=47.6NTU tds=235ppm T=21.5C flow=10.6L/min led=AMBER | SQLite pending=47
+09:59:57.380 | BDR-01 | FLUSH     | 2 rows seq 205-206 (ts 09:58:27..09:58:29, original timestamps) PUBACK in 297 ms, remaining=33
+09:59:57.695 | BDR-03 | READ      | seq=111 ph=7.14 turb=2.5NTU tds=230ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+09:59:57.994 | BDR-03 | PUB       | seq=111 ts=1794629697692 QoS1 PUBACK in 235 ms
+09:59:58.731 | BDR-02 | READ      | seq=231 ph=7.07 turb=47.9NTU tds=234ppm T=21.5C flow=10.6L/min led=AMBER | SQLite pending=48
+09:59:58.760 | BDR-01 | READ      | seq=240 ph=7.16 turb=28.4NTU tds=219ppm T=20.3C flow=13.9L/min led=GREEN | SQLite pending=34
+09:59:59.018 | BDR-02 | FLUSH     | 2 rows seq 184-185 (ts 09:58:24..09:58:26, original timestamps) PUBACK in 233 ms, remaining=46
+10:00:00.042 | BDR-01 | FLUSH     | 2 rows seq 207-208 (ts 09:58:31..09:58:33, original timestamps) PUBACK in 218 ms, remaining=32
+10:00:00.744 | BDR-02 | READ      | seq=232 ph=7.09 turb=47.8NTU tds=232ppm T=21.5C flow=10.6L/min led=AMBER | SQLite pending=47
+10:00:01.784 | BDR-02 | FLUSH     | 2 rows seq 186-187 (ts 09:58:28..09:58:30, original timestamps) PUBACK in 263 ms, remaining=45
+10:00:02.703 | BDR-03 | READ      | seq=112 ph=7.13 turb=2.3NTU tds=230ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:02.752 | BDR-02 | READ      | seq=233 ph=7.08 turb=45.1NTU tds=235ppm T=21.4C flow=10.4L/min led=AMBER | SQLite pending=46
+10:00:02.773 | BDR-01 | FLUSH     | 2 rows seq 209-210 (ts 09:58:35..09:58:37, original timestamps) PUBACK in 206 ms, remaining=30
+10:00:03.011 | BDR-03 | PUB       | seq=112 ts=1794629702702 QoS1 PUBACK in 255 ms
+10:00:03.767 | BDR-01 | READ      | seq=241 ph=7.17 turb=27.5NTU tds=218ppm T=20.3C flow=14.2L/min led=GREEN | SQLite pending=31
+10:00:04.546 | BDR-02 | FLUSH     | 2 rows seq 188-189 (ts 09:58:32..09:58:34, original timestamps) PUBACK in 261 ms, remaining=44
+10:00:04.762 | BDR-02 | READ      | seq=234 ph=7.08 turb=42.1NTU tds=234ppm T=21.5C flow=10.1L/min led=AMBER | SQLite pending=45
+10:00:05.572 | BDR-01 | FLUSH     | 2 rows seq 211-212 (ts 09:58:39..09:58:41, original timestamps) PUBACK in 251 ms, remaining=29
+10:00:06.775 | BDR-02 | READ      | seq=235 ph=7.08 turb=42.9NTU tds=235ppm T=21.5C flow=10.0L/min led=AMBER | SQLite pending=46
+10:00:07.209 | BDR-02 | FLUSH     | 2 rows seq 190-191 (ts 09:58:36..09:58:38, original timestamps) PUBACK in 187 ms, remaining=44
+10:00:07.719 | BDR-03 | READ      | seq=113 ph=7.13 turb=2.3NTU tds=232ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:08.093 | BDR-03 | PUB       | seq=113 ts=1794629707716 QoS1 PUBACK in 357 ms
+10:00:08.279 | BDR-01 | FLUSH     | 2 rows seq 213-214 (ts 09:58:43..09:58:45, original timestamps) PUBACK in 196 ms, remaining=27
+10:00:08.780 | BDR-02 | ALARM     | edge rule CLEAR: High Turbidity [WARNING] -> LED GREEN
+10:00:08.784 | BDR-01 | READ      | seq=242 ph=7.19 turb=26.4NTU tds=217ppm T=20.3C flow=13.8L/min led=GREEN | SQLite pending=28
+10:00:08.790 | BDR-02 | READ      | seq=236 ph=7.08 turb=39.9NTU tds=232ppm T=21.6C flow=10.1L/min led=GREEN | SQLite pending=45
+10:00:09.939 | BDR-02 | FLUSH     | 2 rows seq 192-193 (ts 09:58:40..09:58:42, original timestamps) PUBACK in 167 ms, remaining=43
+10:00:11.103 | BDR-01 | FLUSH     | 2 rows seq 215-216 (ts 09:58:47..09:58:49, original timestamps) PUBACK in 282 ms, remaining=26
+10:00:12.736 | BDR-02 | FLUSH     | 2 rows seq 194-195 (ts 09:58:44..09:58:46, original timestamps) PUBACK in 259 ms, remaining=41
+10:00:12.736 | BDR-03 | READ      | seq=114 ph=7.14 turb=2.2NTU tds=232ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:13.045 | BDR-03 | PUB       | seq=114 ts=1794629712732 QoS1 PUBACK in 246 ms
+10:00:13.785 | BDR-01 | READ      | seq=243 ph=7.20 turb=25.6NTU tds=215ppm T=20.4C flow=13.6L/min led=GREEN | SQLite pending=27
+10:00:13.785 | BDR-02 | READ      | seq=237 ph=7.08 turb=38.6NTU tds=230ppm T=21.6C flow=10.2L/min led=GREEN | SQLite pending=42
+10:00:13.862 | BDR-01 | FLUSH     | 2 rows seq 217-218 (ts 09:58:51..09:58:53, original timestamps) PUBACK in 292 ms, remaining=25
+10:00:15.502 | BDR-02 | FLUSH     | 2 rows seq 196-197 (ts 09:58:48..09:58:50, original timestamps) PUBACK in 221 ms, remaining=40
+10:00:16.525 | BDR-01 | FLUSH     | 2 rows seq 219-220 (ts 09:58:55..09:58:57, original timestamps) PUBACK in 204 ms, remaining=23
+10:00:17.741 | BDR-03 | READ      | seq=115 ph=7.12 turb=2.4NTU tds=232ppm T=18.7C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:18.032 | BDR-03 | PUB       | seq=115 ts=1794629717738 QoS1 PUBACK in 226 ms
+10:00:18.228 | BDR-02 | FLUSH     | 2 rows seq 198-199 (ts 09:58:52..09:58:54, original timestamps) PUBACK in 206 ms, remaining=38
+10:00:18.797 | BDR-02 | READ      | seq=238 ph=7.08 turb=38.1NTU tds=229ppm T=21.6C flow=10.3L/min led=GREEN | SQLite pending=39
+10:00:18.797 | BDR-01 | READ      | seq=244 ph=7.19 turb=26.4NTU tds=215ppm T=20.4C flow=13.8L/min led=GREEN | SQLite pending=24
+10:00:19.292 | BDR-01 | FLUSH     | 2 rows seq 221-222 (ts 09:58:59..09:59:01, original timestamps) PUBACK in 208 ms, remaining=22
+10:00:21.037 | BDR-02 | FLUSH     | 2 rows seq 200-201 (ts 09:58:56..09:58:58, original timestamps) PUBACK in 252 ms, remaining=37
+10:00:22.063 | BDR-01 | FLUSH     | 2 rows seq 223-224 (ts 09:59:03..09:59:05, original timestamps) PUBACK in 242 ms, remaining=20
+10:00:22.753 | BDR-03 | READ      | seq=116 ph=7.12 turb=2.4NTU tds=232ppm T=18.7C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:23.081 | BDR-03 | PUB       | seq=116 ts=1794629722750 QoS1 PUBACK in 265 ms
+10:00:23.797 | BDR-02 | FLUSH     | 2 rows seq 202-203 (ts 09:59:00..09:59:02, original timestamps) PUBACK in 275 ms, remaining=35
+10:00:23.806 | BDR-01 | READ      | seq=245 ph=7.19 turb=23.6NTU tds=212ppm T=20.4C flow=14.0L/min led=GREEN | SQLite pending=21
+10:00:23.808 | BDR-02 | READ      | seq=239 ph=7.09 turb=40.0NTU tds=229ppm T=21.6C flow=10.2L/min led=GREEN | SQLite pending=36
+10:00:24.750 | BDR-01 | FLUSH     | 2 rows seq 225-226 (ts 09:59:07..09:59:09, original timestamps) PUBACK in 182 ms, remaining=19
+10:00:26.562 | BDR-02 | FLUSH     | 2 rows seq 204-205 (ts 09:59:04..09:59:06, original timestamps) PUBACK in 291 ms, remaining=34
+10:00:27.586 | BDR-01 | FLUSH     | 2 rows seq 227-228 (ts 09:59:11..09:59:13, original timestamps) PUBACK in 266 ms, remaining=17
+10:00:27.760 | BDR-03 | READ      | seq=117 ph=7.13 turb=2.3NTU tds=230ppm T=18.7C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:28.100 | BDR-03 | PUB       | seq=117 ts=1794629727758 QoS1 PUBACK in 275 ms
+10:00:28.820 | BDR-01 | READ      | seq=246 ph=7.19 turb=23.2NTU tds=208ppm T=20.4C flow=14.0L/min led=GREEN | SQLite pending=18
+10:00:28.820 | BDR-02 | READ      | seq=240 ph=7.07 turb=38.0NTU tds=230ppm T=21.6C flow=10.5L/min led=GREEN | SQLite pending=35
+10:00:29.327 | BDR-02 | FLUSH     | 2 rows seq 206-207 (ts 09:59:08..09:59:10, original timestamps) PUBACK in 294 ms, remaining=33
+10:00:30.264 | BDR-01 | FLUSH     | 2 rows seq 229-230 (ts 09:59:15..09:59:17, original timestamps) PUBACK in 180 ms, remaining=16
+10:00:32.000 | BDR-02 | FLUSH     | 2 rows seq 208-209 (ts 09:59:12..09:59:14, original timestamps) PUBACK in 212 ms, remaining=31
+10:00:32.776 | BDR-03 | READ      | seq=118 ph=7.11 turb=2.4NTU tds=230ppm T=18.7C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:33.114 | BDR-01 | FLUSH     | 2 rows seq 231-232 (ts 09:59:19..09:59:21, original timestamps) PUBACK in 283 ms, remaining=14
+10:00:33.115 | BDR-03 | PUB       | seq=118 ts=1794629732772 QoS1 PUBACK in 276 ms
+10:00:33.829 | BDR-02 | READ      | seq=241 ph=7.09 turb=38.0NTU tds=228ppm T=21.6C flow=10.5L/min led=GREEN | SQLite pending=32
+10:00:33.829 | BDR-01 | READ      | seq=247 ph=7.21 turb=22.1NTU tds=207ppm T=20.4C flow=13.9L/min led=GREEN | SQLite pending=15
+10:00:34.753 | BDR-02 | FLUSH     | 2 rows seq 210-211 (ts 09:59:16..09:59:18, original timestamps) PUBACK in 218 ms, remaining=30
+10:00:35.779 | BDR-01 | FLUSH     | 2 rows seq 233-234 (ts 09:59:23..09:59:28, original timestamps) PUBACK in 211 ms, remaining=13
+10:00:37.625 | BDR-02 | FLUSH     | 2 rows seq 212-213 (ts 09:59:20..09:59:22, original timestamps) PUBACK in 355 ms, remaining=28
+10:00:37.774 | BDR-03 | READ      | seq=119 ph=7.13 turb=2.5NTU tds=230ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:38.030 | BDR-03 | PUB       | seq=119 ts=1794629737773 QoS1 PUBACK in 237 ms
+10:00:38.647 | BDR-01 | FLUSH     | 2 rows seq 235-236 (ts 09:59:33..09:59:38, original timestamps) PUBACK in 327 ms, remaining=11
+10:00:38.829 | BDR-02 | READ      | seq=242 ph=7.09 turb=36.5NTU tds=228ppm T=21.5C flow=10.6L/min led=GREEN | SQLite pending=29
+10:00:38.829 | BDR-01 | READ      | seq=248 ph=7.22 turb=21.9NTU tds=207ppm T=20.5C flow=13.9L/min led=GREEN | SQLite pending=12
+10:00:40.282 | BDR-02 | FLUSH     | 2 rows seq 214-215 (ts 09:59:24..09:59:26, original timestamps) PUBACK in 261 ms, remaining=27
+10:00:41.464 | BDR-01 | FLUSH     | 2 rows seq 237-238 (ts 09:59:43..09:59:48, original timestamps) PUBACK in 394 ms, remaining=10
+10:00:42.777 | BDR-03 | READ      | seq=120 ph=7.10 turb=2.4NTU tds=231ppm T=18.8C flow=0.0L/min led=GREEN | SQLite pending=1
+10:00:43.046 | BDR-02 | FLUSH     | 2 rows seq 216-217 (ts 09:59:28..09:59:30, original timestamps) PUBACK in 274 ms, remaining=25
+10:00:43.048 | BDR-03 | PUB       | seq=120 ts=1794629742776 QoS1 PUBACK in 204 ms
+10:00:43.837 | BDR-01 | READ      | seq=249 ph=7.22 turb=21.9NTU tds=206ppm T=20.4C flow=13.5L/min led=GREEN | SQLite pending=11
+10:00:43.838 | BDR-02 | READ      | seq=243 ph=7.10 turb=34.3NTU tds=229ppm T=21.5C flow=10.5L/min led=GREEN | SQLite pending=26
+10:00:44.071 | BDR-01 | FLUSH     | 2 rows seq 239-240 (ts 09:59:53..09:59:58, original timestamps) PUBACK in 249 ms, remaining=9
+10:00:45.709 | BDR-02 | FLUSH     | 2 rows seq 218-219 (ts 09:59:32..09:59:34, original timestamps) PUBACK in 178 ms, remaining=24
+10:00:46.839 | BDR-01 | FLUSH     | 2 rows seq 241-242 (ts 10:00:03..10:00:08, original timestamps) PUBACK in 266 ms, remaining=7
+10:00:47.784 | BDR-03 | ALARM     | edge rule CREATE: Supply Interruption [MAJOR] -> LED AMBER
+10:00:47.788 | BDR-03 | READ      | seq=121 ph=7.11 turb=2.4NTU tds=233ppm T=18.9C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:48.065 | BDR-03 | PUB       | seq=121 ts=1794629747785 QoS1 PUBACK in 214 ms
+10:00:48.485 | BDR-02 | FLUSH     | 2 rows seq 220-221 (ts 09:59:36..09:59:38, original timestamps) PUBACK in 204 ms, remaining=22
+10:00:48.850 | BDR-01 | READ      | seq=250 ph=7.23 turb=21.4NTU tds=206ppm T=20.4C flow=13.4L/min led=GREEN | SQLite pending=8
+10:00:48.850 | BDR-02 | READ      | seq=244 ph=7.11 turb=33.3NTU tds=227ppm T=21.6C flow=10.7L/min led=GREEN | SQLite pending=23
+10:00:49.603 | BDR-01 | FLUSH     | 2 rows seq 243-244 (ts 10:00:13..10:00:18, original timestamps) PUBACK in 283 ms, remaining=6
+10:00:49.794 | BDR-03 | READ      | seq=122 ph=7.12 turb=2.4NTU tds=232ppm T=18.9C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:50.217 | BDR-03 | PUB       | seq=122 ts=1794629749792 QoS1 PUBACK in 357 ms
+10:00:51.203 | BDR-02 | FLUSH     | 2 rows seq 222-223 (ts 09:59:40..09:59:42, original timestamps) PUBACK in 172 ms, remaining=21
+10:00:51.796 | BDR-03 | READ      | seq=123 ph=7.11 turb=2.3NTU tds=231ppm T=19.0C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:52.049 | BDR-03 | PUB       | seq=123 ts=1794629751793 QoS1 PUBACK in 189 ms
+10:00:52.240 | BDR-01 | FLUSH     | 2 rows seq 245-246 (ts 10:00:23..10:00:28, original timestamps) PUBACK in 172 ms, remaining=4
+10:00:53.798 | BDR-03 | READ      | seq=124 ph=7.10 turb=2.4NTU tds=233ppm T=19.0C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:53.861 | BDR-02 | READ      | seq=245 ph=7.11 turb=32.4NTU tds=225ppm T=21.7C flow=10.7L/min led=GREEN | SQLite pending=22
+10:00:53.864 | BDR-01 | READ      | seq=251 ph=7.21 turb=20.1NTU tds=206ppm T=20.5C flow=13.2L/min led=GREEN | SQLite pending=5
+10:00:54.015 | BDR-02 | FLUSH     | 2 rows seq 224-225 (ts 09:59:44..09:59:46, original timestamps) PUBACK in 231 ms, remaining=20
+10:00:54.072 | BDR-03 | PUB       | seq=124 ts=1794629753796 QoS1 PUBACK in 210 ms
+10:00:55.134 | BDR-01 | FLUSH     | 2 rows seq 247-248 (ts 10:00:33..10:00:38, original timestamps) PUBACK in 295 ms, remaining=3
+10:00:55.818 | BDR-03 | READ      | seq=125 ph=7.09 turb=2.4NTU tds=233ppm T=18.9C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:56.175 | BDR-03 | PUB       | seq=125 ts=1794629755813 QoS1 PUBACK in 295 ms
+10:00:56.770 | BDR-02 | FLUSH     | 2 rows seq 226-227 (ts 09:59:48..09:59:50, original timestamps) PUBACK in 235 ms, remaining=18
+10:00:57.793 | BDR-01 | FLUSH     | 2 rows seq 249-250 (ts 10:00:43..10:00:48, original timestamps) PUBACK in 224 ms, remaining=1
+10:00:57.830 | BDR-03 | READ      | seq=126 ph=7.09 turb=2.1NTU tds=233ppm T=18.9C flow=0.0L/min led=AMBER | SQLite pending=1
+10:00:58.102 | BDR-03 | PUB       | seq=126 ts=1794629757824 QoS1 PUBACK in 210 ms
+10:00:58.865 | BDR-01 | READ      | seq=252 ph=7.23 turb=19.3NTU tds=206ppm T=20.5C flow=13.1L/min led=GREEN | SQLite pending=2
+10:00:58.870 | BDR-02 | READ      | seq=246 ph=7.11 turb=29.6NTU tds=222ppm T=21.7C flow=10.8L/min led=GREEN | SQLite pending=19
+10:00:59.229 | BDR-01 | FLUSH     | 1 rows seq 251-251 (ts 10:00:53..10:00:53, original timestamps) PUBACK in 271 ms, remaining=1
+10:00:59.444 | BDR-02 | FLUSH     | 2 rows seq 228-229 (ts 09:59:52..09:59:54, original timestamps) PUBACK in 175 ms, remaining=17
+10:00:59.832 | BDR-03 | READ      | seq=127 ph=7.09 turb=2.6NTU tds=230ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:00.147 | BDR-03 | PUB       | seq=127 ts=1794629759829 QoS1 PUBACK in 267 ms
+10:01:00.620 | BDR-01 | FLUSH     | 1 rows seq 252-252 (ts 10:00:58..10:00:58, original timestamps) PUBACK in 352 ms, remaining=0
+10:01:00.622 | BDR-01 | DRAINED   | buffer empty: 158 rows replayed in 213.86 s (0.7 msg/s)
+10:01:00.623 | BDR-01 | STATE     | REPLAYING -> ONLINE  (backfill complete)
+10:01:01.838 | BDR-03 | READ      | seq=128 ph=7.09 turb=2.7NTU tds=230ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:02.100 | BDR-03 | PUB       | seq=128 ts=1794629761835 QoS1 PUBACK in 199 ms
+10:01:02.271 | BDR-02 | FLUSH     | 2 rows seq 230-231 (ts 09:59:56..09:59:58, original timestamps) PUBACK in 254 ms, remaining=15
+10:01:03.844 | BDR-03 | READ      | seq=129 ph=7.09 turb=2.4NTU tds=232ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:03.875 | BDR-02 | READ      | seq=247 ph=7.11 turb=28.2NTU tds=220ppm T=21.7C flow=10.8L/min led=GREEN | SQLite pending=16
+10:01:03.876 | BDR-01 | READ      | seq=253 ph=7.24 turb=19.6NTU tds=206ppm T=20.5C flow=13.0L/min led=GREEN | SQLite pending=1
+10:01:04.090 | BDR-03 | PUB       | seq=129 ts=1794629763841 QoS1 PUBACK in 180 ms
+10:01:04.156 | BDR-01 | PUB       | seq=253 ts=1794629763873 QoS1 PUBACK in 217 ms
+10:01:05.062 | BDR-02 | FLUSH     | 2 rows seq 232-233 (ts 10:00:00..10:00:02, original timestamps) PUBACK in 290 ms, remaining=14
+10:01:05.855 | BDR-03 | READ      | seq=130 ph=7.10 turb=2.3NTU tds=230ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:06.089 | BDR-03 | PUB       | seq=130 ts=1794629765852 QoS1 PUBACK in 171 ms
+10:01:07.692 | BDR-02 | FLUSH     | 2 rows seq 234-235 (ts 10:00:04..10:00:06, original timestamps) PUBACK in 170 ms, remaining=12
+10:01:07.863 | BDR-03 | READ      | seq=131 ph=7.09 turb=2.4NTU tds=233ppm T=18.9C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:08.098 | BDR-03 | PUB       | seq=131 ts=1794629767861 QoS1 PUBACK in 169 ms
+10:01:08.889 | BDR-02 | READ      | seq=248 ph=7.12 turb=28.8NTU tds=221ppm T=21.7C flow=10.8L/min led=GREEN | SQLite pending=13
+10:01:08.890 | BDR-01 | READ      | seq=254 ph=7.23 turb=19.2NTU tds=204ppm T=20.6C flow=13.0L/min led=GREEN | SQLite pending=1
+10:01:09.129 | BDR-01 | PUB       | seq=254 ts=1794629768887 QoS1 PUBACK in 175 ms
+10:01:09.868 | BDR-03 | READ      | seq=132 ph=7.09 turb=2.5NTU tds=232ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:10.101 | BDR-03 | PUB       | seq=132 ts=1794629769865 QoS1 PUBACK in 167 ms
+10:01:10.816 | BDR-02 | FLUSH     | 2 rows seq 236-237 (ts 10:00:08..10:00:13, original timestamps) PUBACK in 588 ms, remaining=11
+10:01:11.876 | BDR-03 | READ      | seq=133 ph=7.07 turb=2.4NTU tds=233ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:12.105 | BDR-03 | PUB       | seq=133 ts=1794629771873 QoS1 PUBACK in 166 ms
+10:01:13.199 | BDR-02 | FLUSH     | 2 rows seq 238-239 (ts 10:00:18..10:00:23, original timestamps) PUBACK in 166 ms, remaining=9
+10:01:13.887 | BDR-03 | READ      | seq=134 ph=7.09 turb=2.3NTU tds=234ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:13.902 | BDR-02 | READ      | seq=249 ph=7.12 turb=29.7NTU tds=221ppm T=21.7C flow=10.5L/min led=GREEN | SQLite pending=10
+10:01:13.902 | BDR-01 | READ      | seq=255 ph=7.24 turb=18.1NTU tds=203ppm T=20.5C flow=12.9L/min led=GREEN | SQLite pending=1
+10:01:14.189 | BDR-01 | PUB       | seq=255 ts=1794629773901 QoS1 PUBACK in 223 ms
+10:01:14.190 | BDR-03 | PUB       | seq=134 ts=1794629773885 QoS1 PUBACK in 237 ms
+10:01:15.890 | BDR-03 | READ      | seq=135 ph=7.08 turb=2.3NTU tds=232ppm T=18.8C flow=0.0L/min led=AMBER | SQLite pending=1
+10:01:15.934 | BDR-02 | FLUSH     | 2 rows seq 240-241 (ts 10:00:28..10:00:33, original timestamps) PUBACK in 187 ms, remaining=8
+10:01:16.121 | BDR-03 | PUB       | seq=135 ts=1794629775889 QoS1 PUBACK in 199 ms
+10:01:17.892 | BDR-03 | ALARM     | edge rule CLEAR: Supply Interruption [MAJOR] -> LED GREEN
+10:01:17.896 | BDR-03 | READ      | seq=136 ph=7.08 turb=23.8NTU tds=231ppm T=18.8C flow=8.6L/min led=GREEN | SQLite pending=1
+10:01:18.078 | BDR-03 | PUB       | seq=136 ts=1794629777893 QoS1 PUBACK in 167 ms
+10:01:18.691 | BDR-02 | FLUSH     | 2 rows seq 242-243 (ts 10:00:38..10:00:43, original timestamps) PUBACK in 171 ms, remaining=6
+10:01:18.910 | BDR-02 | READ      | seq=250 ph=7.12 turb=28.1NTU tds=221ppm T=21.6C flow=10.8L/min led=GREEN | SQLite pending=7
+10:01:18.911 | BDR-01 | READ      | seq=256 ph=7.24 turb=17.4NTU tds=202ppm T=20.5C flow=13.2L/min led=GREEN | SQLite pending=1
+10:01:19.149 | BDR-01 | PUB       | seq=256 ts=1794629778909 QoS1 PUBACK in 177 ms
+10:01:21.556 | BDR-02 | FLUSH     | 2 rows seq 244-245 (ts 10:00:48..10:00:53, original timestamps) PUBACK in 271 ms, remaining=5
+10:01:22.897 | BDR-03 | READ      | seq=137 ph=7.08 turb=18.3NTU tds=231ppm T=18.8C flow=8.5L/min led=GREEN | SQLite pending=1
+10:01:23.192 | BDR-03 | PUB       | seq=137 ts=1794629782894 QoS1 PUBACK in 232 ms
+10:01:23.910 | BDR-02 | READ      | seq=251 ph=7.14 turb=29.3NTU tds=220ppm T=21.6C flow=10.6L/min led=GREEN | SQLite pending=6
+10:01:23.910 | BDR-01 | READ      | seq=257 ph=7.22 turb=17.6NTU tds=202ppm T=20.6C flow=13.5L/min led=GREEN | SQLite pending=1
+10:01:24.214 | BDR-02 | FLUSH     | 2 rows seq 246-247 (ts 10:00:58..10:01:03, original timestamps) PUBACK in 184 ms, remaining=4
+10:01:24.214 | BDR-01 | PUB       | seq=257 ts=1794629783907 QoS1 PUBACK in 243 ms
+10:01:26.974 | BDR-02 | FLUSH     | 2 rows seq 248-249 (ts 10:01:08..10:01:13, original timestamps) PUBACK in 203 ms, remaining=2
+10:01:27.913 | BDR-03 | READ      | seq=138 ph=7.09 turb=14.6NTU tds=232ppm T=18.8C flow=8.4L/min led=GREEN | SQLite pending=1
+10:01:28.205 | BDR-03 | PUB       | seq=138 ts=1794629787910 QoS1 PUBACK in 229 ms
+10:01:28.922 | BDR-01 | READ      | seq=258 ph=7.23 turb=17.1NTU tds=201ppm T=20.5C flow=13.5L/min led=GREEN | SQLite pending=1
+10:01:28.922 | BDR-02 | READ      | seq=252 ph=7.14 turb=27.3NTU tds=217ppm T=21.7C flow=10.5L/min led=GREEN | SQLite pending=3
+10:01:29.334 | BDR-01 | PUB       | seq=258 ts=1794629788918 QoS1 PUBACK in 348 ms
+10:01:29.741 | BDR-02 | FLUSH     | 2 rows seq 250-251 (ts 10:01:18..10:01:23, original timestamps) PUBACK in 222 ms, remaining=1
+10:01:31.071 | BDR-02 | FLUSH     | 1 rows seq 252-252 (ts 10:01:28..10:01:28, original timestamps) PUBACK in 177 ms, remaining=0
+10:01:31.072 | BDR-02 | DRAINED   | buffer empty: 177 rows replayed in 239.86 s (0.7 msg/s)
+10:01:31.073 | BDR-02 | STATE     | REPLAYING -> ONLINE  (backfill complete)
+10:01:32.929 | BDR-03 | READ      | seq=139 ph=7.08 turb=11.2NTU tds=232ppm T=18.8C flow=8.7L/min led=GREEN | SQLite pending=1
+10:01:33.224 | BDR-03 | PUB       | seq=139 ts=1794629792926 QoS1 PUBACK in 229 ms
+10:01:33.929 | BDR-01 | READ      | seq=259 ph=7.24 turb=16.2NTU tds=199ppm T=20.5C flow=13.7L/min led=GREEN | SQLite pending=1
+10:01:33.930 | BDR-02 | READ      | seq=253 ph=7.14 turb=27.1NTU tds=218ppm T=21.7C flow=10.3L/min led=GREEN | SQLite pending=1
+10:01:34.170 | BDR-02 | PUB       | seq=253 ts=1794629793927 QoS1 PUBACK in 176 ms
+10:01:34.179 | BDR-01 | PUB       | seq=259 ts=1794629793926 QoS1 PUBACK in 184 ms
+10:01:37.930 | BDR-03 | READ      | seq=140 ph=7.10 turb=8.3NTU tds=232ppm T=18.9C flow=8.9L/min led=GREEN | SQLite pending=1
+10:01:38.256 | BDR-03 | PUB       | seq=140 ts=1794629797929 QoS1 PUBACK in 260 ms
+10:01:38.937 | BDR-01 | READ      | seq=260 ph=7.23 turb=15.8NTU tds=199ppm T=20.5C flow=13.5L/min led=GREEN | SQLite pending=1
+10:01:38.937 | BDR-02 | READ      | seq=254 ph=7.14 turb=27.7NTU tds=218ppm T=21.7C flow=10.2L/min led=GREEN | SQLite pending=1
+10:01:39.172 | BDR-02 | PUB       | seq=254 ts=1794629798934 QoS1 PUBACK in 173 ms
+10:01:39.182 | BDR-01 | PUB       | seq=260 ts=1794629798934 QoS1 PUBACK in 183 ms
+10:01:42.944 | BDR-03 | READ      | seq=141 ph=7.10 turb=6.4NTU tds=231ppm T=18.8C flow=8.8L/min led=GREEN | SQLite pending=1
+10:01:43.296 | BDR-03 | PUB       | seq=141 ts=1794629802942 QoS1 PUBACK in 288 ms
+10:01:43.938 | BDR-02 | READ      | seq=255 ph=7.12 turb=25.8NTU tds=219ppm T=21.6C flow=10.6L/min led=GREEN | SQLite pending=1
+10:01:43.939 | BDR-01 | READ      | seq=261 ph=7.23 turb=15.6NTU tds=201ppm T=20.5C flow=13.3L/min led=GREEN | SQLite pending=1
+10:01:44.284 | BDR-01 | PUB       | seq=261 ts=1794629803936 QoS1 PUBACK in 282 ms
+10:01:44.284 | BDR-02 | PUB       | seq=255 ts=1794629803936 QoS1 PUBACK in 283 ms
+10:01:47.947 | BDR-03 | READ      | seq=142 ph=7.10 turb=5.1NTU tds=231ppm T=18.8C flow=8.7L/min led=GREEN | SQLite pending=1
+10:01:48.276 | BDR-03 | PUB       | seq=142 ts=1794629807946 QoS1 PUBACK in 262 ms
+10:01:48.952 | BDR-02 | READ      | seq=256 ph=7.13 turb=22.9NTU tds=216ppm T=21.7C flow=10.6L/min led=GREEN | SQLite pending=1
+10:01:48.952 | BDR-01 | READ      | seq=262 ph=7.25 turb=15.2NTU tds=199ppm T=20.6C flow=13.5L/min led=GREEN | SQLite pending=1
+10:01:49.302 | BDR-01 | PUB       | seq=262 ts=1794629808949 QoS1 PUBACK in 284 ms
+10:01:49.302 | BDR-02 | PUB       | seq=256 ts=1794629808949 QoS1 PUBACK in 283 ms
+10:01:52.966 | BDR-03 | READ      | seq=143 ph=7.11 turb=4.3NTU tds=230ppm T=18.9C flow=8.5L/min led=GREEN | SQLite pending=1
+10:01:53.414 | BDR-03 | PUB       | seq=143 ts=1794629812958 QoS1 PUBACK in 387 ms
+10:01:53.968 | BDR-01 | READ      | seq=263 ph=7.26 turb=14.2NTU tds=198ppm T=20.6C flow=13.6L/min led=GREEN | SQLite pending=1
+10:01:53.969 | BDR-02 | READ      | seq=257 ph=7.14 turb=22.7NTU tds=217ppm T=21.7C flow=10.6L/min led=GREEN | SQLite pending=1
+10:01:54.244 | BDR-02 | PUB       | seq=257 ts=1794629813963 QoS1 PUBACK in 214 ms
+10:01:54.244 | BDR-01 | PUB       | seq=263 ts=1794629813964 QoS1 PUBACK in 214 ms
+10:01:57.980 | BDR-03 | READ      | seq=144 ph=7.11 turb=3.9NTU tds=229ppm T=18.9C flow=8.5L/min led=GREEN | SQLite pending=1
+10:01:58.233 | BDR-03 | PUB       | seq=144 ts=1794629817972 QoS1 PUBACK in 195 ms
+10:01:58.974 | BDR-01 | READ      | seq=264 ph=7.27 turb=14.2NTU tds=196ppm T=20.7C flow=13.6L/min led=GREEN | SQLite pending=1
+10:01:58.974 | BDR-02 | READ      | seq=258 ph=7.16 turb=23.1NTU tds=217ppm T=21.7C flow=10.6L/min led=GREEN | SQLite pending=1
+10:01:59.233 | BDR-02 | PUB       | seq=258 ts=1794629818972 QoS1 PUBACK in 195 ms
+10:01:59.233 | BDR-01 | PUB       | seq=264 ts=1794629818971 QoS1 PUBACK in 196 ms
+10:02:02.992 | BDR-03 | READ      | seq=145 ph=7.10 turb=3.8NTU tds=229ppm T=18.8C flow=8.6L/min led=GREEN | SQLite pending=1
+10:02:03.250 | BDR-03 | PUB       | seq=145 ts=1794629822984 QoS1 PUBACK in 168 ms
+10:02:03.977 | BDR-02 | READ      | seq=259 ph=7.16 turb=21.3NTU tds=213ppm T=21.7C flow=10.8L/min led=GREEN | SQLite pending=1
+10:02:03.977 | BDR-01 | READ      | seq=265 ph=7.26 turb=13.4NTU tds=193ppm T=20.7C flow=13.6L/min led=GREEN | SQLite pending=1
+10:02:04.273 | BDR-02 | PUB       | seq=259 ts=1794629823974 QoS1 PUBACK in 232 ms
+10:02:04.274 | BDR-01 | PUB       | seq=265 ts=1794629823975 QoS1 PUBACK in 231 ms
+10:02:07.998 | BDR-03 | READ      | seq=146 ph=7.08 turb=3.6NTU tds=229ppm T=18.9C flow=8.7L/min led=GREEN | SQLite pending=1
+10:02:08.374 | BDR-03 | PUB       | seq=146 ts=1794629827991 QoS1 PUBACK in 315 ms
+10:02:08.978 | BDR-02 | READ      | seq=260 ph=7.16 turb=21.2NTU tds=213ppm T=21.8C flow=10.6L/min led=GREEN | SQLite pending=1
+10:02:08.979 | BDR-01 | READ      | seq=266 ph=7.26 turb=13.1NTU tds=195ppm T=20.6C flow=13.6L/min led=GREEN | SQLite pending=1
+10:02:09.287 | BDR-02 | PUB       | seq=260 ts=1794629828976 QoS1 PUBACK in 244 ms
+10:02:09.287 | BDR-01 | PUB       | seq=266 ts=1794629828976 QoS1 PUBACK in 244 ms
+10:02:13.012 | BDR-03 | READ      | seq=147 ph=7.09 turb=3.0NTU tds=229ppm T=18.9C flow=9.0L/min led=GREEN | SQLite pending=1
+10:02:13.311 | BDR-03 | PUB       | seq=147 ts=1794629833005 QoS1 PUBACK in 271 ms
+10:02:13.996 | BDR-01 | READ      | seq=267 ph=7.28 turb=12.8NTU tds=193ppm T=20.7C flow=13.7L/min led=GREEN | SQLite pending=1
+10:02:13.997 | BDR-02 | READ      | seq=261 ph=7.16 turb=20.2NTU tds=212ppm T=21.8C flow=10.5L/min led=GREEN | SQLite pending=1
+10:02:14.284 | BDR-02 | PUB       | seq=261 ts=1794629833993 QoS1 PUBACK in 226 ms
+10:02:14.285 | BDR-01 | PUB       | seq=267 ts=1794629833993 QoS1 PUBACK in 227 ms
+10:02:18.013 | BDR-03 | READ      | seq=148 ph=7.09 turb=2.9NTU tds=230ppm T=19.0C flow=9.0L/min led=GREEN | SQLite pending=1
+10:02:18.278 | BDR-03 | PUB       | seq=148 ts=1794629838010 QoS1 PUBACK in 251 ms
+10:02:19.002 | BDR-02 | READ      | seq=262 ph=7.16 turb=18.9NTU tds=213ppm T=21.8C flow=10.4L/min led=GREEN | SQLite pending=1
+10:02:19.003 | BDR-01 | READ      | seq=268 ph=7.28 turb=11.8NTU tds=194ppm T=20.6C flow=13.7L/min led=GREEN | SQLite pending=1
+10:02:19.303 | BDR-02 | PUB       | seq=262 ts=1794629839000 QoS1 PUBACK in 238 ms
+10:02:19.303 | BDR-01 | PUB       | seq=268 ts=1794629839000 QoS1 PUBACK in 237 ms
+10:02:23.017 | BDR-03 | READ      | seq=149 ph=7.09 turb=2.6NTU tds=230ppm T=19.0C flow=9.2L/min led=GREEN | SQLite pending=1
+10:02:23.296 | BDR-03 | PUB       | seq=149 ts=1794629843014 QoS1 PUBACK in 212 ms
+10:02:24.011 | BDR-01 | READ      | seq=269 ph=7.29 turb=12.4NTU tds=195ppm T=20.7C flow=13.6L/min led=GREEN | SQLite pending=1
+10:02:24.012 | BDR-02 | READ      | seq=263 ph=7.16 turb=19.1NTU tds=215ppm T=21.8C flow=10.8L/min led=GREEN | SQLite pending=1
+10:02:24.319 | BDR-02 | PUB       | seq=263 ts=1794629844009 QoS1 PUBACK in 244 ms
+10:02:24.319 | BDR-01 | PUB       | seq=269 ts=1794629844009 QoS1 PUBACK in 245 ms
+10:02:26.685 | FLEET  | SCENARIO  | contamination event at BDR-03: peak 140 NTU (ingress fraction 0.092), rise 8 min, washout tau 15 min [sim time]
+10:02:28.030 | BDR-03 | READ      | seq=150 ph=7.08 turb=3.1NTU tds=230ppm T=19.0C flow=10.0L/min led=GREEN | SQLite pending=1
+10:02:28.313 | BDR-03 | PUB       | seq=150 ts=1794629848029 QoS1 PUBACK in 218 ms
+10:02:29.023 | BDR-01 | READ      | seq=270 ph=7.28 turb=12.0NTU tds=194ppm T=20.7C flow=13.6L/min led=GREEN | SQLite pending=1
+10:02:29.023 | BDR-02 | READ      | seq=264 ph=7.16 turb=19.6NTU tds=214ppm T=21.8C flow=10.7L/min led=GREEN | SQLite pending=1
+10:02:29.341 | BDR-02 | PUB       | seq=264 ts=1794629849020 QoS1 PUBACK in 254 ms
+10:02:29.341 | BDR-01 | PUB       | seq=270 ts=1794629849020 QoS1 PUBACK in 301 ms
+10:02:33.051 | BDR-03 | READ      | seq=151 ph=7.08 turb=11.8NTU tds=234ppm T=19.0C flow=8.1L/min led=GREEN | SQLite pending=1
+10:02:33.638 | BDR-03 | PUB       | seq=151 ts=1794629853042 QoS1 PUBACK in 245 ms
+10:02:34.036 | BDR-01 | READ      | seq=271 ph=7.27 turb=12.0NTU tds=193ppm T=20.7C flow=13.4L/min led=GREEN | SQLite pending=1
+10:02:34.036 | BDR-02 | READ      | seq=265 ph=7.16 turb=17.9NTU tds=213ppm T=21.8C flow=10.5L/min led=GREEN | SQLite pending=1
+10:02:34.354 | BDR-01 | PUB       | seq=271 ts=1794629854033 QoS1 PUBACK in 254 ms
+10:02:34.354 | BDR-02 | PUB       | seq=265 ts=1794629854033 QoS1 PUBACK in 254 ms
+10:02:38.062 | BDR-03 | READ      | seq=152 ph=7.06 turb=29.2NTU tds=243ppm T=19.0C flow=7.3L/min led=GREEN | SQLite pending=1
+10:02:38.236 | FLEET  | STOP      | Ctrl+C received
+10:02:38.316 | BDR-03 | PUB       | seq=152 ts=1794629858056 QoS1 PUBACK in 197 ms
+10:02:39.237 | FLEET  | STATUS    | node   state        generated  pending total rows  alarms
+10:02:39.237 | FLEET  | STATUS    | BDR-01 ONLINE             271        0        271  -
+10:02:39.237 | FLEET  | STATUS    | BDR-02 ONLINE             265        0        265  -
+10:02:39.237 | FLEET  | STATUS    | BDR-03 ONLINE             152        0        152  -
+10:02:39.237 | BDR-01 | NET       | link lost (Normal disconnection)
+10:02:39.238 | BDR-02 | NET       | link lost (Normal disconnection)
+10:02:39.240 | BDR-03 | NET       | link lost (Normal disconnection)
+10:02:39.241 | FLEET  | STOP      | log saved to D:\college\iims\sem10\IoT\ga2\GroupNo_Assessment-03_Implementation\GroupNo_Assessment-03_Implementation\logs\run_20261114_095046.log

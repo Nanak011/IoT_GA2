@@ -1,0 +1,342 @@
+{
+  "source": "thingsboard",
+  "nodes": [
+    "BDR-01",
+    "BDR-02",
+    "BDR-03"
+  ],
+  "latency_server_ms": {
+    "n": 1756,
+    "mean": 2922.4367881548974,
+    "median": 2919.0,
+    "p95": 2959.25,
+    "max": 4026.0,
+    "min": 2852.0
+  },
+  "latency_edge_ack_ms": {
+    "n": 1756,
+    "mean": 318.06776765375855,
+    "median": 261.0,
+    "p95": 481.0,
+    "max": 8423,
+    "min": 180
+  },
+  "latency_basis": "edge PUBACK round trip (edge clock 2.79 s behind server, corrected)",
+  "latency_ms": {
+    "n": 1756,
+    "mean": 318.06776765375855,
+    "median": 261.0,
+    "p95": 481.0,
+    "max": 8423,
+    "min": 180
+  },
+  "generated": 2127,
+  "synced": 2127,
+  "evicted_or_purged": 0,
+  "delivery_ratio_pct": 100.0,
+  "server_rows": 2127,
+  "data_loss_rows": 0,
+  "data_loss_pct": 0.0,
+  "alarm_delay_ms": {
+    "n": 16,
+    "mean": 222.25,
+    "median": 162.5,
+    "p95": 433.75,
+    "max": 1148.5,
+    "min": 108.5
+  },
+  "alarm_events": [
+    {
+      "node": "BDR-01",
+      "type": "pH Out of Range",
+      "severity": "CRITICAL",
+      "breach_ts": 1794632309558,
+      "created": 1794632312522,
+      "delay_ms": 2964,
+      "delay_corrected_ms": 175.5
+    },
+    {
+      "node": "BDR-01",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794633302286,
+      "created": 1794633305231,
+      "delay_ms": 2945,
+      "delay_corrected_ms": 156.5
+    },
+    {
+      "node": "BDR-01",
+      "type": "Gross Contamination",
+      "severity": "CRITICAL",
+      "breach_ts": 1794632287466,
+      "created": 1794632290363,
+      "delay_ms": 2897,
+      "delay_corrected_ms": 108.5
+    },
+    {
+      "node": "BDR-01",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794632277424,
+      "created": 1794632280385,
+      "delay_ms": 2961,
+      "delay_corrected_ms": 172.5
+    },
+    {
+      "node": "BDR-01",
+      "type": "High TDS",
+      "severity": "CRITICAL",
+      "breach_ts": 1794632311567,
+      "created": 1794632314493,
+      "delay_ms": 2926,
+      "delay_corrected_ms": 137.5
+    },
+    {
+      "node": "BDR-01",
+      "type": "Gross Contamination",
+      "severity": "CRITICAL",
+      "breach_ts": 1794633310331,
+      "created": 1794633313277,
+      "delay_ms": 2946,
+      "delay_corrected_ms": 157.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794632342545,
+      "created": 1794632345485,
+      "delay_ms": 2940,
+      "delay_corrected_ms": 151.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "Gross Contamination",
+      "severity": "CRITICAL",
+      "breach_ts": 1794633390455,
+      "created": 1794633393419,
+      "delay_ms": 2964,
+      "delay_corrected_ms": 175.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "Gross Contamination",
+      "severity": "CRITICAL",
+      "breach_ts": 1794632360629,
+      "created": 1794632363580,
+      "delay_ms": 2951,
+      "delay_corrected_ms": 162.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794633368329,
+      "created": 1794633371274,
+      "delay_ms": 2945,
+      "delay_corrected_ms": 156.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "Gross Contamination",
+      "severity": "CRITICAL",
+      "breach_ts": 1794633785782,
+      "created": 1794633788736,
+      "delay_ms": 2954,
+      "delay_corrected_ms": 165.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "pH Out of Range",
+      "severity": "CRITICAL",
+      "breach_ts": 1794633803855,
+      "created": 1794633806839,
+      "delay_ms": 2984,
+      "delay_corrected_ms": 195.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "High TDS",
+      "severity": "CRITICAL",
+      "breach_ts": 1794633805857,
+      "created": 1794633808815,
+      "delay_ms": 2958,
+      "delay_corrected_ms": 169.5
+    },
+    {
+      "node": "BDR-02",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794633773750,
+      "created": 1794633776699,
+      "delay_ms": 2949,
+      "delay_corrected_ms": 160.5
+    },
+    {
+      "node": "BDR-03",
+      "type": "High Turbidity",
+      "severity": "WARNING",
+      "breach_ts": 1794634324702,
+      "created": 1794634327653,
+      "delay_ms": 2951,
+      "delay_corrected_ms": 162.5
+    },
+    {
+      "node": "BDR-03",
+      "type": "High TDS",
+      "severity": "CRITICAL",
+      "breach_ts": 1794632904599,
+      "created": 1794632908536,
+      "delay_ms": 3937,
+      "delay_corrected_ms": 1148.5
+    }
+  ],
+  "alarm_total": 30,
+  "flush_sessions": [
+    {
+      "node": "BDR-01",
+      "rows": 77,
+      "dur_s": 102.47,
+      "rate": 0.7514394456914218
+    },
+    {
+      "node": "BDR-01",
+      "rows": 36,
+      "dur_s": 45.991,
+      "rate": 0.7827618447087473
+    },
+    {
+      "node": "BDR-02",
+      "rows": 102,
+      "dur_s": 136.938,
+      "rate": 0.7448626385663586
+    },
+    {
+      "node": "BDR-02",
+      "rows": 3,
+      "dur_s": 0.669,
+      "rate": 4.484304932735426
+    },
+    {
+      "node": "BDR-02",
+      "rows": 49,
+      "dur_s": 63.851,
+      "rate": 0.767411630201563
+    },
+    {
+      "node": "BDR-03",
+      "rows": 63,
+      "dur_s": 83.172,
+      "rate": 0.7574664550569904
+    },
+    {
+      "node": "BDR-03",
+      "rows": 35,
+      "dur_s": 44.617,
+      "rate": 0.7844543559629737
+    }
+  ],
+  "flush_rate": {
+    "n": 6,
+    "mean": 0.7647327283646758,
+    "median": 0.7624390426292766,
+    "p95": 0.7840312281494172,
+    "max": 0.7844543559629737,
+    "min": 0.7448626385663586
+  },
+  "recovery": [
+    {
+      "node": "BDR-01",
+      "depth": 77,
+      "reconnect_s": 8.17,
+      "drain_s": 102.47,
+      "total_s": 111.083
+    },
+    {
+      "node": "BDR-01",
+      "depth": 36,
+      "reconnect_s": 10.782,
+      "drain_s": 45.991,
+      "total_s": 57.164
+    },
+    {
+      "node": "BDR-02",
+      "depth": 102,
+      "reconnect_s": 5.903,
+      "drain_s": 136.938,
+      "total_s": 143.424
+    },
+    {
+      "node": "BDR-02",
+      "depth": 49,
+      "reconnect_s": 2.973,
+      "drain_s": 63.851,
+      "total_s": 67.311
+    },
+    {
+      "node": "BDR-03",
+      "depth": 63,
+      "reconnect_s": 13.363,
+      "drain_s": 83.172,
+      "total_s": 97.03
+    },
+    {
+      "node": "BDR-03",
+      "depth": 35,
+      "reconnect_s": 11.924,
+      "drain_s": 44.617,
+      "total_s": 56.948
+    }
+  ],
+  "recovery_total_s": {
+    "n": 6,
+    "mean": 88.82666666666667,
+    "median": 82.1705,
+    "p95": 135.33875,
+    "max": 143.424,
+    "min": 56.948
+  },
+  "recovery_depth": {
+    "n": 6,
+    "mean": 60.333333333333336,
+    "median": 56.0,
+    "p95": 95.75,
+    "max": 102,
+    "min": 35
+  },
+  "recovery_drain_s": {
+    "n": 6,
+    "mean": 79.5065,
+    "median": 73.5115,
+    "p95": 128.321,
+    "max": 136.938,
+    "min": 44.617
+  },
+  "recovery_reconnect_s": {
+    "n": 6,
+    "mean": 8.8525,
+    "median": 9.475999999999999,
+    "p95": 13.00325,
+    "max": 13.363,
+    "min": 2.973
+  },
+  "clock_offset_ms": 2788.5,
+  "latency_server_raw_ms": {
+    "n": 1756,
+    "mean": 2922.4367881548974,
+    "median": 2919.0,
+    "p95": 2959.25,
+    "max": 4026.0,
+    "min": 2852.0
+  },
+  "alarm_delay_raw_ms": {
+    "n": 16,
+    "mean": 3010.75,
+    "median": 2951.0,
+    "p95": 3222.25,
+    "max": 3937,
+    "min": 2897
+  },
+  "hysteresis_alarms_with": 9,
+  "hysteresis_alarms_without": 123
+}

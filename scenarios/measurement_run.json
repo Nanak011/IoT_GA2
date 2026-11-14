@@ -1,0 +1,15 @@
+{
+  "name": "measurement-run-40min",
+  "description": "Run used for the manuscript metrics: >=200 messages, >=10 alarm events, two outages. Run with --duration 2400.",
+  "events": [
+    {"at_s": 60,   "action": "contamination", "node": "BDR-01", "peak_ntu": 650, "rise_min": 10, "hold_min": 5, "washout_tau_min": 25},
+    {"at_s": 420,  "action": "outage", "duration_s": 180},
+    {"at_s": 660,  "action": "contamination", "node": "BDR-03", "peak_ntu": 700, "rise_min": 10, "hold_min": 5, "washout_tau_min": 20},
+    {"at_s": 1080, "action": "contamination", "node": "BDR-01", "peak_ntu": 450, "rise_min": 10, "hold_min": 4, "washout_tau_min": 20},
+    {"at_s": 1380, "action": "supply_interruption", "node": "BDR-03", "duration_s": 100},
+    {"at_s": 1560, "action": "contamination", "node": "BDR-02", "peak_ntu": 680, "rise_min": 10, "hold_min": 5, "washout_tau_min": 20},
+    {"at_s": 1900, "action": "outage", "duration_s": 120},
+    {"at_s": 2100, "action": "contamination", "node": "BDR-03", "peak_ntu": 160, "rise_min": 8, "hold_min": 3, "washout_tau_min": 10},
+    {"at_s": 2380, "action": "status"}
+  ]
+}

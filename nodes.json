@@ -1,0 +1,35 @@
+{
+  "_comment": "Three virtual nodes in Bidur Municipality, Nuwakot (illustrative coordinates). BDR-02 is fed by the BDR-01 reservoir, so an intrusion at BDR-01 reaches BDR-02 after a transport lag with dilution.",
+  "nodes": [
+    {
+      "node_id": "BDR-01",
+      "name": "Bidur Reservoir Outlet",
+      "site_type": "reservoir_outlet",
+      "latitude": 27.8993,
+      "longitude": 85.1608,
+      "token_env": "TB_TOKEN_BDR01",
+      "baseline": {"ph": 7.35, "turbidity_ntu": 3.2, "tds_ppm": 175, "temp_mean_c": 19.0, "temp_amp_c": 2.5, "flow_lpm": 14.0}
+    },
+    {
+      "node_id": "BDR-02",
+      "name": "Battar Tap Stand",
+      "site_type": "tap_stand",
+      "latitude": 27.8912,
+      "longitude": 85.1534,
+      "token_env": "TB_TOKEN_BDR02",
+      "baseline": {"ph": 7.25, "turbidity_ntu": 4.1, "tds_ppm": 190, "temp_mean_c": 20.0, "temp_amp_c": 3.0, "flow_lpm": 11.0},
+      "downstream_of": "BDR-01",
+      "lag_min": 12.0,
+      "attenuation": 0.6
+    },
+    {
+      "node_id": "BDR-03",
+      "name": "Holding Centre Tubewell",
+      "site_type": "tubewell",
+      "latitude": 27.8846,
+      "longitude": 85.1679,
+      "token_env": "TB_TOKEN_BDR03",
+      "baseline": {"ph": 7.10, "turbidity_ntu": 2.4, "tds_ppm": 230, "temp_mean_c": 18.0, "temp_amp_c": 1.2, "flow_lpm": 9.5}
+    }
+  ]
+}

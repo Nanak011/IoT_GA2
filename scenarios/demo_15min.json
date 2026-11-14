@@ -1,0 +1,19 @@
+{
+  "name": "demo-15min",
+  "description": "Repeatable live-demo timeline (real seconds from start, SIM_TIME_SCALE=12). Matches the 7 demo steps in docs/DEMO_RUNBOOK.md.",
+  "events": [
+    {"at_s": 5,   "action": "note", "text": "STEP 1-2: baseline telemetry - all three sources normal (green)"},
+    {"at_s": 75,  "action": "note", "text": "STEP 3: rainfall-triggered silt/sewage intrusion at the reservoir outlet"},
+    {"at_s": 75,  "action": "contamination", "node": "BDR-01", "peak_ntu": 650, "rise_min": 10, "hold_min": 5, "washout_tau_min": 25},
+    {"at_s": 200, "action": "status"},
+    {"at_s": 240, "action": "note", "text": "STEP 5: cellular outage - watch SQLite pending rows grow, no crash"},
+    {"at_s": 240, "action": "outage", "duration_s": 150},
+    {"at_s": 330, "action": "status"},
+    {"at_s": 395, "action": "note", "text": "STEP 6: connectivity back - automatic reconnect with back-off, batched replay"},
+    {"at_s": 480, "action": "status"},
+    {"at_s": 540, "action": "note", "text": "Extra: supply interruption at the holding-centre tubewell"},
+    {"at_s": 540, "action": "supply_interruption", "node": "BDR-03", "duration_s": 90},
+    {"at_s": 700, "action": "contamination", "node": "BDR-03", "peak_ntu": 140, "rise_min": 8, "hold_min": 3, "washout_tau_min": 15},
+    {"at_s": 880, "action": "status"}
+  ]
+}
