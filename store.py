@@ -8,7 +8,7 @@ Rules implemented (Task 3, Part B):
    network, so the acquisition loop can never block on it.
 4. Replay is oldest-first (ORDER BY ts_ms, seq) in batches, and each row
    keeps its original acquisition timestamp ``ts_ms``.
-5. Capacity management - see ``_make_room``.
+5. Capacity management - ``_make_room``.
 
 Why mark instead of delete
 --------------------------

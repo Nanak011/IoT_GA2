@@ -1,6 +1,6 @@
 {
   "name": "demo-15min",
-  "description": "Repeatable live-demo timeline (real seconds from start, SIM_TIME_SCALE=12). Matches the 7 demo steps in docs/DEMO_RUNBOOK.md.",
+  "description": "Repeatable live-demo timeline (real seconds from start, SIM_TIME_SCALE=12)",
   "events": [
     {"at_s": 5,   "action": "note", "text": "STEP 1-2: baseline telemetry - all three sources normal (green)"},
     {"at_s": 75,  "action": "note", "text": "STEP 3: rainfall-triggered silt/sewage intrusion at the reservoir outlet"},

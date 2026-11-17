@@ -40,12 +40,12 @@ from config import BASE_DIR, load_dotenv, load_nodes, load_settings
 RESULTS = BASE_DIR / "results"
 LIVE_MAX_QUEUE_MS = 1500      # first publish attempt within 1.5 s => "live" row
 
-# reference palette (dataviz skill): categorical slots 1-3 + status colours
+# reference palette: categorical slots 1-3 + status colours
 NODE_COLORS = ["#2a78d6", "#eb6834", "#1baf7a"]
 WARN, CRIT, INK, MUTED = "#c98500", "#d03b3b", "#0b0b0b", "#898781"
 
 
-# ------------------------------------------------------------------ helpers
+# helpers
 def pct(values: list[float], p: float) -> float:
     s = sorted(values)
     if not s:
@@ -89,7 +89,7 @@ def is_live(r: dict) -> bool:
             and r["attempts"] == 1 and r["synced"] == 1)
 
 
-# ------------------------------------------------------- server-side data
+# server-side data
 def server_loopback() -> dict:
     """{node: {seq: rx_ms}} from the bench server log."""
     out: dict = {}
@@ -171,7 +171,7 @@ def emulate_alarms(edge: dict, server: dict) -> dict:
     return alarms
 
 
-# ---------------------------------------------------------------- metrics
+# metrics
 def compute(edge: dict, server: dict | None, alarms: dict | None, source: str) -> dict:
     m: dict = {"source": source, "nodes": list(edge)}
 
@@ -291,7 +291,7 @@ def apply_clock_correction(m: dict) -> dict:
     return m
 
 
-# ---------------------------------------------------------------- figures
+# figures
 def figures(edge: dict, server: dict | None, m: dict) -> None:
     import matplotlib
     matplotlib.use("Agg")
@@ -319,7 +319,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
         for a, b in outages:
             ax.axvspan(a, b, color="#d9d8d3", alpha=0.6, lw=0)
 
-    # --- coupled event (first node with an alarm, default first node)
+    # coupled event (first node with an alarm, default first node)
     nid = "BDR-01" if "BDR-01" in edge else next(iter(edge))
     rs = edge[nid]["readings"]
     x = [mins(r["ts"]) for r in rs]
@@ -338,7 +338,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
     fig.savefig(RESULTS / "fig_event.pdf"); fig.savefig(RESULTS / "fig_event.png", dpi=200)
     plt.close(fig)
 
-    # --- fleet turbidity (cross-node propagation) and WQI
+    # fleet turbidity (cross-node propagation) and WQI
     def wqi(v):
         q = {"ph": 100 * abs(v["ph"] - 7) / 1.5, "t": 100 * v["turbidity_ntu"] / 5,
              "d": 100 * v["tds_ppm"] / 1000}
@@ -360,7 +360,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
         fig.tight_layout(); fig.savefig(RESULTS / f"{name}.pdf")
         fig.savefig(RESULTS / f"{name}.png", dpi=200); plt.close(fig)
 
-    # --- buffer depth over time
+    # buffer depth over time
     fig, ax = plt.subplots(figsize=(3.5, 2.0))
     shade(ax)
     for i, (nid, e) in enumerate(edge.items()):
@@ -380,7 +380,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
     fig.tight_layout(); fig.savefig(RESULTS / "fig_buffer.pdf")
     fig.savefig(RESULTS / "fig_buffer.png", dpi=200); plt.close(fig)
 
-    # --- latency CDF
+    # latency CDF
     lat = []
     for nid, e in edge.items():
         for r in e["readings"]:
@@ -401,7 +401,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
         fig.tight_layout(); fig.savefig(RESULTS / "fig_latency.pdf")
         fig.savefig(RESULTS / "fig_latency.png", dpi=200); plt.close(fig)
 
-    # --- backfill: arrival vs acquisition
+    # backfill: arrival vs acquisition
     if server:
         fig, ax = plt.subplots(figsize=(3.5, 2.2))
         for i, (nid, e) in enumerate(edge.items()):
@@ -417,7 +417,7 @@ def figures(edge: dict, server: dict | None, m: dict) -> None:
         fig.tight_layout(); fig.savefig(RESULTS / "fig_backfill.pdf")
         fig.savefig(RESULTS / "fig_backfill.png", dpi=200); plt.close(fig)
 
-    # --- hysteresis ablation (turbidity hovering around 50 NTU)
+    # hysteresis ablation (turbidity hovering around 50 NTU)
     import math
     import random
     rng = random.Random(1)

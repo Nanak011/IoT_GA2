@@ -1,14 +1,12 @@
 
-/* ---------------------------------------------------------------------
+/* 
  * [A] Transformation > Script   name: "WQI + ingest age"
- * Server-side Water Quality Index (weighted arithmetic index, Brown et al.
- * 1970) with the Task 2 weights (Table 8), stored as derived keys
+ * Server-side Water Quality Index, stored as derived keys
  * wqi / wqi_class.  ingest_age_ms = server receive time - acquisition ts,
  * which is the end-to-end latency for live rows and the buffering age
  * for replayed rows (metrics.py separates the two).
  * NOTE: one rule-engine message is created per timestamp, so batch-replayed
- * rows each get their own WQI computed at their ORIGINAL timestamp.
- * ------------------------------------------------------------------- */
+ * rows each get their own WQI computed at their ORIGINAL timestamp. */
 var w  = {ph: 0.369, turbidity_ntu: 0.628, tds_ppm: 0.003};  // unit weights
 var S  = {ph: 8.5,   turbidity_ntu: 5,     tds_ppm: 1000};   // NDWQS standard
 var V0 = {ph: 7.0,   turbidity_ntu: 0,     tds_ppm: 0};      // ideal value
@@ -32,15 +30,14 @@ if (!isNaN(acquired)) {
 return {msg: msg, metadata: metadata, msgType: msgType};
 
 
-/* ---------------------------------------------------------------------
+/*
  * [B] Enrichment > Originator attributes
  *     Server attributes: active_alarms   (adds metadata.ss_active_alarms)
  *
  * [C] Transformation > Script   name: "alarm state"
  * Keeps a per-device map {alarmType: severity} of ACTIVE alarms and the
  * highest severity, saved as server attributes.  The map widget colours
- * each node marker from alarm_severity (see DASHBOARD_BUILD_GUIDE.md).
- * ------------------------------------------------------------------- */
+ * each node marker from alarm_severity. */
 var active = {};
 try { active = JSON.parse(metadata.ss_active_alarms || '{}'); } catch (e) { active = {}; }
 
@@ -60,11 +57,3 @@ return {
     msgType: 'POST_ATTRIBUTES_REQUEST'
 };
 
-
-/* ---------------------------------------------------------------------
- * [D] OPTIONAL - map marker colour function (OpenStreetMap widget ->
- *     Markers -> "Use color function"), data key alarm_severity (attribute)
- * ------------------------------------------------------------------- */
-// var s = data.alarm_severity;
-// return s === 'CRITICAL' ? '#c62828' : s === 'MAJOR' ? '#ef6c00'
-//      : s === 'WARNING'  ? '#f9a825' : '#2e7d32';

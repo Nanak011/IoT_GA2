@@ -1,8 +1,5 @@
--- ===================================================================
 -- Edge store-and-forward buffer (one SQLite file per node: data/<node>.db)
--- ITS67404 Assessment Task 3 - virtual ESP32-S3 water-quality node
--- Extends the Task 2 design (Section 7.2) with audit/metric columns.
--- ===================================================================
+-- Virtual ESP32-S3 water-quality node
 
 -- Write-ahead logging: readers (sync thread) never block the writer
 -- (acquisition thread); a crash mid-write cannot corrupt committed rows.

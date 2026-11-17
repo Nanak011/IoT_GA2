@@ -1,6 +1,6 @@
 """Alarm rules with hysteresis - one definition shared by
 
-* the edge node (local traffic-light + burst mode, works offline - Task 2 FR-05),
+* the edge node (local traffic-light + burst mode, works offline),
 * the loopback bench server (emulated cloud alarms for offline testing),
 * metrics.py (finding the reading that breached a threshold, and the
   hysteresis ablation figure).

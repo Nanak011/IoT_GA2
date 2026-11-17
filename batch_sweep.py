@@ -1,5 +1,4 @@
-"""Empirically choose the replay batch size (brief: "Determine your optimal
-batch size empirically and report it").
+"""Empirically choose the replay batch size.
 
 Publishes the same synthetic backlog (N rows, timestamps 48 h in the past so
 the live charts are not polluted) with several batch sizes and measures

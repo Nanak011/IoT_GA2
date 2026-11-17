@@ -38,7 +38,7 @@ Flow has a demand-driven diurnal pattern, a damped pressure transient at
 intrusion onset (breach), and exact zero during a supply interruption.
 Water temperature follows a diurnal sine (peak ~15:00) plus noise.
 
-All times inside the model are *simulated* seconds; see SimClock.
+All times inside the model are *simulated* seconds; SimClock.
 """
 
 from __future__ import annotations
@@ -49,7 +49,6 @@ import time
 from dataclasses import dataclass
 
 # Ingress (flood runoff + sewage) end-member - modelling assumptions,
-# documented in the manuscript (Section VI-A) and to be calibrated in the field.
 TURB_INGRESS_NTU = 1500.0
 TDS_INGRESS_PPM = 950.0
 TEMP_INGRESS_C = 14.0
@@ -57,7 +56,7 @@ PH_FLOOR = 5.9
 PH_ALPHA = 2.3
 TDS_WASHOUT_RATIO = 1.5      # dissolved load recovers 1.5x slower than silt
 
-# Physical limits of the selected sensors (Task 2, Table 1)
+# Physical limits of the selected sensors
 TDS_SENSOR_MAX = 1000.0      # DFRobot SEN0244 range 0-1000 ppm
 TURB_SENSOR_MAX = 3000.0
 
@@ -160,7 +159,7 @@ class WaterNodeModel:
         self.n_flow = AR1(0.03, 0.85, r)     # relative noise
         self.n_rssi = AR1(3.0, 0.9, r)
 
-    # ---------------------------------------------------------------- events
+    # events
     def add_event(self, event: ContaminationEvent) -> None:
         self.events.append(event)
         self.transient_starts.append(event.start_s)
@@ -172,7 +171,7 @@ class WaterNodeModel:
     def active_event(self, t_s: float) -> bool:
         return any(not e.finished(t_s) and e.start_s <= t_s for e in self.events)
 
-    # ------------------------------------------------------------ components
+    # components
     def _fractions(self, t_s: float) -> tuple[float, float]:
         fp = sum(e.particulate(t_s) for e in self.events)
         fd = sum(e.dissolved(t_s) for e in self.events)
@@ -204,7 +203,7 @@ class WaterNodeModel:
             2 * math.pi * (hour - 9.0) / 24.0)     # peak at ~15:00
         return (1 - fd) * diurnal + fd * TEMP_INGRESS_C + self.n_temp.step()
 
-    # --------------------------------------------------------------- reading
+    # reading
     def read(self, t_s: float, hour: float) -> dict[str, float]:
         fp, fd = self._fractions(t_s)
         b = self.b

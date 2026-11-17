@@ -1,4 +1,4 @@
-"""Provision ThingsBoard over its REST API (run once before the demo).
+"""Provision ThingsBoard over its REST API.
 
 1. logs in as the tenant administrator (TB_URL, TB_USERNAME, TB_PASSWORD)
 2. imports thingsboard/device_profile_water_node.json (alarm rules)

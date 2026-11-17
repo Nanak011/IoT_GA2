@@ -1,7 +1,5 @@
 """Virtual ESP32-S3 post-flood water-quality edge node(s) for ThingsBoard.
 
-ITS67404 Internet of Things - Assessment Task 3 (Group Project)
-
 Runs one or more virtual nodes. Each node has two threads:
 
   acquisition thread  read coupled sensors -> evaluate local alarm rules
@@ -47,9 +45,7 @@ from transport import (ATTRIBUTES_TOPIC, TELEMETRY_TOPIC, Backoff, ConnectResult
                        LoopbackServer, LoopbackTransport, MqttTransport, TokenBucket)
 
 
-# ==========================================================================
 # Logging: one structured line per event, to console and to logs/*.log
-# ==========================================================================
 class Logger:
     def __init__(self, log_dir: Path) -> None:
         log_dir.mkdir(parents=True, exist_ok=True)
@@ -68,9 +64,7 @@ class Logger:
         self._fh.close()
 
 
-# ==========================================================================
 # One virtual node
-# ==========================================================================
 class NodeRuntime:
     STATES = ("BOOT", "CONNECTING", "ONLINE", "OFFLINE", "REPLAYING", "AUTH_FAILED")
 
@@ -101,7 +95,7 @@ class NodeRuntime:
             self.store.journal("STATE", detail=f"{self.state}->{new}")
             self.state = new
 
-    # ------------------------------------------------------- acquisition
+    # acquisition
     def acquisition_loop(self) -> None:
         while not self.stop.is_set():
             started = time.monotonic()
@@ -133,7 +127,7 @@ class NodeRuntime:
             interval = self.s.burst_interval_s if burst else self.s.interval_s
             self.stop.wait(max(0.0, interval - (time.monotonic() - started)))
 
-    # -------------------------------------------------------------- sync
+    # sync
     def sync_loop(self) -> None:
         next_attempt = 0.0
         last_attr = 0.0
@@ -259,7 +253,7 @@ class NodeRuntime:
             self.store.journal("DRAINED", rows=sent, dur_ms=int(dur * 1000))
             self.set_state("ONLINE", "backfill complete")
 
-    # ------------------------------------------------------------ control
+    # control
     def start(self) -> list[threading.Thread]:
         self.log("BOOT", f"{self.spec.name} ({self.spec.latitude}, {self.spec.longitude}) "
                          f"buffer={self.store.db_path.name} pending={self.store.pending_count()}")
@@ -272,9 +266,7 @@ class NodeRuntime:
         return threads
 
 
-# ==========================================================================
-# Fleet + scenario control (no code edits needed during the demo)
-# ==========================================================================
+# Fleet + scenario control
 class Fleet:
     def __init__(self, nodes: dict[str, NodeRuntime], specs: list[NodeSpec],
                  clock: SimClock, log: Logger) -> None:
@@ -427,7 +419,6 @@ def command_loop(fleet: Fleet, stop: threading.Event) -> None:
             print(f"error: {error}", flush=True)
 
 
-# ==========================================================================
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)

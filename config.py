@@ -18,9 +18,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 
-# --------------------------------------------------------------------------
-# Small helpers (same style as the class thingsboard_config.py)
-# --------------------------------------------------------------------------
+# Small helpers
 def load_dotenv(path: Path = BASE_DIR / ".env") -> None:
     """Load KEY=VALUE lines from .env without overriding real env vars."""
     if not path.exists():
@@ -70,9 +68,7 @@ def env_bool(name: str, default: bool) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
-# --------------------------------------------------------------------------
 # Node definitions (three nodes at distinct coordinates, Bidur, Nuwakot)
-# --------------------------------------------------------------------------
 @dataclass
 class NodeSpec:
     node_id: str
@@ -97,12 +93,10 @@ def load_nodes(path: Path | None = None) -> list[NodeSpec]:
     return [NodeSpec(**item) for item in raw["nodes"]]
 
 
-# --------------------------------------------------------------------------
 # Runtime settings
-# --------------------------------------------------------------------------
 @dataclass
 class Settings:
-    # Transport -----------------------------------------------------------
+    # Transport 
     host: str
     port: int
     use_tls: bool
@@ -110,22 +104,22 @@ class Settings:
     tls_insecure: bool
     keepalive_s: int
     publish_timeout_s: float
-    # Sampling -----------------------------------------------------------
+    # Sampling 
     interval_s: float          # normal reporting interval (real seconds)
     burst_interval_s: float    # interval while a local alarm is active
     time_scale: float          # simulated seconds per real second (physics)
-    # Store-and-forward --------------------------------------------------
+    # Store-and-forward 
     db_dir: Path
     buffer_max_rows: int       # hard capacity of the SQLite buffer
     batch_size: int            # max rows per replay publish (array payload)
     dp_rate: float             # sustained telemetry data points / s per node (0 = unlimited)
     dp_burst: float            # token-bucket burst size in data points
     synced_retention_s: int    # how long synced rows are kept for audit
-    # Reconnect back-off -------------------------------------------------
+    # Reconnect back-off 
     backoff_min_s: float
     backoff_max_s: float
     backoff_factor: float
-    # Misc ---------------------------------------------------------------
+    # Misc 
     log_dir: Path
     attributes_every_s: float
 
