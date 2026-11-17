@@ -1,6 +1,6 @@
 # ITS67404 Assessment Task 3 - Implementation & Demonstration
 
-**Group:** · Gurunanak Adhikari (0369915) · Bisakha Shrestha (0370008) · Jeshik Neupane (0369877)
+**Group:M** · Gurunanak Adhikari (0369915) · Bisakha Shrestha (0370008) · Jeshik Neupane (0369877)
 
 **System:** post-flood drinking-water surveillance, Bidur (Nuwakot): three virtual ESP32-S3 nodes, then a SQLite store-and-forward buffer, then MQTT/TLS 8883, then ThingsBoard.
 
