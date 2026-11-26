@@ -14,3 +14,8 @@ Taken on ThingsBoard Cloud (EU, v4.4) during the demo run
 | tb_backfill_after.png | Same chart after replay: gap filled at the original timestamps |
 | tb_alarm_rules.png | The six alarm rules (Alarm Rules 2.0) on the device profile |
 | tb_rule_chain.png | Root rule chain with the WQI + ingest-age script node |
+| SQLite/sqlite_schema.png | SQLite tables: readings (store-and-forward buffer), buffer_log (journal), meta |
+| SQLite/sqlite_buffer_log.png | Journal of the 180 s outage: NET_LOST, rows buffered, NET_RESTORED, FLUSH batches, DRAINED |
+| SQLite/sqlite_replayed_rows.png | Readings taken during the outage, sent ~3 min later with original timestamps |
+| SQLitesqlite_readings_normal.png | Normal readings sent within ~1 s of acquisition |
+| SQLite/sqlite_summary.png | All rows sent, 0 pending, 0 DATA_LOSS entries |
